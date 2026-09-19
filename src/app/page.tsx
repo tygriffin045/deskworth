@@ -21,9 +21,9 @@ export default function HomePage() {
             Honest picks for a better home office
           </h1>
           <p className="mt-4 text-lg text-stone-700">
-            DeskWorth reviews standing desks, chairs, monitors, and the small
-            upgrades that make long days easier — with clear affiliate
-            disclosure and no invented brand scores.
+            DeskWorth reviews standing desks, chairs, monitors, arms, mats, stands,
+            docks, and the small upgrades that make long days easier — with clear
+            affiliate disclosure and no invented brand scores.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -49,7 +49,7 @@ export default function HomePage() {
               Shop by category
             </h2>
             <p className="mt-1 text-stone-600">
-              Start where your setup hurts most — chair, desk, or screen.
+              Start where your setup hurts most — chair, desk, screen, arm, or dock.
             </p>
           </div>
         </div>

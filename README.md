@@ -2,7 +2,7 @@
 
 **Honest picks for a better home office**
 
-DeskWorth is a Next.js affiliate marketing site for home office gadgets — standing desks, ergonomic chairs, monitors, keyboards, webcams, lighting, and accessories. Product names are fictional placeholders; affiliate URLs go through one shared helper so you can plug in Amazon Associates later.
+DeskWorth is a Next.js affiliate marketing site for home office gadgets — standing desks, ergonomic chairs, monitors, keyboards, webcams, lighting, and accessories. Catalog entries use real Amazon products with verified ASINs where available; affiliate URLs go through `src/lib/affiliate.ts` with tag `deskworth20-20`.
 
 ## Stack
 
@@ -26,30 +26,17 @@ npm start
 
 ## Affiliate links
 
-All product CTAs use `getAffiliateUrl(slug)` from `src/lib/affiliate.ts`.
+All product CTAs use `getAffiliateUrl(...)` from `src/lib/affiliate.ts`.
 
-Default pattern:
-
-```text
-https://example.com/aff/PRODUCT_SLUG
-```
-
-To point at your network (e.g. Amazon Associates tracking domain or a link shortener):
-
-1. Copy `.env.example` to `.env.local`
-2. Set `NEXT_PUBLIC_AFFILIATE_BASE_URL` (no trailing slash), for example:
-
-```bash
-NEXT_PUBLIC_AFFILIATE_BASE_URL=https://www.amazon.com/dp
-```
-
-Or change the helper to build full Associates URLs with your tag. Keep CTAs calling the helper so you never hardcode links in page components.
+- Prefer `amazonAsin` → `https://www.amazon.com/dp/ASIN?tag=deskworth20-20`
+- Else `amazonQuery` → Amazon search with the same tag
+- Override tag with `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG` if needed
 
 ## Add a product
 
 1. Open `src/data/products.ts`
-2. Add a `Product` object (slug, category, pros/cons, specs, `relatedSlugs`, etc.)
-3. Use a fictional brand/name unless you have rights and real review notes
+2. Add a `Product` object (slug, category, pros/cons, specs, `relatedSlugs`, `amazonQuery`, optional `amazonAsin`)
+3. Only use verified ASINs — never invent them
 4. Optionally mark `featured: true` for the homepage
 5. Link it from a guide in `src/data/guides.ts` if relevant
 

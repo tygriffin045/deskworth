@@ -14,7 +14,7 @@ export default function ProductsIndexPage() {
       <h1 className="font-serif text-4xl text-stone-900">All products</h1>
       <p className="mt-2 max-w-2xl text-stone-600">
         Filter by category and budget band. Every product page includes pros,
-        cons, who it&apos;s for, and a placeholder affiliate CTA.
+        cons, who it&apos;s for, and an Amazon Associate buy link.
       </p>
       <div className="mt-8">
         <ProductFilters products={products} />

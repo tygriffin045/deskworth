@@ -13,7 +13,7 @@ export function Header() {
             home office picks
           </span>
         </Link>
-        <nav className="hidden items-center gap-5 text-sm text-stone-700 lg:flex">
+        <nav className="hidden items-center gap-3 text-sm text-stone-700 xl:flex">
           {categories.map((c) => (
             <Link
               key={c.slug}
@@ -48,7 +48,7 @@ export function Header() {
           </Link>
         </div>
       </div>
-      <div className="flex gap-3 overflow-x-auto border-t border-stone-200/60 px-4 py-2 text-xs text-stone-600 lg:hidden">
+      <div className="flex gap-3 overflow-x-auto border-t border-stone-200/60 px-4 py-2 text-xs text-stone-600 xl:hidden">
         {categories.map((c) => (
           <Link
             key={c.slug}

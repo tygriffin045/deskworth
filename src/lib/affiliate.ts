@@ -1,22 +1,31 @@
 /**
- * Central affiliate link helper.
- * Swap AFFILIATE_BASE_URL (or NEXT_PUBLIC_AFFILIATE_BASE_URL) for Amazon Associates
- * or another network later — keep product CTAs calling getAffiliateUrl(slug).
+ * Amazon Associates affiliate helper.
+ * Store ID / tag: deskworth20-20
+ * Prefer real ASINs when available; otherwise Amazon search with the tag.
  */
-const DEFAULT_BASE = "https://example.com/aff";
+export const AMAZON_ASSOCIATE_TAG =
+  process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || "deskworth20-20";
 
-export function getAffiliateBaseUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_AFFILIATE_BASE_URL ||
-    process.env.AFFILIATE_BASE_URL ||
-    DEFAULT_BASE
+export type AffiliateTarget = {
+  slug: string;
+  amazonAsin?: string;
+  amazonQuery?: string;
+};
+
+export function getAffiliateUrl(target: string | AffiliateTarget): string {
+  const tag = AMAZON_ASSOCIATE_TAG;
+  if (typeof target === "string") {
+    const q = encodeURIComponent(target.replace(/-/g, " "));
+    return `https://www.amazon.com/s?k=${q}&tag=${tag}`;
+  }
+  if (target.amazonAsin) {
+    return `https://www.amazon.com/dp/${target.amazonAsin}?tag=${tag}`;
+  }
+  const q = encodeURIComponent(
+    target.amazonQuery || target.slug.replace(/-/g, " "),
   );
-}
-
-export function getAffiliateUrl(productSlug: string): string {
-  const base = getAffiliateBaseUrl().replace(/\/$/, "");
-  return `${base}/${productSlug}`;
+  return `https://www.amazon.com/s?k=${q}&tag=${tag}`;
 }
 
 export const AFFILIATE_DISCLOSURE_SHORT =
-  "As an affiliate, DeskWorth may earn a commission when you buy through our links — at no extra cost to you.";
+  "As an Amazon Associate, DeskWorth earns from qualifying purchases.";

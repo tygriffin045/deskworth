@@ -20,8 +20,8 @@ export default function AboutPage() {
       <p className="mt-3 text-stone-700">
         We write like people who actually work from home: prioritize stability
         and adjustability over buzzwords, call out tradeoffs, and avoid fake
-        “verified scores” for real brands. Products on this demo use fictional
-        names so you can wire in your own catalog later.
+        “verified scores.” Product pages use real Amazon listings with verified
+        ASINs where available, plus honest editorial pros and cons.
       </p>
       <h2 className="mt-10 font-serif text-2xl text-stone-900">
         How we make money

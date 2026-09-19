@@ -4,45 +4,47 @@ import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
 
 export const metadata: Metadata = {
-  title: "Standing desk comparison",
+  title: "Monitor arm comparison",
   description:
-    "Side-by-side comparison of three DeskWorth standing desks across budget, mid-range, and premium.",
+    "Side-by-side comparison of HUANUO dual, Amazon Basics dual, and Ergotron LX monitor arms.",
 };
 
 const slugs = [
-  "flexispot-pro-dual-motor",
-  "flexispot-e7-pro",
-  "uplift-v2",
+  "huanuo-dual-monitor-arm",
+  "amazon-basics-dual-monitor-arm",
+  "ergotron-lx-monitor-arm",
 ] as const;
 
 const rows: { label: string; key: (slug: string) => string }[] = [
   { label: "Price band", key: (s) => getProduct(s)!.priceBand },
   { label: "Budget tier", key: (s) => getProduct(s)!.budget },
   {
-    label: "Height range",
+    label: "Screen size",
     key: (s) =>
-      getProduct(s)!.specs.find((x) => x.label === "Height range")?.value ||
+      getProduct(s)!.specs.find((x) => x.label === "Screen size")?.value || "—",
+  },
+  {
+    label: "Load",
+    key: (s) => {
+      const p = getProduct(s)!;
+      return (
+        p.specs.find((x) => x.label === "Load per arm")?.value ||
+        p.specs.find((x) => x.label === "Load")?.value ||
+        "—"
+      );
+    },
+  },
+  {
+    label: "VESA",
+    key: (s) =>
+      getProduct(s)!.specs.find((x) => x.label === "VESA")?.value || "—",
+  },
+  {
+    label: "Mount",
+    key: (s) =>
+      getProduct(s)!.specs.find((x) => x.label === "Mount")?.value ||
+      getProduct(s)!.specs.find((x) => x.label === "Lift")?.value ||
       "—",
-  },
-  {
-    label: "Motors",
-    key: (s) =>
-      getProduct(s)!.specs.find((x) => x.label === "Motors")?.value || "—",
-  },
-  {
-    label: "Top size",
-    key: (s) =>
-      getProduct(s)!.specs.find((x) => x.label === "Top size")?.value || "—",
-  },
-  {
-    label: "Max load",
-    key: (s) =>
-      getProduct(s)!.specs.find((x) => x.label === "Max load")?.value || "—",
-  },
-  {
-    label: "Warranty",
-    key: (s) =>
-      getProduct(s)!.specs.find((x) => x.label === "Warranty")?.value || "—",
   },
   {
     label: "Best for",
@@ -50,37 +52,36 @@ const rows: { label: string; key: (slug: string) => string }[] = [
   },
 ];
 
-export default function ComparePage() {
-  const desks = slugs.map((s) => getProduct(s)!);
+export default function CompareMonitorArmsPage() {
+  const arms = slugs.map((s) => getProduct(s)!);
 
   return (
     <div>
       <h1 className="font-serif text-4xl text-stone-900">
-        Standing desk comparison
+        Monitor arm comparison
       </h1>
       <p className="mt-2 max-w-2xl text-stone-600">
-        Three real standing desks across mid-range FlexiSpot options and premium
-        UPLIFT — so you can match stability and features to how you actually
-        work. Read the{" "}
+        Dual budget mounts versus a premium Ergotron LX single arm — so you can
+        match VESA, weight, and motion to your desk. Read the{" "}
         <Link
-          href="/guides/how-to-choose-a-standing-desk"
+          href="/guides/how-to-choose-a-monitor-arm"
           className="underline underline-offset-2"
         >
-          full buying guide
+          monitor arm buying guide
         </Link>{" "}
-        for context.
+        for the full checklist.
       </p>
 
       <div className="mt-6 flex flex-wrap gap-2 text-sm">
-        <span className="rounded-full bg-stone-900 px-3 py-1 text-stone-50">
-          Standing desks
-        </span>
         <Link
-          href="/compare/monitor-arms"
+          href="/compare"
           className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
         >
-          Monitor arms
+          Standing desks
         </Link>
+        <span className="rounded-full bg-stone-900 px-3 py-1 text-stone-50">
+          Monitor arms
+        </span>
         <Link
           href="/compare/usb-c-docks"
           className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
@@ -94,7 +95,7 @@ export default function ComparePage() {
           <thead>
             <tr className="border-b border-stone-200 bg-stone-50">
               <th className="px-4 py-4 font-medium text-stone-500">Feature</th>
-              {desks.map((d) => (
+              {arms.map((d) => (
                 <th key={d.slug} className="px-4 py-4">
                   <Link
                     href={`/products/${d.slug}`}
@@ -124,7 +125,7 @@ export default function ComparePage() {
             ))}
             <tr className="align-top">
               <th className="px-4 py-4 font-medium text-stone-500">Shop</th>
-              {desks.map((d) => (
+              {arms.map((d) => (
                 <td key={d.slug} className="px-4 py-4">
                   <AffiliateButton
                     productSlug={d.slug}

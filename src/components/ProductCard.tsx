@@ -10,11 +10,23 @@ export function ProductCard({ product }: { product: Product }) {
       className="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
       <div
-        className={`relative aspect-[4/3] bg-gradient-to-br ${product.imageGradient}`}
-        role="img"
-        aria-label={product.imageAlt}
+        className={`relative aspect-[4/3] overflow-hidden bg-stone-100 bg-gradient-to-br ${product.imageGradient}`}
       >
-        <div className="absolute inset-0 opacity-30 mix-blend-overlay bg-[radial-gradient(circle_at_30%_20%,white,transparent_45%)]" />
+        {product.imageUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={product.imageUrl}
+            alt={product.imageAlt}
+            className="absolute inset-0 h-full w-full object-contain p-4 transition duration-300 group-hover:scale-[1.02]"
+            loading="lazy"
+          />
+        ) : (
+          <div
+            className="absolute inset-0 opacity-30 mix-blend-overlay bg-[radial-gradient(circle_at_30%_20%,white,transparent_45%)]"
+            role="img"
+            aria-label={product.imageAlt}
+          />
+        )}
         <span className="absolute bottom-3 left-3 rounded-full bg-black/40 px-2.5 py-0.5 text-[11px] font-medium text-white backdrop-blur">
           {category?.shortLabel}
         </span>

@@ -55,6 +55,16 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/compare/monitor-arms" className="hover:text-stone-50">
+                Monitor arm comparison
+              </Link>
+            </li>
+            <li>
+              <Link href="/compare/usb-c-docks" className="hover:text-stone-50">
+                USB-C dock comparison
+              </Link>
+            </li>
+            <li>
               <Link href="/guides" className="hover:text-stone-50">
                 Buying guides
               </Link>
@@ -76,8 +86,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-stone-800 py-4 text-center text-xs text-stone-600">
-        © {new Date().getFullYear()} DeskWorth. Example affiliate site —
-        placeholder links only.
+        © {new Date().getFullYear()} DeskWorth. As an Amazon Associate we earn from qualifying purchases.
       </div>
     </footer>
   );

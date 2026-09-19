@@ -14,8 +14,8 @@ export default function AffiliateDisclosurePage() {
         Affiliate disclosure
       </h1>
       <p className="mt-4 text-lg text-stone-700">
-        DeskWorth participates in affiliate marketing programs. Here is what
-        that means in plain language.
+        DeskWorth participates in the Amazon Associates Program and other
+        affiliate marketing programs. Here is what that means in plain language.
       </p>
 
       <h2 className="mt-10 font-serif text-2xl text-stone-900">
@@ -23,8 +23,8 @@ export default function AffiliateDisclosurePage() {
       </h2>
       <p className="mt-3 text-stone-700">
         Some links on this site are affiliate links. If you click one and buy
-        something, we may receive a commission from the retailer or partner
-        network. You do not pay more because you used our link.
+        something, we may receive a commission from the retailer. You do not pay
+        more because you used our link.
       </p>
 
       <h2 className="mt-10 font-serif text-2xl text-stone-900">
@@ -33,27 +33,18 @@ export default function AffiliateDisclosurePage() {
       <p className="mt-3 text-stone-700">
         Affiliate relationships do not buy rankings or force positive reviews.
         We describe tradeoffs — including cons — because trust matters more than
-        a single conversion. Product names on this demo site are fictional
-        placeholders.
+        a single conversion. We link to real Amazon product pages when available.
+        Prices shown are approximate; Amazon&apos;s live checkout price always
+        wins.
       </p>
 
       <h2 className="mt-10 font-serif text-2xl text-stone-900">
-        Placeholder links today
+        Amazon Associates
       </h2>
       <p className="mt-3 text-stone-700">
-        Demo CTAs currently point to{" "}
-        <code className="rounded bg-stone-200/80 px-1.5 py-0.5 text-sm">
-          https://example.com/aff/PRODUCT_SLUG
-        </code>
-        . When you join Amazon Associates (or another network), set{" "}
-        <code className="rounded bg-stone-200/80 px-1.5 py-0.5 text-sm">
-          NEXT_PUBLIC_AFFILIATE_BASE_URL
-        </code>{" "}
-        or update the helper in{" "}
-        <code className="rounded bg-stone-200/80 px-1.5 py-0.5 text-sm">
-          src/lib/affiliate.ts
-        </code>
-        . See the README for steps.
+        As an Amazon Associate, DeskWorth earns from qualifying purchases. Buy
+        buttons on product pages take you to Amazon with our tracking ID so we
+        can be credited if you purchase.
       </p>
 
       <h2 className="mt-10 font-serif text-2xl text-stone-900">Questions</h2>

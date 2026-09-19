@@ -3,7 +3,11 @@ export type CategorySlug =
   | "office-chairs"
   | "monitors"
   | "keyboards-mice"
-  | "webcams-audio";
+  | "webcams-audio"
+  | "monitor-arms"
+  | "desk-mats"
+  | "laptop-stands"
+  | "usb-c-docks";
 
 export type BudgetBand = "budget" | "mid" | "premium";
 
@@ -25,12 +29,18 @@ export interface Product {
   priceMax: number;
   imageGradient: string;
   imageAlt: string;
+  /** Amazon CDN product image when available */
+  imageUrl?: string;
   featured: boolean;
   pros: string[];
   cons: string[];
   whoItsFor: string;
   specs: ProductSpec[];
   relatedSlugs: string[];
+  /** Amazon ASIN when known — preferred for affiliate links */
+  amazonAsin?: string;
+  /** Amazon search query used until a real ASIN is set */
+  amazonQuery: string;
 }
 
 export interface Category {

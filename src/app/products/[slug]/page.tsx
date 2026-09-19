@@ -57,11 +57,22 @@ export default async function ProductPage({ params }: Props) {
 
       <div className="mt-6 grid gap-10 lg:grid-cols-2">
         <div
-          className={`relative aspect-[4/3] overflow-hidden rounded-3xl bg-gradient-to-br ${product.imageGradient}`}
-          role="img"
-          aria-label={product.imageAlt}
+          className={`relative aspect-[4/3] overflow-hidden rounded-3xl border border-stone-200 bg-stone-50 bg-gradient-to-br ${product.imageGradient}`}
         >
-          <div className="absolute inset-0 opacity-35 mix-blend-overlay bg-[radial-gradient(circle_at_25%_20%,white,transparent_50%)]" />
+          {product.imageUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={product.imageUrl}
+              alt={product.imageAlt}
+              className="absolute inset-0 h-full w-full object-contain p-6"
+            />
+          ) : (
+            <div
+              className="absolute inset-0 opacity-35 mix-blend-overlay bg-[radial-gradient(circle_at_25%_20%,white,transparent_50%)]"
+              role="img"
+              aria-label={product.imageAlt}
+            />
+          )}
         </div>
         <div>
           <p className="text-xs uppercase tracking-wider text-stone-500">
@@ -78,6 +89,8 @@ export default async function ProductPage({ params }: Props) {
           <AffiliateButton
             productSlug={product.slug}
             productName={product.name}
+            amazonAsin={product.amazonAsin}
+            amazonQuery={product.amazonQuery}
             className="mt-6"
           />
         </div>

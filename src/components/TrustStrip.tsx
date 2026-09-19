@@ -10,8 +10,8 @@ const items = [
     body: "If we earn a commission, we say so in plain language.",
   },
   {
-    title: "Placeholder links for now",
-    body: "Demo links go to example.com — swap in your Amazon Associates tags later.",
+    title: "Amazon Associate links",
+    body: "Buy buttons go to Amazon with our Associates tag. We may earn a commission at no extra cost to you.",
   },
 ];
 
