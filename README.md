@@ -66,3 +66,5 @@ Categories live in `src/data/categories.ts`. Types are in `src/data/types.ts`.
 ## License
 
 Private project starter for DeskWorth. Replace disclosure/contact copy before a public launch.
+
+<!-- Deploys automatically from GitHub main via Vercel. -->
