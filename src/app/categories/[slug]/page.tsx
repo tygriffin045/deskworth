@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_URL,
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category not found" };
   const title = `${category.name} — DeskWorth picks`;
-  const description = `${category.description} Compare options and open Amazon Associate links with clear disclosure.`;
+  const description = `${category.description} Compare options and check current Amazon prices.`;
   return {
     title,
     description,
@@ -70,6 +71,7 @@ export default async function CategoryPage({ params }: Props) {
         {category.name}
       </h1>
       <p className="mt-3 max-w-2xl text-stone-600">{category.description}</p>
+      <AffiliateNote />
       <p className="mt-4 text-sm text-stone-500">
         <Link href="/products" className="underline underline-offset-2">
           All products

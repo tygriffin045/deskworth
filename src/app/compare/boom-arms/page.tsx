@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import { CompareNav } from "@/components/CompareNav";
 import { CompareWinner } from "@/components/CompareWinner";
 import { JsonLd } from "@/components/JsonLd";
@@ -96,6 +97,7 @@ export default function ComparePage() {
         pick by mic weight, camera framing, and how quiet the arm needs to be on
         calls.
       </p>
+      <AffiliateNote />
 
       <CompareNav current={"/compare/boom-arms"} />
 

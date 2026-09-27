@@ -227,12 +227,6 @@ export function SiteNav() {
 
         <div className="flex items-center gap-2 text-sm sm:gap-3">
           <Link
-            href="/affiliate-disclosure"
-            className="hidden text-xs text-stone-500 underline-offset-2 hover:text-stone-800 hover:underline sm:inline"
-          >
-            Disclosure
-          </Link>
-          <Link
             href="/products"
             className="rounded-full bg-stone-900 px-3.5 py-1.5 text-xs font-medium text-stone-50 hover:bg-stone-800 sm:text-sm"
           >
@@ -341,15 +335,6 @@ export function SiteNav() {
                       onClick={closeMobile}
                     >
                       All products
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/affiliate-disclosure"
-                      className="block rounded-lg px-3 py-2.5 text-stone-600 hover:bg-stone-200/50"
-                      onClick={closeMobile}
-                    >
-                      Disclosure
                     </Link>
                   </li>
                 </ul>

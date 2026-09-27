@@ -4,7 +4,7 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
-import { TrustStrip } from "@/components/TrustStrip";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import {
   SITE_URL,
   SITE_DESCRIPTION,
@@ -48,9 +48,10 @@ export default function HomePage() {
           </h1>
           <p className="mt-4 text-lg text-stone-700">
             Standing desks, converters, chairs, monitors, boom arms, mats, cables,
-            and desk power. Editorial shortlists with Amazon Associate links,
-            clear FTC disclosure, and no invented scores.
+            and desk power. Editorial shortlists with real tradeoffs and no
+            invented scores.
           </p>
+          <AffiliateNote className="mt-3" />
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/products"
@@ -132,8 +133,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      <TrustStrip />
 
       <section>
         <div className="flex items-end justify-between gap-4">

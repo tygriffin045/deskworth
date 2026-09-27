@@ -13,6 +13,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 import { ProductCard } from "@/components/ProductCard";
 import { JsonLd } from "@/components/JsonLd";
 import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import {
   SITE_URL,
   CATEGORY_CROSS_LINKS,
@@ -188,6 +189,7 @@ export default async function ProductPage({ params }: Props) {
             {product.name}
           </h1>
           <p className="mt-2 text-lg text-stone-700">{product.tagline}</p>
+          <AffiliateNote />
           <p className="mt-4 text-stone-600">{product.summary}</p>
           <p className="mt-4 text-xl font-semibold text-stone-900">
             {product.priceBand}

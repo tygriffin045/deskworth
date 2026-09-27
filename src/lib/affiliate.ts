@@ -28,4 +28,4 @@ export function getAffiliateUrl(target: string | AffiliateTarget): string {
 }
 
 export const AFFILIATE_DISCLOSURE_SHORT =
-  "As an Amazon Associate, DeskWorth earns from qualifying purchases.";
+  "We may earn a commission from qualifying purchases.";

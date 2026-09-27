@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getAllNavGroupsWithLinks } from "@/data/nav";
-import { AFFILIATE_DISCLOSURE_SHORT } from "@/lib/affiliate";
 
 const groups = getAllNavGroupsWithLinks();
 
@@ -13,15 +12,6 @@ export function Footer() {
           <p className="mt-2 text-sm text-stone-400">
             Desk setup reviews with tradeoffs spelled out — desks, converters, boom
             arms, organizers, mats, cables, and desk power.
-          </p>
-          <p className="mt-4 text-xs leading-relaxed text-stone-500">
-            {AFFILIATE_DISCLOSURE_SHORT}{" "}
-            <Link
-              href="/affiliate-disclosure"
-              className="underline underline-offset-2 hover:text-stone-300"
-            >
-              Full disclosure
-            </Link>
           </p>
         </div>
 
@@ -112,7 +102,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-stone-800 py-4 text-center text-xs text-stone-600">
-        © {new Date().getFullYear()} DeskWorth. As an Amazon Associate we earn from qualifying purchases.
+        © {new Date().getFullYear()} DeskWorth. As an Amazon Associate I earn from qualifying purchases.
       </div>
     </footer>
   );

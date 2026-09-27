@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_URL,
@@ -111,6 +112,7 @@ export default async function GuidePage({ params }: Props) {
         {guide.title}
       </h1>
       <p className="mt-4 text-lg text-stone-700">{guide.description}</p>
+      <AffiliateNote />
 
       <div className="mt-10 space-y-10">
         {guide.sections.map((section) => (

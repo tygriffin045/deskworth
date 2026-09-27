@@ -43,9 +43,6 @@ export function AffiliateButton({
       >
         {label ?? `Check price on Amazon — ${productName}`}
       </a>
-      <p className="mt-2 text-xs text-stone-500">
-        Amazon Associate link · We may earn a commission at no extra cost to you
-      </p>
     </div>
   );
 }
