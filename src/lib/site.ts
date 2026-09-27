@@ -29,6 +29,10 @@ export const CATEGORY_CROSS_LINKS: Partial<
         href: "/guides/sit-stand-converter-vs-standing-desk",
         label: "Converter vs standing desk",
       },
+      {
+        href: "/guides/best-power-strip-for-standing-desk",
+        label: "Best power strip for a standing desk",
+      },
     ],
     compares: [{ href: "/compare", label: "Standing desk comparison" }],
   },
@@ -57,6 +61,12 @@ export const CATEGORY_CROSS_LINKS: Partial<
     compares: [{ href: "/compare/usb-c-docks", label: "USB-C dock comparison" }],
   },
   "cable-management": {
+    guides: [
+      {
+        href: "/guides/best-power-strip-for-standing-desk",
+        label: "Best power strip for a standing desk",
+      },
+    ],
     compares: [{ href: "/compare/cable-management", label: "Cable management comparison" }],
   },
   "boom-arms": {
@@ -68,7 +78,33 @@ export const CATEGORY_CROSS_LINKS: Partial<
         href: "/guides/ergonomic-home-office-starter-kit",
         label: "Ergonomic starter kit",
       },
+      {
+        href: "/guides/best-footrest-for-short-people",
+        label: "Best footrest for short people",
+      },
     ],
+  },
+  "laptop-stands": {
+    guides: [
+      { href: "/guides/best-laptop-stand-for-desk", label: "Best laptop stand for a desk" },
+    ],
+  },
+  footrests: {
+    guides: [
+      {
+        href: "/guides/best-footrest-for-short-people",
+        label: "Best footrest for short people",
+      },
+    ],
+  },
+  "desk-power": {
+    guides: [
+      {
+        href: "/guides/best-power-strip-for-standing-desk",
+        label: "Best power strip for a standing desk",
+      },
+    ],
+    compares: [{ href: "/compare/cable-management", label: "Cable management comparison" }],
   },
 };
 

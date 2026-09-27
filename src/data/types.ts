@@ -58,12 +58,47 @@ export interface Category {
   shortLabel: string;
 }
 
+export interface GuidePick {
+  productSlug: string;
+  /** Short award label, e.g. "Best for most desks" */
+  award: string;
+  /** One-line reason shown in the quick-pick summary */
+  quickNote: string;
+  verdict: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string;
+}
+
+export interface GuideFaq {
+  question: string;
+  answer: string;
+}
+
+export interface GuideLink {
+  href: string;
+  label: string;
+}
+
 export interface Guide {
   slug: string;
   title: string;
   description: string;
+  /** Optional SEO overrides (fall back to title / description) */
+  metaTitle?: string;
+  metaDescription?: string;
   readingTime: string;
   publishedAt: string;
   productSlugs: string[];
   sections: { heading: string; body: string }[];
+  /** Buying-guide format: ranked picks with pros/cons (rendered before sections) */
+  picks?: GuidePick[];
+  /** Short buying-criteria checklist */
+  criteria?: { heading: string; body: string }[];
+  /** FAQ entries — also emitted as FAQPage JSON-LD */
+  faqs?: GuideFaq[];
+  /** Other guides worth reading next (slugs of existing guides) */
+  relatedGuideSlugs?: string[];
+  /** Extra internal links (compares, categories) */
+  relatedLinks?: GuideLink[];
 }

@@ -134,8 +134,11 @@ export default async function ProductPage({ params }: Props) {
   };
 
   const cross = CATEGORY_CROSS_LINKS[product.category];
-  const mentionedInGuides = guides.filter((g) =>
-    g.productSlugs.includes(product.slug),
+  const crossGuideHrefs = new Set((cross?.guides ?? []).map((g) => g.href));
+  const mentionedInGuides = guides.filter(
+    (g) =>
+      g.productSlugs.includes(product.slug) &&
+      !crossGuideHrefs.has(`/guides/${g.slug}`),
   );
 
   return (
