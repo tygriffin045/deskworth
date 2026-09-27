@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const HOST = "https://deskworth.vercel.app";
+import { SITE_URL, SITE_HOST } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${HOST}/sitemap.xml`,
-    host: HOST,
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_HOST,
   };
 }

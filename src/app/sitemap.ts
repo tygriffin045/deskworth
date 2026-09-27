@@ -3,7 +3,7 @@ import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { guides } from "@/data/guides";
 
-const HOST = "https://deskworth.vercel.app";
+import { SITE_URL as HOST } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

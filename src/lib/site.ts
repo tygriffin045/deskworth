@@ -1,4 +1,8 @@
-export const SITE_URL = "https://deskworth.vercel.app";
+/** Single source of truth for the canonical site origin (no trailing slash). */
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://desk.theworthguide.com"
+).replace(/\/+$/, "");
+export const SITE_HOST = new URL(SITE_URL).host;
 export const SITE_NAME = "DeskWorth";
 export const SITE_TITLE = "DeskWorth — Honest picks for a better home office";
 export const SITE_DESCRIPTION =
