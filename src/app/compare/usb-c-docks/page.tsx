@@ -2,18 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { CompareNav } from "@/components/CompareNav";
+import { CompareWinner } from "@/components/CompareWinner";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_URL, DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "USB-C dock comparison",
-  description:
-    "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks.",
+  title: "USB-C dock comparison (Anker vs Plugable vs CalDigit)",
+  description: "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks for travel vs dual-monitor desks.",
+  openGraph: {
+    title: "USB-C dock comparison (Anker vs Plugable vs CalDigit)",
+    description: "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks for travel vs dual-monitor desks.",
+    url: "/compare/usb-c-docks",
+    images: [DEFAULT_OG_IMAGE_METADATA],
+  },
+  twitter: {
+    title: "USB-C dock comparison (Anker vs Plugable vs CalDigit)",
+    description: "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks for travel vs dual-monitor desks.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  alternates: { canonical: "/compare/usb-c-docks" },
 };
 
-const slugs = [
-  "anker-7in1-usb-c-hub",
-  "plugable-thunderbolt-4-dock",
-  "caldigit-ts4",
-] as const;
+const slugs = ["anker-7in1-usb-c-hub", "plugable-thunderbolt-4-dock", "caldigit-ts4"] as const;
 
 const rows: { label: string; key: (slug: string) => string }[] = [
   { label: "Price band", key: (s) => getProduct(s)!.priceBand },
@@ -47,11 +58,26 @@ const rows: { label: string; key: (slug: string) => string }[] = [
   },
 ];
 
-export default function CompareUsbCDocksPage() {
-  const docks = slugs.map((s) => getProduct(s)!);
+export default function ComparePage() {
+  const items = slugs.map((s) => getProduct(s)!);
+  const winner = getProduct("plugable-thunderbolt-4-dock")!;
+  const listLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "USB-C dock comparison",
+    url: `${SITE_URL}/compare/usb-c-docks`,
+    numberOfItems: items.length,
+    itemListElement: items.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/products/${p.slug}`,
+      name: p.name,
+    })),
+  };
 
   return (
     <div>
+      <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         USB-C dock comparison
       </h1>
@@ -60,30 +86,16 @@ export default function CompareUsbCDocksPage() {
         TS4 — pick by port needs and host laptop capability.
       </p>
 
-      <div className="mt-6 flex flex-wrap gap-2 text-sm">
-        <Link
-          href="/compare"
-          className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
-        >
-          Standing desks
-        </Link>
-        <Link
-          href="/compare/monitor-arms"
-          className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
-        >
-          Monitor arms
-        </Link>
-        <span className="rounded-full bg-stone-900 px-3 py-1 text-stone-50">
-          USB-C docks
-        </span>
-      </div>
+      <CompareNav current={"/compare/usb-c-docks"} />
+
+      <CompareWinner product={winner} reason={"For a fixed desk with dual 4K ambitions, Plugable's Thunderbolt 4 dock is the sweet spot before CalDigit money. Keep the Anker 7-in-1 for travel bags; reserve TS4 when you need the full port farm and brand ecosystem."} />
 
       <div className="mt-10 overflow-x-auto rounded-2xl border border-stone-200 bg-white">
         <table className="min-w-[720px] w-full text-left text-sm">
           <thead>
             <tr className="border-b border-stone-200 bg-stone-50">
               <th className="px-4 py-4 font-medium text-stone-500">Feature</th>
-              {docks.map((d) => (
+              {items.map((d) => (
                 <th key={d.slug} className="px-4 py-4">
                   <Link
                     href={`/products/${d.slug}`}
@@ -113,7 +125,7 @@ export default function CompareUsbCDocksPage() {
             ))}
             <tr className="align-top">
               <th className="px-4 py-4 font-medium text-stone-500">Shop</th>
-              {docks.map((d) => (
+              {items.map((d) => (
                 <td key={d.slug} className="px-4 py-4">
                   <AffiliateButton
                     productSlug={d.slug}

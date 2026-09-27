@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { ProductFilters } from "@/components/ProductFilters";
+import { DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "All products",
+  title: "All home office products",
   description:
-    "Browse DeskWorth home office picks. Filter by category and budget.",
+    "Browse DeskWorth standing desks, chairs, monitors, docks, mats, and accessories. Filter by category and budget — Amazon Associate links with disclosure.",
+  openGraph: {
+    title: "All home office products",
+    description:
+      "Browse DeskWorth standing desks, chairs, monitors, docks, mats, and accessories. Filter by category and budget.",
+    url: "/products",
+    images: [DEFAULT_OG_IMAGE_METADATA],
+  },
+  twitter: {
+    title: "All home office products",
+    description:
+      "Browse DeskWorth standing desks, chairs, monitors, docks, mats, and accessories.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  alternates: { canonical: "/products" },
 };
 
 export default function ProductsIndexPage() {

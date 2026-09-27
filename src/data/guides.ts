@@ -10,8 +10,8 @@ export const guides: Guide[] = [
     publishedAt: "2026-08-12",
     productSlugs: [
       "flexispot-pro-dual-motor",
-      "flexispot-e7-pro",
-      "uplift-v2",
+      "flexispot-e6-dual-motor-55x28",
+      "uplift-v3",
     ],
     sections: [
       {
@@ -28,7 +28,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Our shortlist by budget",
-        body: "Most remote workers will be happy with the FlexiSpot Pro dual-motor. Heavier multi-monitor setups should look at the FlexiSpot E7 Pro. Long ownership horizons and maximum stability justify the UPLIFT Desk V2. Compare them side-by-side on our comparison page before you buy.",
+        body: "Most remote workers will be happy with the FlexiSpot Pro dual-motor (E6 MAX bamboo, about $440). If you want a wider top for less, the FlexiSpot E6 55x28 is about $320 — just note its 220 lb rating. Heavy multi-monitor setups, long ownership horizons, and maximum stability justify the premium UPLIFT V3 at about $569, with a 355 lb frame and a 15-year warranty. Compare them side-by-side on our comparison page before you buy — and budget an anti-fatigue mat the same week; our standing mat guide covers Topo terrain versus dense flat foam.",
       },
     ],
   },
@@ -100,6 +100,74 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: "best-standing-desk-mat",
+    title: "Best Standing Desk Mat: Topo Terrain vs Dense Flat Foam",
+    description:
+      "How to choose an anti-fatigue mat for real standing sessions — textured Topo-style terrain, commercial flat foam, and honest budget options.",
+    readingTime: "8 min read",
+    publishedAt: "2026-09-19",
+    productSlugs: [
+      "ergodriven-topo-comfort-mat",
+      "gelpro-newlife-eco-pro-mat",
+      "sky-solutions-anti-fatigue-mat",
+      "flexispot-pro-dual-motor",
+      "huanuo-adjustable-footrest",
+    ],
+    sections: [
+      {
+        heading: "If your calves complain before lunch, the floor is the problem",
+        body: "A dual-motor desk solves height. It does not solve standing on hardwood or thin carpet for two-hour blocks. After reviewing mats across textured terrain, dense commercial foam, and soft kitchen-style foam, the pattern is consistent: people stand longer when the mat either cushions hard impact or forces small stance changes. Buy the mat the same week you buy the desk — waiting until your knees ache usually means you have already started sitting more again.",
+      },
+      {
+        heading: "Textured Topo-style vs dense flat foam",
+        body: "Topo-style mats (Ergodriven Topo) use calculated rises and valleys so you rock, stretch, and shift weight without a timer app. Dense flat foam (NewLife by GelPro Eco-Pro) stays supportive under sneakers and feels more like a commercial kitchen mat — less ‘active,’ more all-day cushion. Soft budget foam (Sky Solutions and similar) helps versus bare floors but compresses sooner. If you stand barefoot and fidget naturally, Topo wins. If you stand in shoes and want a predictable surface next to a rolling chair, pick dense flat foam.",
+      },
+      {
+        heading: "Size, edges, and standing-desk bases",
+        body: "Match footprint to your stance, not the desk width: roughly 20×30 to 20×39 covers most people. Beveled edges matter more than marketing — square foam lips catch toes when you step on and off. Leave clearance for dual-motor feet; a mat that fights the frame will migrate every time you sit. Soft mats that curl at the corners are a trip hazard next to a sit-stand base — denser builds usually hold their edge longer.",
+      },
+      {
+        heading: "Our shortlist",
+        body: "Choose the Ergodriven Topo Comfort Mat if you want Wirecutter-famous textured terrain and will stand for long blocks. Pick NewLife by GelPro Eco-Pro when you want commercial-grade flat density around $80. Start with Sky Solutions’ 20×39 if you need a full-size mat under $50 while you learn your standing habits. Pair any of them with a dual-motor desk like the FlexiSpot Pro, and compare Topo vs GelPro vs Sky on our standing-mats comparison page. A footrest still helps on sitting days — the HUANUO adjustable platform is the usual companion pick.",
+      },
+    ],
+  },
+  {
+    slug: "sit-stand-converter-vs-standing-desk",
+    title: "Sit-Stand Converter vs Standing Desk: Which Should You Buy?",
+    description:
+      "Keep your fixed desk with a converter, or replace the whole thing with an electric frame — tradeoffs, costs, and when each wins.",
+    readingTime: "8 min read",
+    publishedAt: "2026-09-19",
+    productSlugs: [
+      "varidesk-pro-plus-36",
+      "flexispot-36-desk-converter",
+      "vivo-36-desk-converter",
+      "flexispot-pro-dual-motor",
+      "flexispot-e6-dual-motor-55x28",
+      "uplift-v3",
+    ],
+    sections: [
+      {
+        heading: "Start with the desk you already have",
+        body: "If the fixed desk is solid, fits the room, and you mainly want standing blocks — not a full furniture redo — a sit-stand converter is the high-intent buy. You keep the top, drawers, and cable holes you already live with. Measure depth and width first: a 36-inch converter needs a clear rectangle, and dual-tier models steal some knee space when you sit. If the desk is a wobbly folding table, skip the converter and fund a real frame instead — stacking a heavy riser on a bad base makes both worse.",
+      },
+      {
+        heading: "Converters win on disruption; full desks win on stability",
+        body: "A VariDesk Pro Plus 36 or FlexiSpot 36-inch riser drops onto the existing surface — Vari even ships assembled. You are standing the same afternoon. The tradeoff is mass and motion: converters are heavier to lift when loaded, and they never feel as planted as a dual-motor standing desk at full height. Electric frames (FlexiSpot Pro, FlexiSpot E6, UPLIFT V3) move the whole top evenly, handle monitor arms better, and leave the underside clear for cable trays. If you already know you stand for hours and run dual monitors on arms, buy the desk once.",
+      },
+      {
+        heading: "Budget reality check",
+        body: "Honest Amazon ranges right now: FlexiSpot and VIVO converters roughly $130–$170, VariDesk Pro Plus 36 around $429, and capable dual-motor desks from about $320 (FlexiSpot E6 55x28) through about $440 (FlexiSpot E6 MAX bamboo) to about $569 for the premium UPLIFT V3. A $170 converter on a desk you like beats a $569 frame you do not need. A $429 Vari on a treasured fixed desk is still cheaper than white-glove furniture replacement. Do not buy a converter as a 'trial' if your fixed desk is trash — you will pay twice.",
+      },
+      {
+        heading: "Our shortlist",
+        body: "Choose the FlexiSpot 36-inch converter for most fixed desks that need sit-stand without Vari pricing. Step up to the VariDesk Pro Plus 36 when you want assembled quality and a polished dual-tier deck. Take the VIVO 36-inch if you are testing the habit on a budget. When the fixed desk is the problem — or you want monitor-arm stability — switch to a full frame: FlexiSpot E6 55x28 for the lowest-cost wide dual-motor top, FlexiSpot Pro for everyday bamboo dual-motor use, UPLIFT V3 for heavy layouts, the accessory ecosystem, and a 15-year warranty. Compare converters side-by-side on our desk-converters comparison page, and full desks on the standing desk comparison.",
+      },
+    ],
+  },
+
 ];
 
 export function getGuide(slug: string): Guide | undefined {

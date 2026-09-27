@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "We buy what we’d recommend",
-    body: "Picks reflect practical use, not paid rankings or invented scores.",
+    title: "Tradeoffs over trophies",
+    body: "We call out dual-motor noise, clamp limits, and foam that compresses — not invented 10/10 scores.",
   },
   {
     title: "Clear affiliate disclosure",
-    body: "If we earn a commission, we say so in plain language.",
+    body: "If we earn a commission, we say so in plain language on every buy path.",
   },
   {
     title: "Amazon Associate links",
@@ -24,7 +24,7 @@ export function TrustStrip() {
             How DeskWorth works
           </p>
           <h2 className="mt-1 font-serif text-2xl text-stone-900">
-            Affiliate transparency, not hype
+            Editorial picks with honest affiliate links
           </h2>
         </div>
         <Link

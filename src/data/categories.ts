@@ -64,6 +64,62 @@ export const categories: Category[] = [
     description:
       "Webcams, mics, and headphones so you look and sound clear on calls without turning your desk into a studio.",
   },
+  {
+    slug: "standing-mats",
+    name: "Anti-Fatigue Standing Mats",
+    shortLabel: "Stand mats",
+    description:
+      "Floor mats that make standing sessions lasting — textured Topo-style terrain versus dense flat foam, matched to how long you actually stand.",
+  },
+  {
+    slug: "cable-management",
+    name: "Cable Management",
+    shortLabel: "Cables",
+    description:
+      "Under-desk trays, J-channel raceways, and cord covers that keep power bricks and HDMI runs out of the lift path and off the floor.",
+  },
+  {
+    slug: "footrests",
+    name: "Footrests",
+    shortLabel: "Footrests",
+    description:
+      "Under-desk footrests that fix dangling feet and restless legs — rocking plastic platforms versus memory-foam cushions.",
+  },
+  {
+    slug: "desk-power",
+    name: "Desk Power & Charging",
+    shortLabel: "Power",
+    description:
+      "Surge strips, USB desk chargers, and clamp-mounted power bars that feed monitors, docks, and phones without a floor tangle.",
+  },
+  {
+    slug: "desk-converters",
+    name: "Sit-Stand Desk Converters",
+    shortLabel: "Converters",
+    description:
+      "Desktop risers that turn a fixed desk into sit-stand — keep the furniture you already own and lift the work surface instead.",
+  },
+  {
+    slug: "boom-arms",
+    name: "Mic & Webcam Boom Arms",
+    shortLabel: "Boom arms",
+    description:
+      "Desk-clamp boom arms that get mics and cameras off the desk surface — low-profile streamer arms versus broadcast spring mounts.",
+  },
+  {
+    slug: "desk-organizers",
+    name: "Desk Organizers",
+    shortLabel: "Organizers",
+    description:
+      "File trays, mesh caddies, and drawer bins that clear the desktop so keyboard, mouse, and notebook actually have room.",
+  },
+  {
+    slug: "wrist-rests",
+    name: "Wrist Rests & Palm Supports",
+    shortLabel: "Wrist rests",
+    description:
+      "Keyboard and mouse wrist supports that reduce hard-edge pressure on long typing days — foam sets versus classic gel pads.",
+  },
 ];
 
 export function getCategory(slug: string): Category | undefined {

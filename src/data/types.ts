@@ -7,7 +7,15 @@ export type CategorySlug =
   | "monitor-arms"
   | "desk-mats"
   | "laptop-stands"
-  | "usb-c-docks";
+  | "usb-c-docks"
+  | "standing-mats"
+  | "cable-management"
+  | "footrests"
+  | "desk-power"
+  | "desk-converters"
+  | "boom-arms"
+  | "desk-organizers"
+  | "wrist-rests";
 
 export type BudgetBand = "budget" | "mid" | "premium";
 

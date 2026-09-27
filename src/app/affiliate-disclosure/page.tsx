@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Affiliate disclosure",
   description:
     "FTC affiliate disclosure for DeskWorth — how commissions work in plain language.",
+  openGraph: {
+    title: "Affiliate disclosure",
+    description:
+      "FTC affiliate disclosure for DeskWorth — how commissions work in plain language.",
+    url: "/affiliate-disclosure",
+    images: [DEFAULT_OG_IMAGE_METADATA],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Affiliate disclosure",
+    description:
+      "FTC affiliate disclosure for DeskWorth — how commissions work in plain language.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  alternates: { canonical: "/affiliate-disclosure" },
 };
 
 export default function AffiliateDisclosurePage() {
@@ -49,11 +64,7 @@ export default function AffiliateDisclosurePage() {
 
       <h2 className="mt-10 font-serif text-2xl text-stone-900">Questions</h2>
       <p className="mt-3 text-stone-700">
-        Read more about DeskWorth on the{" "}
-        <Link href="/about" className="underline underline-offset-2">
-          About page
-        </Link>
-        . This disclosure is intended to comply with FTC endorsement guidelines
+        This disclosure is intended to comply with FTC endorsement guidelines
         requiring clear, conspicuous notice of material connections.
       </p>
     </article>

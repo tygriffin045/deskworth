@@ -53,7 +53,6 @@ Categories live in `src/data/categories.ts`. Types are in `src/data/types.ts`.
 | `/compare` | 3 standing desks side-by-side |
 | `/guides` | Guide index |
 | `/guides/[slug]` | Buying guide |
-| `/about` | About |
 | `/affiliate-disclosure` | FTC-style disclosure |
 
 ## Deploy to Vercel

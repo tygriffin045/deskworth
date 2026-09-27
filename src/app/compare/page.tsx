@@ -2,18 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { CompareNav } from "@/components/CompareNav";
+import { CompareWinner } from "@/components/CompareWinner";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_URL, DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Standing desk comparison",
-  description:
-    "Side-by-side comparison of three DeskWorth standing desks across budget, mid-range, and premium.",
+  title: "Standing desk comparison (FlexiSpot vs UPLIFT)",
+  description: "Side-by-side DeskWorth comparison of the FlexiSpot E6 55x28, FlexiSpot E6 MAX (48x24 bamboo), and UPLIFT V3 standing desks across budget, mid-range, and premium.",
+  openGraph: {
+    title: "Standing desk comparison (FlexiSpot vs UPLIFT)",
+    description: "Side-by-side DeskWorth comparison of the FlexiSpot E6 55x28, FlexiSpot E6 MAX (48x24 bamboo), and UPLIFT V3 standing desks across budget, mid-range, and premium.",
+    url: "/compare",
+    images: [DEFAULT_OG_IMAGE_METADATA],
+  },
+  twitter: {
+    title: "Standing desk comparison (FlexiSpot vs UPLIFT)",
+    description: "Side-by-side DeskWorth comparison of the FlexiSpot E6 55x28, FlexiSpot E6 MAX (48x24 bamboo), and UPLIFT V3 standing desks across budget, mid-range, and premium.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  alternates: { canonical: "/compare" },
 };
 
-const slugs = [
-  "flexispot-pro-dual-motor",
-  "flexispot-e7-pro",
-  "uplift-v2",
-] as const;
+const slugs = ["flexispot-e6-dual-motor-55x28", "flexispot-pro-dual-motor", "uplift-v3"] as const;
 
 const rows: { label: string; key: (slug: string) => string }[] = [
   { label: "Price band", key: (s) => getProduct(s)!.priceBand },
@@ -51,16 +62,31 @@ const rows: { label: string; key: (slug: string) => string }[] = [
 ];
 
 export default function ComparePage() {
-  const desks = slugs.map((s) => getProduct(s)!);
+  const items = slugs.map((s) => getProduct(s)!);
+  const winner = getProduct("flexispot-pro-dual-motor")!;
+  const listLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Standing desk comparison",
+    url: `${SITE_URL}/compare`,
+    numberOfItems: items.length,
+    itemListElement: items.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/products/${p.slug}`,
+      name: p.name,
+    })),
+  };
 
   return (
     <div>
+      <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Standing desk comparison
       </h1>
       <p className="mt-2 max-w-2xl text-stone-600">
-        Three real standing desks across mid-range FlexiSpot options and premium
-        UPLIFT — so you can match stability and features to how you actually
+        Three real standing desks across budget and mid-range FlexiSpot options and
+        premium UPLIFT — so you can match stability and features to how you actually
         work. Read the{" "}
         <Link
           href="/guides/how-to-choose-a-standing-desk"
@@ -71,30 +97,16 @@ export default function ComparePage() {
         for context.
       </p>
 
-      <div className="mt-6 flex flex-wrap gap-2 text-sm">
-        <span className="rounded-full bg-stone-900 px-3 py-1 text-stone-50">
-          Standing desks
-        </span>
-        <Link
-          href="/compare/monitor-arms"
-          className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
-        >
-          Monitor arms
-        </Link>
-        <Link
-          href="/compare/usb-c-docks"
-          className="rounded-full bg-stone-100 px-3 py-1 text-stone-700 hover:bg-stone-200"
-        >
-          USB-C docks
-        </Link>
-      </div>
+      <CompareNav current={"/compare"} />
+
+      <CompareWinner product={winner} reason={"Most remote workers want a reliable dual-motor desk without boutique pricing \u2014 the FlexiSpot E6 MAX (48x24 bamboo) is the one we send people to first. Save with the FlexiSpot E6 55x28 if you want a wider top for less and a lighter load, or step up to the premium UPLIFT V3 for heavy multi-monitor rigs, a 355 lb frame, and a 15-year warranty."} />
 
       <div className="mt-10 overflow-x-auto rounded-2xl border border-stone-200 bg-white">
         <table className="min-w-[720px] w-full text-left text-sm">
           <thead>
             <tr className="border-b border-stone-200 bg-stone-50">
               <th className="px-4 py-4 font-medium text-stone-500">Feature</th>
-              {desks.map((d) => (
+              {items.map((d) => (
                 <th key={d.slug} className="px-4 py-4">
                   <Link
                     href={`/products/${d.slug}`}
@@ -124,7 +136,7 @@ export default function ComparePage() {
             ))}
             <tr className="align-top">
               <th className="px-4 py-4 font-medium text-stone-500">Shop</th>
-              {desks.map((d) => (
+              {items.map((d) => (
                 <td key={d.slug} className="px-4 py-4">
                   <AffiliateButton
                     productSlug={d.slug}

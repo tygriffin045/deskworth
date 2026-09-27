@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guides } from "@/data/guides";
+import { DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Buying guides",
+  title: "Buying guides for home office desks & gear",
   description:
-    "Practical DeskWorth guides for standing desks and ergonomic home office setups.",
+    "Practical DeskWorth guides for standing desks, converters, monitor arms, mats, and ergonomic setups — with links to products we mention.",
+  openGraph: {
+    title: "Buying guides for home office desks & gear",
+    description:
+      "Practical DeskWorth guides for standing desks, converters, monitor arms, mats, and ergonomic setups — with links to products we mention.",
+    url: "/guides",
+    images: [DEFAULT_OG_IMAGE_METADATA],
+  },
+  twitter: {
+    title: "Buying guides for home office desks & gear",
+    description:
+      "Practical DeskWorth guides for standing desks, converters, monitor arms, mats, and ergonomic setups.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  alternates: { canonical: "/guides" },
 };
 
 export default function GuidesIndexPage() {

@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/products/flexispot-e7-pro",
+        destination: "/products/flexispot-e6-dual-motor-55x28",
+        permanent: true,
+      },
+      {
+        source: "/products/uplift-v2",
+        destination: "/products/uplift-v3",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
