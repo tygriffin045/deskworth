@@ -15,7 +15,8 @@ export type CategorySlug =
   | "desk-converters"
   | "boom-arms"
   | "desk-organizers"
-  | "wrist-rests";
+  | "wrist-rests"
+  | "desk-lamps";
 
 export type BudgetBand = "budget" | "mid" | "premium";
 
