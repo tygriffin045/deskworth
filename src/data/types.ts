@@ -1,4 +1,5 @@
 export type CategorySlug =
+  | "desk-lighting"
   | "standing-desks"
   | "office-chairs"
   | "monitors"
