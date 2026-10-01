@@ -4,6 +4,7 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
+import { TopRail } from "@/components/TopRail";
 import { AffiliateNote } from "@/components/AffiliateNote";
 import {
   SITE_URL,
@@ -75,6 +76,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TopRail />
+
       <section>
         <div className="flex items-end justify-between gap-4">
           <div>
@@ -110,7 +113,7 @@ export default function HomePage() {
       <section>
         <div className="flex items-end justify-between gap-4">
           <div>
-            <h2 className="font-serif text-3xl text-stone-900">Featured picks</h2>
+            <h2 className="font-serif text-3xl text-stone-900">More picks</h2>
             <p className="mt-1 text-stone-600">
               Six products we&apos;d put on our own desks first — with Amazon price checks.
             </p>
