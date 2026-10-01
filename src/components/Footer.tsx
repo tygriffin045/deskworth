@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-stone-200 bg-stone-900 text-stone-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <p className="font-serif text-2xl text-stone-50">DeskWorth</p>
+          <p className="font-serif text-2xl text-stone-50">Desk<span className="text-[#d4af37]">Worth</span></p>
           <p className="mt-2 text-sm text-stone-400">
             Desk setup reviews with tradeoffs spelled out — desks, converters, boom
             arms, organizers, mats, cables, and desk power.
