@@ -136,7 +136,7 @@ export function SiteNav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-baseline gap-2">
           <span className="font-serif text-xl font-semibold tracking-tight text-stone-900 sm:text-2xl">
-            DeskWorth
+            <svg aria-hidden viewBox="0 0 24 24" className="mr-1.5 inline h-5 w-5 align-[-2px]" fill="none" stroke="#d4af37" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" strokeLinecap="round" strokeLinejoin="round"/></svg>Desk<span className="text-[#d4af37]">Worth</span>
           </span>
           <span className="hidden text-xs text-stone-500 sm:inline">
             home office picks
