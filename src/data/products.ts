@@ -2141,7 +2141,29 @@ export const products: Product[] = [
     specs: [{ label: "Mount", value: "Monitor bezel" }],
     relatedSlugs: [],
   },
+,
 
+  {
+    slug: "benq-screenbar",
+    name: "BenQ ScreenBar Halo",
+    brand: "BenQ",
+    category: "desk-lighting",
+    tagline: "A monitor light with a backlight for the wall.",
+    summary: "Buy it if the desk is dark and a lamp has nowhere to sit.",
+    priceBand: "About $180",
+    budget: "premium",
+    priceMin: 160,
+    priceMax: 200,
+    imageGradient: "from-amber-100 to-stone-200",
+    imageAlt: "BenQ ScreenBar Halo",
+    featured: false,
+    pros: ["No desk footprint", "Front and back light"],
+    cons: ["Needs a flat bezel", "Costs more than a lamp"],
+    whoItsFor: "A dark office with no room for a lamp.",
+    specs: [{ label: "Mount", value: "Monitor" }],
+    relatedSlugs: [],
+    amazonQuery: "BenQ ScreenBar Halo",
+  }
 ];
 
 export function getProduct(slug: string): Product | undefined {
