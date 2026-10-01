@@ -79,6 +79,18 @@ export default function HomePage() {
       <TopRail />
 
       <section>
+        <h2 className="font-serif text-3xl text-stone-900">Vs reviews</h2>
+        <p className="mt-1 text-stone-600">Two ways to solve the same desk problem. Buy the one that matches the job.</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <a href="/compare/monitor-arms" className="rounded-2xl border border-stone-200 bg-white p-5 hover:border-stone-400">HUANUO dual arm vs Ergotron LX</a>
+          <a href="/compare/usb-c-docks" className="rounded-2xl border border-stone-200 bg-white p-5 hover:border-stone-400">USB-C dock vs a cheaper hub</a>
+          <a href="/compare/standing-mats" className="rounded-2xl border border-stone-200 bg-white p-5 hover:border-stone-400">Standing mat comparison</a>
+          <a href="/compare/boom-arms" className="rounded-2xl border border-stone-200 bg-white p-5 hover:border-stone-400">Boom arm comparison</a>
+        </div>
+      </section>
+
+
+      <section>
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="font-serif text-3xl text-stone-900">
