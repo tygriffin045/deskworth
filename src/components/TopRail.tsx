@@ -1,6 +1,14 @@
 import { getFeaturedProducts } from "@/data/products";
 import { getAffiliateUrl } from "@/lib/affiliate";
 
+function picture(product: { imageUrl?: string; amazonAsin?: string; name: string }) {
+  if (product.imageUrl) return product.imageUrl;
+  if (product.amazonAsin) {
+    return `https://m.media-amazon.com/images/P/${product.amazonAsin}.01._SCLZZZZZZZ_.jpg`;
+  }
+  return "";
+}
+
 export function TopRail() {
   const picks = getFeaturedProducts().slice(0, 10);
   if (!picks.length) return null;
@@ -20,34 +28,30 @@ export function TopRail() {
         </div>
       </div>
       <div className="mt-5 flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory">
-        {picks.map((product, index) => (
-          <a
-            key={product.slug}
-            href={getAffiliateUrl(product)}
-            target="_blank"
-            rel="sponsored nofollow noopener"
-            className="snap-start flex w-[250px] shrink-0 flex-col rounded-2xl border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[#d8cbb8] hover:shadow-md"
-          >
-            <div className="flex items-center justify-between gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-                #{index + 1}
-              </span>
-              <span className="rounded-full bg-[#ecfccb] px-2 py-0.5 text-[11px] font-bold text-[#3f6212]">
-                Worth It
-              </span>
-            </div>
-            <p className="mt-3 font-serif text-lg leading-snug text-stone-900">
-              {product.name}
-            </p>
-            <p className="mt-1 line-clamp-2 text-sm text-stone-600">{product.tagline}</p>
-            <p className="mt-auto pt-3 text-sm font-semibold text-stone-800">
-              {product.priceBand}
-            </p>
-            <span className="mt-2 text-sm font-semibold text-[#a84c1f]">
-              Check price on Amazon →
-            </span>
-          </a>
-        ))}
+        {picks.map((product, index) => {
+          const src = picture(product);
+          return (
+            <a
+              key={product.slug}
+              href={getAffiliateUrl(product)}
+              target="_blank"
+              rel="sponsored nofollow noopener"
+              className="snap-start flex w-[250px] shrink-0 flex-col rounded-2xl border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[#d8cbb8] hover:shadow-md"
+            >
+              {src ? (
+                <img src={src} alt={product.name} className="mb-3 h-36 w-full rounded-xl bg-[#f4f1ea] object-contain" />
+              ) : null}
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-stone-500">#{index + 1}</span>
+                <span className="rounded-full bg-[#f8f1de] px-2 py-0.5 text-[11px] font-bold text-[#8a6a22]">Worth It</span>
+              </div>
+              <p className="mt-3 font-serif text-lg leading-snug text-stone-900">{product.name}</p>
+              <p className="mt-1 line-clamp-2 text-sm text-stone-600">{product.tagline}</p>
+              <p className="mt-auto pt-3 text-sm font-semibold text-stone-800">{product.priceBand}</p>
+              <span className="mt-2 text-sm font-semibold text-[#c45c26]">Check price on Amazon →</span>
+            </a>
+          );
+        })}
       </div>
     </section>
   );
