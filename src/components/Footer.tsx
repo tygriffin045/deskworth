@@ -101,6 +101,16 @@ export function Footer() {
           </ul>
         </div>
       </div>
+        <div className="lg:col-span-12">
+          <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">The Worth Guide</p>
+          <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <li><a href="https://theworthguide.com/" className="hover:text-stone-50">The Worth Guide</a></li>
+            <li><a href="https://brew.theworthguide.com/" className="hover:text-stone-50">BrewWorth</a></li>
+            <li><a href="https://sleep.theworthguide.com/" className="hover:text-stone-50">SleepWorth</a></li>
+            <li><a href="https://pet.theworthguide.com/" className="hover:text-stone-50">PetWorth</a></li>
+            <li><a href="https://tech.theworthguide.com/" className="hover:text-stone-50">TechWorth</a></li>
+          </ul>
+        </div>
       <div className="border-t border-stone-800 py-4 text-center text-xs text-stone-600">
         © {new Date().getFullYear()} DeskWorth. As an Amazon Associate I earn from qualifying purchases.
       </div>
