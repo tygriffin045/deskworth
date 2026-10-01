@@ -2119,6 +2119,29 @@ export const products: Product[] = [
     ],
   },
 
+
+  {
+    slug: "benq-screenbar",
+    name: "BenQ ScreenBar",
+    brand: "BenQ",
+    category: "desk-lamps",
+    tagline: "Monitor light that sits on the bezel and aims down at the desk",
+    summary: "A monitor-mounted light for people who do not want a lamp eating desk space. Check the current ScreenBar model before you buy.",
+    priceBand: "About $110",
+    budget: "mid",
+    priceMin: 90,
+    priceMax: 130,
+    imageGradient: "from-stone-600 via-amber-700 to-stone-800",
+    imageAlt: "BenQ ScreenBar on a monitor",
+    featured: false,
+    amazonQuery: "BenQ ScreenBar monitor light",
+    pros: ["No desk footprint", "Asymmetric light aimed at the desk", "Dimmer on the bar"],
+    cons: ["Needs a flat top bezel", "Not a room light", "Price is high for a lamp"],
+    whoItsFor: "People who work in a dark room and do not want a lamp on the desk.",
+    specs: [{ label: "Mount", value: "Monitor bezel" }],
+    relatedSlugs: [],
+  },
+
 ];
 
 export function getProduct(slug: string): Product | undefined {
