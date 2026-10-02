@@ -2,11 +2,9 @@ import { getFeaturedProducts } from "@/data/products";
 import { getAffiliateUrl } from "@/lib/affiliate";
 
 function picture(product: { imageUrl?: string; amazonAsin?: string; name: string }) {
-  if (product.imageUrl) return product.imageUrl;
-  if (product.amazonAsin) {
-    return `https://m.media-amazon.com/images/P/${product.amazonAsin}.01._SCLZZZZZZZ_.jpg`;
-  }
-  return "";
+  if (product.imageUrl?.startsWith("/")) return product.imageUrl;
+  if (product.amazonAsin) return `/products/${product.amazonAsin}.jpg`;
+  return product.imageUrl || "";
 }
 
 export function TopRail() {
