@@ -2141,10 +2141,8 @@ export const products: Product[] = [
     specs: [{ label: "Mount", value: "Monitor bezel" }],
     relatedSlugs: [],
   },
-,
-
   {
-    slug: "benq-screenbar",
+    slug: "benq-screenbar-halo",
     name: "BenQ ScreenBar Halo",
     brand: "BenQ",
     category: "desk-lighting",

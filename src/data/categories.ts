@@ -119,7 +119,7 @@ export const categories: Category[] = [
     shortLabel: "Wrist rests",
     description:
       "Keyboard and mouse wrist supports that reduce hard-edge pressure on long typing days — foam sets versus classic gel pads.",
-  },,
+  },
   {
     slug: "desk-lighting",
     name: "Desk Lighting",
