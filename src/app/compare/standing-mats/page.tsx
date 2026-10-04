@@ -7,6 +7,8 @@ import { CompareNav } from "@/components/CompareNav";
 import { CompareWinner } from "@/components/CompareWinner";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL, DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
+import type { ReactNode } from "react";
+import { getAffiliateUrl } from "@/lib/affiliate";
 
 export const metadata: Metadata = {
   title: "Standing mat comparison (Topo vs GelPro vs Sky)",
@@ -27,8 +29,20 @@ export const metadata: Metadata = {
 
 const slugs = ["ergodriven-topo-comfort-mat", "gelpro-newlife-eco-pro-mat", "sky-solutions-anti-fatigue-mat"] as const;
 
-const rows: { label: string; key: (slug: string) => string }[] = [
-  { label: "Price band", key: (s) => getProduct(s)!.priceBand },
+const rows: { label: string; key: (slug: string) => ReactNode }[] = [
+  {
+    label: "Price",
+    key: (s) => (
+      <a
+        href={getAffiliateUrl({ slug: s, amazonAsin: getProduct(s)!.amazonAsin })}
+        target="_blank"
+        rel="nofollow sponsored noopener noreferrer"
+        className="font-semibold text-[#c45c26] underline underline-offset-2"
+      >
+        Check price on Amazon
+      </a>
+    ),
+  },
   { label: "Budget tier", key: (s) => getProduct(s)!.budget },
   {
     label: "Style",
@@ -96,7 +110,7 @@ export default function ComparePage() {
 
       <CompareNav current={"/compare/standing-mats"} />
 
-      <CompareWinner product={winner} reason={"If you stand for real blocks and fidget naturally, Topo's terrain keeps you moving without a timer app. Choose GelPro Eco-Pro for dense flat foam in shoes, or Sky Solutions when you need a full-size mat under $50 while you learn the habit."} />
+      <CompareWinner product={winner} reason={"If you stand for real blocks and fidget naturally, Topo's terrain keeps you moving without a timer app. Choose GelPro Eco-Pro for dense flat foam in shoes, or Sky Solutions when you need a budget full-size mat while you learn the habit."} />
 
       <div className="mt-10 overflow-x-auto rounded-2xl border border-stone-200 bg-white">
         <table className="min-w-[720px] w-full text-left text-sm">

@@ -53,7 +53,7 @@ export const products: Product[] = [
     category: "standing-desks",
     tagline: "Wide 55x28 one-piece top on a quiet dual-motor 3-stage frame",
     summary:
-      "The FlexiSpot E6 pairs a 55 x 28 in one-piece black desktop with a dual-motor, 3-stage frame (about 23.6–48.8 in) and four memory presets. It is currently about $320 on Amazon, making it the lower-cost way into a dual-motor desk with room for two monitors and a laptop; its 220 lb rating is lighter than premium frames, so keep heavy multi-arm setups in check.",
+      "The FlexiSpot E6 pairs a 55 x 28 in one-piece black desktop with a dual-motor, 3-stage frame (about 23.6–48.8 in) and four memory presets. It is the lower-cost way into a dual-motor desk with room for two monitors and a laptop; its 220 lb rating is lighter than premium frames, so keep heavy multi-arm setups in check.",
     priceBand: "About $320",
     budget: "budget",
     priceMin: 300,
@@ -76,7 +76,7 @@ export const products: Product[] = [
       "Ships in two boxes and still needs DIY assembly",
     ],
     whoItsFor:
-      "Remote workers who want a wide dual-motor sit-stand desk for about $320 and run a typical two-monitor setup rather than a heavy multi-arm rig.",
+      "Remote workers who want a wide dual-motor sit-stand desk at a lower cost and run a typical two-monitor setup rather than a heavy multi-arm rig.",
     specs: [
       { label: "Height range", value: "~23.6–48.8 in (3-stage)" },
       { label: "Motors", value: "Dual, 3-stage" },
@@ -97,7 +97,7 @@ export const products: Product[] = [
     category: "standing-desks",
     tagline: "Premium dual-motor sit-stand desk with a 355 lb frame and 15-year warranty",
     summary:
-      "The UPLIFT V3 is our premium standing-desk pick: dual German-made motors, 3-stage legs with stability braces, a 355 lb lifting capacity, and a 1-inch 48 x 30 in laminate top. It is currently about $569 on Amazon — clearly more than the FlexiSpot options — and the payoff is a stiffer frame at standing height, an advanced memory keypad, and UPLIFT's 15-year warranty.",
+      "The UPLIFT V3 is our premium standing-desk pick: dual German-made motors, 3-stage legs with stability braces, a 355 lb lifting capacity, and a 1-inch 48 x 30 in laminate top. It costs clearly more than the FlexiSpot options, and the payoff is a stiffer frame at standing height, an advanced memory keypad, and UPLIFT's 15-year warranty.",
     priceBand: "About $569",
     budget: "premium",
     priceMin: 540,
@@ -115,7 +115,7 @@ export const products: Product[] = [
       "Industry-leading 15-year warranty and a large accessory ecosystem",
     ],
     cons: [
-      "About $569 — premium pricing, well above the FlexiSpot picks",
+      "Premium pricing, well above the FlexiSpot picks",
       "48 x 30 in top is narrower than the FlexiSpot E6's 55-inch top",
       "Heavy shipment and DIY assembly",
     ],
@@ -185,7 +185,7 @@ export const products: Product[] = [
     category: "office-chairs",
     tagline: "Budget mesh chair with adjustable support for everyday work",
     summary:
-      "The SIHOO B100 is a breathable mesh task chair with adjustable support for everyday home-office work. Its Amazon price is currently about $170; verify the live listing, included features, and return policy before buying.",
+      "The SIHOO B100 is a breathable mesh task chair with adjustable support for everyday home-office work. Verify the live listing, included features, and return policy before buying.",
     priceBand: "About $170",
     budget: "budget",
     priceMin: 150,
@@ -207,7 +207,7 @@ export const products: Product[] = [
       "Return policy and assembly experience vary by seller",
     ],
     whoItsFor:
-      "Home-office workers who want a named mesh chair around $170 instead of jumping to a premium four-figure model.",
+      "Home-office workers who want a named mesh chair at a moderate price instead of jumping to a premium four-figure model.",
     specs: [
       { label: "Weight capacity", value: "Typically 250–300 lb" },
       { label: "Back", value: "Breathable mesh" },
@@ -1035,7 +1035,7 @@ export const products: Product[] = [
     category: "standing-mats",
     tagline: "Textured Topo terrain that keeps you shifting instead of locking your knees",
     summary:
-      "Topo is the mat Wirecutter-style roundups keep circling back to: thick polyurethane with calculated rises and valleys so you rock, stretch, and change stance without thinking about it. At roughly $109 it is the premium pick — denser and more engaging than flat kitchen-style foam — and pairs cleanly with any dual-motor standing desk once your feet start complaining after 20 minutes.",
+      "Topo is the mat Wirecutter-style roundups keep circling back to: thick polyurethane with calculated rises and valleys so you rock, stretch, and change stance without thinking about it. It is the premium pick — denser and more engaging than flat kitchen-style foam — and pairs cleanly with any dual-motor standing desk once your feet start complaining after 20 minutes.",
     priceBand: "About $109",
     budget: "premium",
     priceMin: 95,
@@ -1080,7 +1080,7 @@ export const products: Product[] = [
     category: "standing-mats",
     tagline: "Dense commercial-grade flat foam when you want support without Topo peaks",
     summary:
-      "NewLife by GelPro’s Eco-Pro is the flat, dense counterpoint to textured mats: roughly ¾-inch bio-foam, beveled edges, and a non-slip bottom built for commercial floors as much as home offices. At about $80 for the 20×32 size it sits in the mid band — firmer than soft kitchen foam, less ‘active’ than Topo, and a strong pick if you stand in sneakers and hate rolling ankles on terrain.",
+      "NewLife by GelPro’s Eco-Pro is the flat, dense counterpoint to textured mats: roughly ¾-inch bio-foam, beveled edges, and a non-slip bottom built for commercial floors as much as home offices. The 20×32 size sits in the mid band — firmer than soft kitchen foam, less ‘active’ than Topo, and a strong pick if you stand in sneakers and hate rolling ankles on terrain.",
     priceBand: "About $80",
     budget: "mid",
     priceMin: 70,
@@ -1125,7 +1125,7 @@ export const products: Product[] = [
     category: "standing-mats",
     tagline: "Budget ¾-inch PU foam that still beats standing on hard floors",
     summary:
-      "Sky Solutions’ 20×39 black mat is the high-volume Amazon pick: about ¾-inch high-density PU foam, diamond-texture top, non-slip bottom, and a price around $47. It will not match Topo’s terrain or GelPro’s commercial density, but it is the honest first mat for anyone who just bought a standing desk and realizes bare hardwood after lunch was a mistake.",
+      "Sky Solutions’ 20×39 black mat is the high-volume Amazon pick: about ¾-inch high-density PU foam, diamond-texture top, non-slip bottom at a lower price. It will not match Topo’s terrain or GelPro’s commercial density, but it is the honest first mat for anyone who just bought a standing desk and realizes bare hardwood after lunch was a mistake.",
     priceBand: "About $47",
     budget: "budget",
     priceMin: 35,
@@ -1148,7 +1148,7 @@ export const products: Product[] = [
       "Edges can curl on some floors over time",
     ],
     whoItsFor:
-      "First-time standing-desk owners who need a full-size mat under ~$50 before upgrading later.",
+      "First-time standing-desk owners who need a budget full-size mat before upgrading later.",
     specs: [
       { label: "Style", value: "Flat cushioned foam" },
       { label: "Size", value: "20 × 39 in" },
@@ -1172,7 +1172,7 @@ export const products: Product[] = [
     category: "cable-management",
     tagline: "Heavy-duty metal tray that swallows power strips under the desktop",
     summary:
-      "A large metal under-desk tray is still the highest-leverage cable fix on a standing desk: mount it once, drop the surge strip and brick pile inside, and the lift columns stop yanking cords. This no-drill XL tray (about $24) uses clamp or adhesive-style mounting depending on the listing configuration — measure your top thickness and leave clearance for dual-motor crossbars before you order.",
+      "A large metal under-desk tray is still the highest-leverage cable fix on a standing desk: mount it once, drop the surge strip and brick pile inside, and the lift columns stop yanking cords. This no-drill XL tray uses clamp or adhesive-style mounting depending on the listing configuration — measure your top thickness and leave clearance for dual-motor crossbars before you order.",
     priceBand: "About $24",
     budget: "budget",
     priceMin: 18,
@@ -1217,7 +1217,7 @@ export const products: Product[] = [
     category: "cable-management",
     tagline: "Open-top J-channel raceway for quick under-desk cord runs",
     summary:
-      "EVEO’s six-piece J-channel kit (~96 inches total) is the adhesive raceway we reach for when you want cables parked under the rear lip without a full metal tray. Open tops make adding an HDMI or USB-C lead painless; at about $17 it is cheap enough to run the full back edge of a 60-inch desk and still have pieces left for the vertical drop.",
+      "EVEO’s six-piece J-channel kit (~96 inches total) is the adhesive raceway we reach for when you want cables parked under the rear lip without a full metal tray. Open tops make adding an HDMI or USB-C lead painless; it is cheap enough to run the full back edge of a 60-inch desk and still have pieces left for the vertical drop.",
     priceBand: "About $17",
     budget: "budget",
     priceMin: 14,
@@ -1262,7 +1262,7 @@ export const products: Product[] = [
     category: "cable-management",
     tagline: "Paintable half-round raceway for wall drops and desk edges",
     summary:
-      "D-Line’s half-round cord cover is the raceway we recommend when cables leave the desk and climb a wall or baseboard. The hinged click-lock lid and peel-and-stick backing make it office-friendly; at about $23 for a 39-inch length it is more polished than generic J-channel when guests can see the run. Paint it to match the wall if beige is not your vibe.",
+      "D-Line’s half-round cord cover is the raceway we recommend when cables leave the desk and climb a wall or baseboard. The hinged click-lock lid and peel-and-stick backing make it office-friendly; the 39-inch length is more polished than generic J-channel when guests can see the run. Paint it to match the wall if beige is not your vibe.",
     priceBand: "About $23",
     budget: "mid",
     priceMin: 18,
@@ -1309,7 +1309,7 @@ export const products: Product[] = [
     category: "footrests",
     tagline: "Three-height rocking platform with textured massage surface",
     summary:
-      "HUANUO’s adjustable footrest is the plastic rocking platform we recommend most often: three height pegs (~4.3 / 5.5 / 6.7 in), free ±30° tilt that encourages fidgeting, and a large textured top. Around $36 it costs more than the cheapest foam pillows, but the height range actually fixes dangling feet on tall chairs — the problem foam cushions rarely solve.",
+      "HUANUO’s adjustable footrest is the plastic rocking platform we recommend most often: three height pegs (~4.3 / 5.5 / 6.7 in), free ±30° tilt that encourages fidgeting, and a large textured top. It costs more than the cheapest foam pillows, but the height range actually fixes dangling feet on tall chairs — the problem foam cushions rarely solve.",
     priceBand: "About $36",
     budget: "mid",
     priceMin: 28,
@@ -1354,7 +1354,7 @@ export const products: Product[] = [
     category: "footrests",
     tagline: "Teardrop memory-foam cushion you can flip to rock",
     summary:
-      "Everlasting Comfort’s memory-foam foot rest (~$38) is the soft alternative to rocking plastic platforms: teardrop shape for arches, OEKO-TEX certified cover you can wash, and a non-slip base. Flip it to rock gently when circulation needs a nudge. It will not raise short sitters as precisely as HUANUO’s height pegs, but it wins for plush comfort in socks.",
+      "Everlasting Comfort’s memory-foam foot rest is the soft alternative to rocking plastic platforms: teardrop shape for arches, OEKO-TEX certified cover you can wash, and a non-slip base. Flip it to rock gently when circulation needs a nudge. It will not raise short sitters as precisely as HUANUO’s height pegs, but it wins for plush comfort in socks.",
     priceBand: "About $38",
     budget: "budget",
     priceMin: 32,
@@ -1399,7 +1399,7 @@ export const products: Product[] = [
     category: "footrests",
     tagline: "Budget height-adjustable plastic platform with textured top",
     summary:
-      "Mind Reader’s adjustable foot rest (~$27) is the no-frills plastic option: height adjustability, textured surface, and a footprint that fits under most desks. It lacks HUANUO’s refined rocking range and Everlasting’s foam plushness, but it is a durable budget pick when you mainly need to stop feet from dangling on a tall task chair.",
+      "Mind Reader’s adjustable foot rest is the no-frills plastic option: height adjustability, textured surface, and a footprint that fits under most desks. It lacks HUANUO’s refined rocking range and Everlasting’s foam plushness, but it is a durable budget pick when you mainly need to stop feet from dangling on a tall task chair.",
     priceBand: "About $27",
     budget: "budget",
     priceMin: 22,
@@ -1446,7 +1446,7 @@ export const products: Product[] = [
     category: "desk-power",
     tagline: "Clamp-mounted GaN strip that puts outlets and 70W USB at desk edge",
     summary:
-      "Anker’s Nano desk-clamp strip (~$70) is the modern answer to floor surge strips: clamp it to a 0.6–1.8 in top edge, get six AC outlets plus dual USB-C / USB-A (70W max), and keep phone and laptop charging off the floor. 1500J surge protection is modest vs classic Belkin joule ratings, but the clamp form factor is what actually cleans a standing-desk cable path.",
+      "Anker’s Nano desk-clamp strip is the modern answer to floor surge strips: clamp it to a 0.6–1.8 in top edge, get six AC outlets plus dual USB-C / USB-A (70W max), and keep phone and laptop charging off the floor. 1500J surge protection is modest vs classic Belkin joule ratings, but the clamp form factor is what actually cleans a standing-desk cable path.",
     priceBand: "About $70",
     budget: "mid",
     priceMin: 60,
@@ -1491,7 +1491,7 @@ export const products: Product[] = [
     category: "desk-power",
     tagline: "Wide 12-AC strip with USB-C for under-tray or wall mounting",
     summary:
-      "Anker’s 12-outlet strip with 20W USB-C (~$29) is the workhorse we drop into an under-desk tray: enough spaced AC sockets for a dual-monitor + dock + lamp cluster, plus USB-A/C so phones do not steal another brick. 2100J surge protection is adequate for home offices; pair it with a metal tray so the whole bundle rides with your standing desk.",
+      "Anker’s 12-outlet strip with 20W USB-C is the workhorse we drop into an under-desk tray: enough spaced AC sockets for a dual-monitor + dock + lamp cluster, plus USB-A/C so phones do not steal another brick. 2100J surge protection is adequate for home offices; pair it with a metal tray so the whole bundle rides with your standing desk.",
     priceBand: "About $29",
     budget: "budget",
     priceMin: 24,
@@ -1505,7 +1505,7 @@ export const products: Product[] = [
     pros: [
       "Twelve AC outlets — room for a full desk loadout",
       "Built-in 20W USB-C reduces brick clutter",
-      "Strong value under $30",
+      "Strong value for the price",
       "Fits cleanly in under-desk cable trays",
     ],
     cons: [
@@ -1536,7 +1536,7 @@ export const products: Product[] = [
     category: "desk-power",
     tagline: "Classic high-joule 12-outlet strip when surge rating matters most",
     summary:
-      "Belkin’s 12-outlet USB surge protector (~$41) is the old-school pick for a reason: nearly 4000J of protection, spaced outlets, a flat plug, and a 6 ft cord. USB-A ports are slower than modern GaN USB-C bricks, but if your priority is protecting a PC, monitors, and a dock from spikes — and you already have a tray — this is the conservative choice.",
+      "Belkin’s 12-outlet USB surge protector is the old-school pick for a reason: nearly 4000J of protection, spaced outlets, a flat plug, and a 6 ft cord. USB-A ports are slower than modern GaN USB-C bricks, but if your priority is protecting a PC, monitors, and a dock from spikes — and you already have a tray — this is the conservative choice.",
     priceBand: "About $41",
     budget: "mid",
     priceMin: 35,
@@ -1582,7 +1582,7 @@ export const products: Product[] = [
     category: "desk-converters",
     tagline: "Fully assembled 36\" converter with 11 height settings — keep your existing desk",
     summary:
-      "The VariDesk Pro Plus 36 (~$429) is the premium desktop converter for people who already like their fixed desk. Fully assembled, dual-tier with a lower keyboard deck, and 11 height stops. Heavy and expensive versus budget risers, but the spring assist and build quality are why it stays a default recommendation when you refuse to replace the whole desk.",
+      "The VariDesk Pro Plus 36 is the premium desktop converter for people who already like their fixed desk. Fully assembled, dual-tier with a lower keyboard deck, and 11 height stops. Heavy and expensive versus budget risers, but the spring assist and build quality are why it stays a default recommendation when you refuse to replace the whole desk.",
     priceBand: "About $429",
     budget: "premium",
     priceMin: 380,
@@ -1628,7 +1628,7 @@ export const products: Product[] = [
     category: "desk-converters",
     tagline: "36\" sit-stand riser that hits the mid-range sweet spot for most fixed desks",
     summary:
-      "FlexiSpot’s 36\" standing desk converter (~$130) is the practical mid pick when VariDesk pricing feels excessive. Spacious enough for a monitor and laptop, spring-lift height adjustment, and far cheaper than ripping out a fixed desk for a full electric frame. Confirm the exact model configuration on Amazon — FlexiSpot runs many similar SKUs.",
+      "FlexiSpot’s 36\" standing desk converter is the practical mid pick when VariDesk pricing feels excessive. Spacious enough for a monitor and laptop, spring-lift height adjustment, and far cheaper than ripping out a fixed desk for a full electric frame. Confirm the exact model configuration on Amazon — FlexiSpot runs many similar SKUs.",
     priceBand: "About $130",
     budget: "mid",
     priceMin: 115,
@@ -1651,7 +1651,7 @@ export const products: Product[] = [
       "Less stable than a full dual-motor standing desk",
     ],
     whoItsFor:
-      "Most people converting a fixed desk who want sit-stand without a $400+ VariDesk or a full frame swap.",
+      "Most people converting a fixed desk who want sit-stand without a premium VariDesk or a full frame swap.",
     specs: [
       { label: "Width", value: "36 in" },
       { label: "Color", value: "Black" },
@@ -1674,7 +1674,7 @@ export const products: Product[] = [
     category: "desk-converters",
     tagline: "Budget-friendly 36\" converter with a wide keyboard tray",
     summary:
-      "VIVO’s DESK-V036KB (~$170) is the Amazon-value converter: 36\" top, wide keyboard tray, and height adjustment that gets you standing without a VariDesk bill. Fit and finish trail FlexiSpot/Vari, and heavy dual-monitor loads can wobble more — but for a first sit-stand experiment on a fixed desk, it is the honest budget path.",
+      "VIVO’s DESK-V036KB is the Amazon-value converter: 36\" top, wide keyboard tray, and height adjustment that gets you standing without a VariDesk bill. Fit and finish trail FlexiSpot/Vari, and heavy dual-monitor loads can wobble more — but for a first sit-stand experiment on a fixed desk, it is the honest budget path.",
     priceBand: "About $170",
     budget: "budget",
     priceMin: 140,
@@ -1720,7 +1720,7 @@ export const products: Product[] = [
     category: "boom-arms",
     tagline: "All-metal low-profile boom that stays below the camera line",
     summary:
-      "Elgato’s Wave Mic Arm Low Profile (~$86) is the streamer/podcast default when you want the mic close without blocking your face on camera. All-metal anti-torsion build, magnetic cable channel, and a clamp that fits typical desks. Often ships with a short delay on Amazon — still the cleanest low-profile pick in this range.",
+      "Elgato’s Wave Mic Arm Low Profile is the streamer/podcast default when you want the mic close without blocking your face on camera. All-metal anti-torsion build, magnetic cable channel, and a clamp that fits typical desks. Often ships with a short delay on Amazon — still the cleanest low-profile pick in this range.",
     priceBand: "About $86",
     budget: "mid",
     priceMin: 75,
@@ -1765,7 +1765,7 @@ export const products: Product[] = [
     category: "boom-arms",
     tagline: "Silent spring-damped broadcast arm for serious desk mics",
     summary:
-      "The RØDE PSA1+ (~$112) is the broadcast-style upgrade: internal spring damping, quiet repositioning mid-call, and support for mics roughly 0.25–1.2 kg including shock mounts. Clamps to desks up to ~70 mm thick. Overkill for a cheap USB stick mic — correct for a SM7B-class or RØDE condenser setup you will live with for years.",
+      "The RØDE PSA1+ is the broadcast-style upgrade: internal spring damping, quiet repositioning mid-call, and support for mics roughly 0.25–1.2 kg including shock mounts. Clamps to desks up to ~70 mm thick. Overkill for a cheap USB stick mic — correct for a SM7B-class or RØDE condenser setup you will live with for years.",
     priceBand: "About $112",
     budget: "premium",
     priceMin: 95,
@@ -1810,7 +1810,7 @@ export const products: Product[] = [
     category: "boom-arms",
     tagline: "Value desk boom for Blue Yeti–class USB mics with cable routing",
     summary:
-      "InnoGear’s cable-management mic boom (~$40) is the budget workhorse for Blue Yeti, Fifine, and similar USB mics. Scissor-style desk clamp, integrated cable path, and enough reach for most home-office layouts. Not as silent or stiff as a PSA1+, but it clears the desk and gets the mic off a cheap tripod without a premium bill.",
+      "InnoGear’s cable-management mic boom is the budget workhorse for Blue Yeti, Fifine, and similar USB mics. Scissor-style desk clamp, integrated cable path, and enough reach for most home-office layouts. Not as silent or stiff as a PSA1+, but it clears the desk and gets the mic off a cheap tripod without a premium bill.",
     priceBand: "About $40",
     budget: "budget",
     priceMin: 35,
@@ -1855,7 +1855,7 @@ export const products: Product[] = [
     category: "desk-organizers",
     tagline: "Double tray, pencil cup, and file slots that reclaim the desktop",
     summary:
-      "Simple Houseware’s desk file organizer with drawer (~$26) is the default desktop cleanup: double letter trays, upright file sections, a pencil holder, and a small drawer for clips and sticky notes. Nothing fancy — just the shape that actually empties a buried inbox pile so the keyboard can sit centered.",
+      "Simple Houseware’s desk file organizer with drawer is the default desktop cleanup: double letter trays, upright file sections, a pencil holder, and a small drawer for clips and sticky notes. Nothing fancy — just the shape that actually empties a buried inbox pile so the keyboard can sit centered.",
     priceBand: "About $26",
     budget: "mid",
     priceMin: 20,
@@ -1898,9 +1898,9 @@ export const products: Product[] = [
     name: "Amazon Basics Mesh Desk Organizer with Drawer",
     brand: "Amazon Basics",
     category: "desk-organizers",
-    tagline: "Compact mesh caddy with pen cup and pullout drawer under $10",
+    tagline: "Compact mesh caddy with pen cup and pullout drawer",
     summary:
-      "Amazon Basics’ mesh desk organizer (~$9) is the tiny caddy for pens, sticky notes, and USB sticks. Pullout drawer plus pen holder in a ~9×4.5\" footprint. It will not replace a file rack — pair it with a larger organizer or drawer bins if paper is the real problem.",
+      "Amazon Basics’ mesh desk organizer is the tiny caddy for pens, sticky notes, and USB sticks. Pullout drawer plus pen holder in a ~9×4.5\" footprint. It will not replace a file rack — pair it with a larger organizer or drawer bins if paper is the real problem.",
     priceBand: "About $9",
     budget: "budget",
     priceMin: 7,
@@ -1912,7 +1912,7 @@ export const products: Product[] = [
     amazonAsin: "B08VPFB5G3",
     amazonQuery: "Amazon Basics mesh desk organizer drawer",
     pros: [
-      "Under $10 for a usable desktop caddy",
+      "Inexpensive, usable desktop caddy",
       "Mesh looks tidy next to other office mesh",
       "Pullout drawer hides small clutter",
       "Small footprint on crowded desks",
@@ -1945,7 +1945,7 @@ export const products: Product[] = [
     category: "desk-organizers",
     tagline: "Six clear bins in mixed sizes for junk-drawer and desk-drawer chaos",
     summary:
-      "Simple Houseware’s 6-pack clear drawer organizers (~$14) fix the drawer you dump chargers and clips into. Assorted sizes nest side-by-side so pens, USBs, sticky notes, and adapters each get a lane. Clear plastic means you see what you own — the opposite of a black hole junk drawer.",
+      "Simple Houseware’s 6-pack clear drawer organizers fix the drawer you dump chargers and clips into. Assorted sizes nest side-by-side so pens, USBs, sticky notes, and adapters each get a lane. Clear plastic means you see what you own — the opposite of a black hole junk drawer.",
     priceBand: "About $14",
     budget: "budget",
     priceMin: 10,
@@ -1990,7 +1990,7 @@ export const products: Product[] = [
     category: "wrist-rests",
     tagline: "Keyboard + mouse foam rests that softens hard desk edges on a budget",
     summary:
-      "Gorilla Grip’s 2-piece memory foam wrist rest set (~$13) is the easy upgrade when the front edge of the desk digs into your wrists. Keyboard rest plus matching mouse rest, non-slip base, soft cover. Foam compresses over years — but at this price it is the first thing to try before $30 gel pads.",
+      "Gorilla Grip’s 2-piece memory foam wrist rest set is the easy upgrade when the front edge of the desk digs into your wrists. Keyboard rest plus matching mouse rest, non-slip base, soft cover. Foam compresses over years — but at this price it is the first thing to try before pricier gel pads.",
     priceBand: "About $13",
     budget: "budget",
     priceMin: 10,
@@ -2005,7 +2005,7 @@ export const products: Product[] = [
       "Keyboard + mouse pair in one box",
       "Soft foam beats a raw laminate edge",
       "Non-slip base stays put while typing",
-      "Strong value under $15",
+      "Strong value for the price",
     ],
     cons: [
       "Foam flattens sooner than quality gel",
@@ -2035,7 +2035,7 @@ export const products: Product[] = [
     category: "wrist-rests",
     tagline: "Classic 18\" gel keyboard rest — firmer support than soft foam",
     summary:
-      "3M’s compact gel keyboard wrist rest (~$30) is the long-running office standard: 18\" wide gel cushion with a durable cover and product-protection reputation. Firmer and more even than bargain foam, better for full-size and TKL keyboards that sit centered. Buy a separate mouse rest (Fellowes or Gorilla Grip) if you want a matched pair.",
+      "3M’s compact gel keyboard wrist rest is the long-running office standard: 18\" wide gel cushion with a durable cover and product-protection reputation. Firmer and more even than bargain foam, better for full-size and TKL keyboards that sit centered. Buy a separate mouse rest (Fellowes or Gorilla Grip) if you want a matched pair.",
     priceBand: "About $30",
     budget: "mid",
     priceMin: 24,
@@ -2080,7 +2080,7 @@ export const products: Product[] = [
     category: "wrist-rests",
     tagline: "Gel mouse pad with built-in wrist cushion — classic office staple",
     summary:
-      "Fellowes’ gel mouse pad wrist support (~$14) combines a Lycra-covered pad with a gel wrist mound and nonskid base. Ideal next to a 3M keyboard rest or alone when only the mouse side hurts. Graphite color disappears on most desks; Microban-era variants exist — this graphite SKU is the straightforward workhorse.",
+      "Fellowes’ gel mouse pad wrist support combines a Lycra-covered pad with a gel wrist mound and nonskid base. Ideal next to a 3M keyboard rest or alone when only the mouse side hurts. Graphite color disappears on most desks; Microban-era variants exist — this graphite SKU is the straightforward workhorse.",
     priceBand: "About $14",
     budget: "budget",
     priceMin: 10,

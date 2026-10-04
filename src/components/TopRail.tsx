@@ -45,7 +45,6 @@ export function TopRail() {
               </div>
               <p className="mt-3 font-serif text-lg leading-snug text-stone-900">{product.name}</p>
               <p className="mt-1 line-clamp-2 text-sm text-stone-600">{product.tagline}</p>
-              <p className="mt-auto pt-3 text-sm font-semibold text-stone-800">{product.priceBand}</p>
               <span className="mt-2 text-sm font-semibold text-[#c45c26]">Check price on Amazon →</span>
             </a>
           );

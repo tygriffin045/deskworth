@@ -29,7 +29,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Our shortlist by budget",
-        body: "Most remote workers will be happy with the FlexiSpot Pro dual-motor (E6 MAX bamboo, about $440). If you want a wider top for less, the FlexiSpot E6 55x28 is about $320 — just note its 220 lb rating. Heavy multi-monitor setups, long ownership horizons, and maximum stability justify the premium UPLIFT V3 at about $569, with a 355 lb frame and a 15-year warranty. Compare them side-by-side on our comparison page before you buy — and budget an anti-fatigue mat the same week; our standing mat guide covers Topo terrain versus dense flat foam.",
+        body: "Most remote workers will be happy with the FlexiSpot Pro dual-motor (E6 MAX bamboo). If you want a wider top for less, the FlexiSpot E6 55x28 costs less — just note its 220 lb rating. Heavy multi-monitor setups, long ownership horizons, and maximum stability justify the premium UPLIFT V3, with a 355 lb frame and a 15-year warranty. Compare them side-by-side on our comparison page before you buy — and budget an anti-fatigue mat the same week; our standing mat guide covers Topo terrain versus dense flat foam.",
       },
     ],
   },
@@ -54,7 +54,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: "Fix the chair before the gadgets",
-        body: "Your hips should be roughly level with or slightly above your knees, feet flat, and lumbar filled in without forcing a military posture. If your dining chair fails that test, prioritize a supportive mesh chair first. The Branch Ergonomic Chair Pro is our premium pick when you sit most of the day; the SIHOO B100 is a named value mesh option around $170.",
+        body: "Your hips should be roughly level with or slightly above your knees, feet flat, and lumbar filled in without forcing a military posture. If your dining chair fails that test, prioritize a supportive mesh chair first. The Branch Ergonomic Chair Pro is our premium pick when you sit most of the day; the SIHOO B100 is a named value mesh option.",
       },
       {
         heading: "Get the screen to eye level",
@@ -132,7 +132,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Our shortlist",
-        body: "Choose the Ergodriven Topo Comfort Mat if you want Wirecutter-famous textured terrain and will stand for long blocks. Pick NewLife by GelPro Eco-Pro when you want commercial-grade flat density around $80. Start with Sky Solutions’ 20×39 if you need a full-size mat under $50 while you learn your standing habits. Pair any of them with a dual-motor desk like the FlexiSpot Pro, and compare Topo vs GelPro vs Sky on our standing-mats comparison page. A footrest still helps on sitting days — the HUANUO adjustable platform is the usual companion pick.",
+        body: "Choose the Ergodriven Topo Comfort Mat if you want Wirecutter-famous textured terrain and will stand for long blocks. Pick NewLife by GelPro Eco-Pro when you want commercial-grade flat density. Start with Sky Solutions’ 20×39 if you need a budget full-size mat while you learn your standing habits. Pair any of them with a dual-motor desk like the FlexiSpot Pro, and compare Topo vs GelPro vs Sky on our standing-mats comparison page. A footrest still helps on sitting days — the HUANUO adjustable platform is the usual companion pick.",
       },
     ],
   },
@@ -163,7 +163,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Budget reality check",
-        body: "Honest Amazon ranges right now: FlexiSpot and VIVO converters roughly $130–$170, VariDesk Pro Plus 36 around $429, and capable dual-motor desks from about $320 (FlexiSpot E6 55x28) through about $440 (FlexiSpot E6 MAX bamboo) to about $569 for the premium UPLIFT V3. A $170 converter on a desk you like beats a $569 frame you do not need. A $429 Vari on a treasured fixed desk is still cheaper than white-glove furniture replacement. Do not buy a converter as a 'trial' if your fixed desk is trash — you will pay twice.",
+        body: "From lowest to highest cost: FlexiSpot and VIVO converters, then the VariDesk Pro Plus 36, then dual-motor desks from the FlexiSpot E6 55x28 through the FlexiSpot E6 MAX bamboo to the premium UPLIFT V3 (check current prices on Amazon). A converter on a desk you like beats a premium frame you do not need. A VariDesk on a treasured fixed desk is still cheaper than white-glove furniture replacement. Do not buy a converter as a 'trial' if your fixed desk is trash — you will pay twice.",
       },
       {
         heading: "Our shortlist",
@@ -201,7 +201,7 @@ export const guides: Guide[] = [
           "Solid single-piece aluminum, with no joints to wobble or wear",
           "5.9-inch fixed lift suits most seated desk setups",
           "2-inch rear cable hole plus keyboard storage underneath",
-          "About $40, the cheapest of the three",
+          "The cheapest of the three",
         ],
         cons: [
           "Fixed height, so there's no fine-tuning for tall users",
@@ -225,7 +225,7 @@ export const guides: Guide[] = [
           "Fits 10–17 inch laptops",
         ],
         cons: [
-          "About $80, roughly double the mStand",
+          "Costs roughly double the mStand",
           "7 lb laptop limit rules out heavy gaming machines",
           "More adjustment points to set than a one-piece riser",
         ],
@@ -246,7 +246,7 @@ export const guides: Guide[] = [
           "Opens straight to your memorized height",
         ],
         cons: [
-          "About $90, the most expensive pick",
+          "The most expensive pick",
           "Built for an external keyboard; you can't type on the laptop comfortably",
           "Minimal frame looks and feels less substantial on a home desk",
         ],
@@ -276,7 +276,7 @@ export const guides: Guide[] = [
       {
         question: "What is the best laptop stand for a desk?",
         answer:
-          "For a laptop that stays on one desk, the Rain Design mStand. It's one piece of aluminum, lifts the screen 5.9 inches, and costs about $40. If you need adjustable height, get the Twelve South Curve Flex (2–11 inches). If the laptop travels, get the Roost V3 (6 oz, 6.5–12.5 inches).",
+          "For a laptop that stays on one desk, the Rain Design mStand. It's one piece of aluminum, lifts the screen 5.9 inches, and is the lowest-cost of the three. If you need adjustable height, get the Twelve South Curve Flex (2–11 inches). If the laptop travels, get the Roost V3 (6 oz, 6.5–12.5 inches).",
       },
       {
         question: "Do laptop stands actually help with neck pain?",
@@ -484,14 +484,13 @@ export const guides: Guide[] = [
         productSlug: "anker-12-outlet-usb-c-power-strip",
         award: "Best budget strip for an under-desk tray",
         quickNote:
-          "12 widely spaced outlets plus a 20W USB-C port for about $29. Drop it in a tray and forget it.",
+          "12 widely spaced outlets plus a 20W USB-C port. Drop it in a tray and forget it.",
         verdict:
           "For the lowest cost, put a flat strip in an under-desk tray so the whole bundle rides with the desk. Anker's 12-outlet strip is the one we use there. The twelve outlets are spaced for bulky plugs, it has one USB-C port (20W for phones) and two USB-A ports, and it's rated at 2100J. It ships with two mounting screws and an 18-month warranty. USB output is shared and far below laptop wattage, so plan on a separate laptop charger or a monitor with USB-C charging.",
         pros: [
           "Twelve widely spaced AC outlets",
           "20W USB-C for fast phone charging",
           "Includes mounting screws; 2100J surge rating",
-          "About $29",
         ],
         cons: [
           "USB ports can't charge a laptop (shared USB output)",
@@ -533,7 +532,6 @@ export const guides: Guide[] = [
           "Holds a full strip plus charger bricks",
           "Metal build is sturdier than thin plastic trays",
           "No-drill installation",
-          "About $24",
         ],
         cons: [
           "Check clearance around dual-motor frame crossbars",

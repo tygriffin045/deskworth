@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug);
   if (!product) return { title: "Product not found" };
   const title = `${product.name} review (2026)`;
-  const description = `${product.summary} DeskWorth editorial take — ${product.priceBand}.`;
+  const description = `${product.summary} DeskWorth editorial take`;
   return {
     title,
     description,
@@ -86,21 +86,6 @@ export default async function ProductPage({ params }: Props) {
     description: product.summary,
     brand: { "@type": "Brand", name: product.brand },
     ...(imageAbs ? { image: [imageAbs] } : {}),
-    // Only emit an Offer when we verified a price on Amazon.
-    ...(product.priceMin > 0
-      ? {
-          offers: {
-            "@type": "AggregateOffer",
-            url: productUrl,
-            priceCurrency: "USD",
-            lowPrice: String(product.priceMin),
-            highPrice: String(product.priceMax),
-            offerCount: 1,
-            availability: "https://schema.org/InStock",
-            description: product.priceBand,
-          },
-        }
-      : {}),
   };
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -199,9 +184,6 @@ export default async function ProductPage({ params }: Props) {
           <p className="mt-2 text-lg text-stone-700">{product.tagline}</p>
           <AffiliateNote />
           <p className="mt-4 text-stone-600">{product.summary}</p>
-          <p className="mt-4 text-xl font-semibold text-stone-900">
-            {product.priceBand}
-          </p>
           <AffiliateButton
             productSlug={product.slug}
             productName={product.name}

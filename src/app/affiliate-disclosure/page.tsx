@@ -49,7 +49,7 @@ export default function AffiliateDisclosurePage() {
         Affiliate relationships do not buy rankings or force positive reviews.
         We describe tradeoffs — including cons — because trust matters more than
         a single conversion. We link to real Amazon product pages when available.
-        Prices shown are approximate; Amazon&apos;s live checkout price always
+        We do not show prices; Amazon&apos;s live checkout price always
         wins.
       </p>
 

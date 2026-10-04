@@ -1,0 +1,1902 @@
+{
+ "generated": "2026-10-04",
+ "method": "Premium = highest-priced well-regarded (rating>=4.3, 50+ ratings) in-stock Top 10 item; Value = lowest-priced well-regarded; Bang for the Buck = middle price band, Amazon Best Seller preferred, then rating. Prices are live amazon.com buy-box prices on the checked date.",
+ "pages": {
+  "standing-desks": {
+   "site": "deskworth",
+   "page": "standing-desks",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0C89PNM7S",
+     "slug": "flexispot-pro-dual-motor",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CXVBN819",
+     "slug": "uplift-v3",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F8MHPVPH",
+     "slug": "fezibo-standing-desk-48-24-inch",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DX6SRFD3",
+     "slug": "huanuo-32x19-inch-small-electric-standing",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0G3X1JMPC",
+     "slug": "dumos-40-inch-electric-standing-desk",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0BLCW7MBR",
+     "slug": "cubiker-standing-desk",
+     "price": 89.99,
+     "rating": 4.6,
+     "ratings": 4442,
+     "bestseller": true
+    },
+    {
+     "asin": "B0B41YH9B6",
+     "slug": "ergear-48-x-24-inch-height",
+     "price": 99.99,
+     "rating": 4.5,
+     "ratings": 5226,
+     "bestseller": true
+    },
+    {
+     "asin": "B0GSZ4H122",
+     "slug": "veken-63-x28-wider-large-standing",
+     "price": 149.99,
+     "rating": 4.2,
+     "ratings": 415,
+     "bestseller": true
+    },
+    {
+     "asin": "B07V6ZSHF4",
+     "slug": "vivo-black-60-x-24-in",
+     "price": 199.99,
+     "rating": 4.4,
+     "ratings": 1719,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BVQMQMY2",
+     "slug": "flexispot-e6-dual-motor-55x28",
+     "price": 319.99,
+     "rating": 4.4,
+     "ratings": 531,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "5 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BVQMQMY2",
+     "slug": "flexispot-e6-dual-motor-55x28",
+     "name": "FlexiSpot E6 Dual-Motor Standing Desk 55x28",
+     "price": 319.99,
+     "line": "Highest-end pick in this Top 10 \u2014 holds 220 lbs, adjustable height w/memory presets."
+    },
+    "bang": {
+     "asin": "B07V6ZSHF4",
+     "slug": "vivo-black-60-x-24-in",
+     "name": "VIVO Black 60 x 24 in Standing Desk",
+     "price": 199.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B0BLCW7MBR",
+     "slug": "cubiker-standing-desk",
+     "name": "Cubiker Standing Desk",
+     "price": 89.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 48x24 inches sit stand home office desk, electric stand up desk."
+    }
+   }
+  },
+  "office-chairs": {
+   "site": "deskworth",
+   "page": "office-chairs",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0FMGZFVK9",
+     "slug": "branch-ergonomic-chair-pro",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CP22DQQS",
+     "slug": "marsail-ergonomic-office-chair-office-desk",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CQD3K8PJ",
+     "slug": "tralt-office-chair-ergonomic-desk-chair",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DKNN49QP",
+     "slug": "neo-chair-office-desk-chair-high",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DPHLWNBG",
+     "slug": "elabest-x100-ergonomic-mesh-office-chair",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0FQDM23S4",
+     "slug": "bestoffice-ergonomic-office-chair",
+     "price": 42.99,
+     "rating": 4.3,
+     "ratings": 64791,
+     "bestseller": true
+    },
+    {
+     "asin": "B081H3Y5NW",
+     "slug": "amazon-basics-classic-puresoft-pu-padded",
+     "price": 90.25,
+     "rating": 4.2,
+     "ratings": 40629,
+     "bestseller": true
+    },
+    {
+     "asin": "B00IFHPVEU",
+     "slug": "amazon-basics-office-task-chair-with",
+     "price": 101.56,
+     "rating": 4.3,
+     "ratings": 31466,
+     "bestseller": true
+    },
+    {
+     "asin": "B00OCSNMO2",
+     "slug": "hyken",
+     "price": 154.99,
+     "rating": 4.3,
+     "ratings": 3698,
+     "bestseller": false
+    },
+    {
+     "asin": "B0G5WQ65P2",
+     "slug": "sihoo-b100",
+     "price": 169.99,
+     "rating": 4.2,
+     "ratings": 3825,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "5 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00OCSNMO2",
+     "slug": "hyken",
+     "name": "Staples Hyken mesh chair",
+     "price": 154.99,
+     "line": "Among the highest-end picks in this Top 10 \u2014 lumbar support."
+    },
+    "bang": {
+     "asin": "B00IFHPVEU",
+     "slug": "amazon-basics-office-task-chair-with",
+     "name": "Amazon Basics Office Task Chair with Adjustable Height",
+     "price": 101.56,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 360\u00b0 swivel, padded armrests."
+    },
+    "value": {
+     "asin": "B0FQDM23S4",
+     "slug": "bestoffice-ergonomic-office-chair",
+     "name": "BestOffice Ergonomic Office Chair",
+     "price": 42.99,
+     "line": "Lowest-priced pick in this Top 10 \u2014 mid-back swivel desk chair."
+    }
+   }
+  },
+  "monitors": {
+   "site": "deskworth",
+   "page": "monitors",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0F1GFD44G",
+     "slug": "dell-s2725qc",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F1GF1KFC",
+     "slug": "dell-s2725qs",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0C8ZKV5R9",
+     "slug": "philips-24-inch-computer-monitor-fhd",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CWQMZPJC",
+     "slug": "sansui-34-inch-curved-gaming-monitor",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CRGJC5ZD",
+     "slug": "samsung-32-odyssey",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CHHSFMRL",
+     "slug": "sceptre-27-inch-prime-gaming-monitor",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F2T7WLFK",
+     "slug": "sansui-27-inch-curved-160hz-gaming",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0FT21HKZ6",
+     "slug": "sceptre-new-22-inch-gaming-monitor",
+     "price": 64.97,
+     "rating": 4.4,
+     "ratings": 1471,
+     "bestseller": true
+    },
+    {
+     "asin": "B0GLQXKKVY",
+     "slug": "dell-24-monitor-se2426h-23-8",
+     "price": 89.99,
+     "rating": 4.7,
+     "ratings": 371,
+     "bestseller": true
+    },
+    {
+     "asin": "B0GD1LMWH3",
+     "slug": "dell-27-plus-qhd-monitor-s2725dsm",
+     "price": 189.99,
+     "rating": 4.6,
+     "ratings": 264,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "7 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0GD1LMWH3",
+     "slug": "dell-27-plus-qhd-monitor-s2725dsm",
+     "name": "Dell 27 Plus QHD Monitor - S2725DSM - 27-inch QHD (2560x1440)",
+     "price": 189.99,
+     "line": "Highest-end pick in this Top 10 \u2014 144Hz 1ms display, 2 x 3W speakers."
+    },
+    "bang": {
+     "asin": "B0GLQXKKVY",
+     "slug": "dell-24-monitor-se2426h-23-8",
+     "name": "Dell 24 Monitor - SE2426H - 23.8-inch FHD (1920x1080) 144Hz 1ms",
+     "price": 89.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 144Hz 1ms display, in-plane switching."
+    },
+    "value": {
+     "asin": "B0FT21HKZ6",
+     "slug": "sceptre-new-22-inch-gaming-monitor",
+     "name": "Sceptre New 22-Inch Gaming Monitor",
+     "price": 64.97,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 FHD 1080p, up to 144Hz."
+    }
+   }
+  },
+  "monitor-arms": {
+   "site": "deskworth",
+   "page": "monitor-arms",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CQTPZNV8",
+     "slug": "amazon-basics-dual-monitor-arm",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DGPZR6P1",
+     "slug": "wali-adjustable-single-monitor-arm-for",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0FQM6QB48",
+     "slug": "ergear-single-monitor-arm",
+     "price": 27.99,
+     "rating": 4.4,
+     "ratings": 9070,
+     "bestseller": true
+    },
+    {
+     "asin": "B0G523STF2",
+     "slug": "nb-smoovex-monitor-arm",
+     "price": 32.9,
+     "rating": 4.6,
+     "ratings": 677,
+     "bestseller": true
+    },
+    {
+     "asin": "B009S750LA",
+     "slug": "vivo-dual-monitor-desk-mount",
+     "price": 34.99,
+     "rating": 4.6,
+     "ratings": 60961,
+     "bestseller": true
+    },
+    {
+     "asin": "B00C5H5DN0",
+     "slug": "vivo-stand-v002f-dual-led-lcd",
+     "price": 34.99,
+     "rating": 4.4,
+     "ratings": 16110,
+     "bestseller": true
+    },
+    {
+     "asin": "B00B21TLQU",
+     "slug": "vivo-single-13-to-38-inch",
+     "price": 34.99,
+     "rating": 4.5,
+     "ratings": 20394,
+     "bestseller": true
+    },
+    {
+     "asin": "B01N2YFO5Z",
+     "slug": "vivo-dual-monitor-stand",
+     "price": 49.99,
+     "rating": 4.5,
+     "ratings": 2905,
+     "bestseller": true
+    },
+    {
+     "asin": "B07T5SY43L",
+     "slug": "huanuo-dual-monitor-arm",
+     "price": 59.99,
+     "rating": 4.6,
+     "ratings": 34782,
+     "bestseller": true
+    },
+    {
+     "asin": "B07Q8TJ2KL",
+     "slug": "ergotron-lx-monitor-arm",
+     "price": 199.99,
+     "rating": 4.6,
+     "ratings": 10986,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B07Q8TJ2KL",
+     "slug": "ergotron-lx-monitor-arm",
+     "name": "Ergotron LX Desk Mount LCD Arm (Matte Black)",
+     "price": 199.99,
+     "line": "Highest-end pick in this Top 10 \u2014 LX monitor arm, single monitor desk mount."
+    },
+    "bang": {
+     "asin": "B009S750LA",
+     "slug": "vivo-dual-monitor-desk-mount",
+     "name": "VIVO Dual Monitor Desk Mount",
+     "price": 34.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 heavy duty fully adjustable steel stand, c-clamp and grommet."
+    },
+    "value": {
+     "asin": "B0FQM6QB48",
+     "slug": "ergear-single-monitor-arm",
+     "name": "ErGear Single Monitor Arm",
+     "price": 27.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 fully adjustable monitor mount for 13\u201334 inch screens, fast install computer monitor stand."
+    }
+   }
+  },
+  "desk-mats": {
+   "site": "deskworth",
+   "page": "desk-mats",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D98Q9HXK",
+     "slug": "afiing-desk-pad-protector-23-6",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CNX4MTB9",
+     "slug": "cadono-leather-desk-pad-protector-non",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0FR4LRLHM",
+     "slug": "ohocut-scalloped-desk-mat",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08D7CWTXY",
+     "slug": "ysagi-non-slip-leather-desk-pad",
+     "price": 12.59,
+     "rating": 4.8,
+     "ratings": 38171,
+     "bestseller": true
+    },
+    {
+     "asin": "B082F5ZLS5",
+     "slug": "aothia-leather-desk-pad",
+     "price": 13.99,
+     "rating": 4.6,
+     "ratings": 79288,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BMTSL48B",
+     "slug": "ysagi-leather-desk-protector",
+     "price": 13.99,
+     "rating": 4.6,
+     "ratings": 22514,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BWGWKNJY",
+     "slug": "ysagi-double-sided-desk-pad",
+     "price": 14.99,
+     "rating": 4.7,
+     "ratings": 2717,
+     "bestseller": true
+    },
+    {
+     "asin": "B08Y7618JN",
+     "slug": "homieazicozi-cork-desk-mat-dual-sided",
+     "price": 18.99,
+     "rating": 4.6,
+     "ratings": 4617,
+     "bestseller": true
+    },
+    {
+     "asin": "B09DV8WKK8",
+     "slug": "logitech-desk-mat-studio",
+     "price": 19.99,
+     "rating": 4.7,
+     "ratings": 6429,
+     "bestseller": false
+    },
+    {
+     "asin": "B08JH8C5T5",
+     "slug": "corsair-mm350-pro-xl",
+     "price": 39.0,
+     "rating": 4.8,
+     "ratings": 2363,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B08JH8C5T5",
+     "slug": "corsair-mm350-pro-xl",
+     "name": "Corsair MM350 PRO Extended XL Desk Mat",
+     "price": 39.0,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B0BWGWKNJY",
+     "slug": "ysagi-double-sided-desk-pad",
+     "name": "YSAGi Double-Sided Desk Pad",
+     "price": 14.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 31.5\"x15.7\"Leather desk mat, eco cork desk pad protector."
+    },
+    "value": {
+     "asin": "B08D7CWTXY",
+     "slug": "ysagi-non-slip-leather-desk-pad",
+     "name": "YSAGi Non-Slip Leather Desk Pad",
+     "price": 12.59,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 waterproof laptop computer desk keyboard mat, table protector blotter mat."
+    }
+   }
+  },
+  "laptop-stands": {
+   "site": "deskworth",
+   "page": "laptop-stands",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DBLBJ2HG",
+     "slug": "loxp-adjustable-laptop-stand",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08G84P8ZX",
+     "slug": "tonmom-laptop-stand-for-desk",
+     "price": 8.99,
+     "rating": 4.5,
+     "ratings": 17665,
+     "bestseller": true
+    },
+    {
+     "asin": "B0C7BKZ883",
+     "slug": "gogoonike-adjustable-laptop-stand-for-desk",
+     "price": 16.99,
+     "rating": 4.6,
+     "ratings": 4378,
+     "bestseller": true
+    },
+    {
+     "asin": "B077B9W343",
+     "slug": "nulaxy-ergonomic-adjustable-laptop-stand-for",
+     "price": 17.99,
+     "rating": 4.7,
+     "ratings": 16890,
+     "bestseller": true
+    },
+    {
+     "asin": "B091B4SWR7",
+     "slug": "ugreen-vertical-laptop-stand-holder-for",
+     "price": 20.99,
+     "rating": 4.7,
+     "ratings": 12041,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BLRJ4R8F",
+     "slug": "amazon-basics-sturdy-and-portable-ergonomic",
+     "price": 25.49,
+     "rating": 4.6,
+     "ratings": 3843,
+     "bestseller": true
+    },
+    {
+     "asin": "B08M94BTYC",
+     "slug": "lamicall-aluminum-laptop-stand-for-desk",
+     "price": 28.99,
+     "rating": 4.7,
+     "ratings": 10512,
+     "bestseller": true
+    },
+    {
+     "asin": "B000OOYECC",
+     "slug": "rain-design-mstand",
+     "price": 37.86,
+     "rating": 4.8,
+     "ratings": 11307,
+     "bestseller": false
+    },
+    {
+     "asin": "B0B7GVMPRK",
+     "slug": "twelve-south-curve-flex",
+     "price": 79.99,
+     "rating": 4.0,
+     "ratings": 386,
+     "bestseller": false
+    },
+    {
+     "asin": "B01C9KG8IG",
+     "slug": "roost-v3-laptop-stand",
+     "price": 89.95,
+     "rating": 4.8,
+     "ratings": 1777,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B01C9KG8IG",
+     "slug": "roost-v3-laptop-stand",
+     "name": "Roost V3 Laptop Stand",
+     "price": 89.95,
+     "line": "Highest-end pick in this Top 10 \u2014 adjustable and extremely portable laptop stand, PC and MacBook stand."
+    },
+    "bang": {
+     "asin": "B091B4SWR7",
+     "slug": "ugreen-vertical-laptop-stand-holder-for",
+     "name": "UGREEN Vertical Laptop Stand Holder for Desk Compatible",
+     "price": 20.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 MacBook Pro."
+    },
+    "value": {
+     "asin": "B08G84P8ZX",
+     "slug": "tonmom-laptop-stand-for-desk",
+     "name": "Tonmom Laptop Stand for Desk",
+     "price": 8.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 adjustable laptop riser."
+    }
+   }
+  },
+  "usb-c-docks": {
+   "site": "deskworth",
+   "page": "usb-c-docks",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DXJQT19B",
+     "slug": "anker-7in1-usb-c-hub",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CNTTVVN6",
+     "slug": "plugable-thunderbolt-4-dock",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CSYYKB97",
+     "slug": "benfei-usb-c-hub-5-in",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CRDJRZP6",
+     "slug": "hodo-usb-c-docking-station-dual",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0BR3M8XHK",
+     "slug": "ugreen-usb-c-hub-5-in",
+     "price": 11.98,
+     "rating": 4.6,
+     "ratings": 32110,
+     "bestseller": true
+    },
+    {
+     "asin": "B07WPTG7NX",
+     "slug": "hiearcool-7-in-1-usb-c",
+     "price": 19.99,
+     "rating": 4.6,
+     "ratings": 52016,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BQLLB61B",
+     "slug": "anker-usb-c-hub",
+     "price": 24.99,
+     "rating": 4.4,
+     "ratings": 18911,
+     "bestseller": true
+    },
+    {
+     "asin": "B0874M3KW4",
+     "slug": "anker-laptop-docking-station-dual-monitor",
+     "price": 53.99,
+     "rating": 4.5,
+     "ratings": 35176,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FCSHJGGK",
+     "slug": "dell-pro-laptop-docking-station-wd25",
+     "price": 153.25,
+     "rating": 4.5,
+     "ratings": 348,
+     "bestseller": true
+    },
+    {
+     "asin": "B09GK8LBWS",
+     "slug": "caldigit-ts4",
+     "price": 379.99,
+     "rating": 4.1,
+     "ratings": 1744,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0FCSHJGGK",
+     "slug": "dell-pro-laptop-docking-station-wd25",
+     "name": "Dell Pro Laptop Docking Station WD25",
+     "price": 153.25,
+     "line": "Among the highest-end picks in this Top 10."
+    },
+    "bang": {
+     "asin": "B0874M3KW4",
+     "slug": "anker-laptop-docking-station-dual-monitor",
+     "name": "Anker Laptop Docking Station Dual Monitor",
+     "price": 53.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 8-in-1 USB c hub, 4K HDMI."
+    },
+    "value": {
+     "asin": "B0BR3M8XHK",
+     "slug": "ugreen-usb-c-hub-5-in",
+     "name": "UGREEN USB C Hub 5 in 1 Multiport USB Adapter 4K HDMI",
+     "price": 11.98,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 100W power delivery."
+    }
+   }
+  },
+  "keyboards-mice": {
+   "site": "deskworth",
+   "page": "keyboards-mice",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0FC2GH8Z4",
+     "slug": "wegear-usb-wireless-mouse-for-laptop",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0GF1VMNJP",
+     "slug": "sablute-wireless-mouse-for-laptop",
+     "price": 8.99,
+     "rating": 4.4,
+     "ratings": 648,
+     "bestseller": true
+    },
+    {
+     "asin": "B015NBTAOW",
+     "slug": "tecknet-wireless-mouse",
+     "price": 9.99,
+     "rating": 4.5,
+     "ratings": 79482,
+     "bestseller": true
+    },
+    {
+     "asin": "B07WJ5D3H4",
+     "slug": "amazon-basics-wired-qwerty-keyboard",
+     "price": 11.7,
+     "rating": 4.5,
+     "ratings": 10002,
+     "bestseller": true
+    },
+    {
+     "asin": "B004YAVF8I",
+     "slug": "logitech-m185-compact-ambidextrous-2-4",
+     "price": 14.9,
+     "rating": 4.4,
+     "ratings": 45217,
+     "bestseller": true
+    },
+    {
+     "asin": "B003NREDC8",
+     "slug": "logitech-mk120-full-size-wired-keyboard",
+     "price": 17.77,
+     "rating": 4.6,
+     "ratings": 22632,
+     "bestseller": true
+    },
+    {
+     "asin": "B014EUQOGK",
+     "slug": "logitech-k400-plus-wireless-touch-tv",
+     "price": 33.99,
+     "rating": 4.4,
+     "ratings": 40479,
+     "bestseller": true
+    },
+    {
+     "asin": "B07QBPDWLS",
+     "slug": "keychron-k2",
+     "price": 79.99,
+     "rating": 4.4,
+     "ratings": 1632,
+     "bestseller": false
+    },
+    {
+     "asin": "B0B11LJ69K",
+     "slug": "logitech-mx-master-3s",
+     "price": 118.99,
+     "rating": 4.6,
+     "ratings": 8879,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BKW3LB2B",
+     "slug": "logitech-mx-keys-s-wireless-keyboard",
+     "price": 129.99,
+     "rating": 4.4,
+     "ratings": 3812,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BKW3LB2B",
+     "slug": "logitech-mx-keys-s-wireless-keyboard",
+     "name": "Logitech MX Keys S Wireless Keyboard Low Profile Fluid Precise",
+     "price": 129.99,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B003NREDC8",
+     "slug": "logitech-mk120-full-size-wired-keyboard",
+     "name": "Logitech MK120 Full Size Wired Keyboard and Mouse Combo",
+     "price": 17.77,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B0GF1VMNJP",
+     "slug": "sablute-wireless-mouse-for-laptop",
+     "name": "SABLUTE Wireless Mouse for Laptop",
+     "price": 8.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 quiet cordless computer mice for office & travel."
+    }
+   }
+  },
+  "webcams-audio": {
+   "site": "deskworth",
+   "page": "webcams-audio",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DSPJPRXD",
+     "slug": "emeet-c960-1080p-webcam-with-microphone",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CYQ5P6T7",
+     "slug": "emeet-s600-4k-webcam-for-streaming",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0GG3JNQGF",
+     "slug": "xweiryn-webcam-for-pc-hd-1080p",
+     "price": 9.99,
+     "rating": 4.4,
+     "ratings": 426,
+     "bestseller": true
+    },
+    {
+     "asin": "B0GJD6PHTZ",
+     "slug": "acer-a610-1080p-webcam-for-pc",
+     "price": 29.99,
+     "rating": 4.5,
+     "ratings": 504,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BXGFFSL1",
+     "slug": "logitech-brio-101-full-hd-1080p",
+     "price": 36.59,
+     "rating": 4.3,
+     "ratings": 6919,
+     "bestseller": true
+    },
+    {
+     "asin": "B07K986YLL",
+     "slug": "logitech-c920s",
+     "price": 67.16,
+     "rating": 4.6,
+     "ratings": 3558,
+     "bestseller": true
+    },
+    {
+     "asin": "B006JH8T3S",
+     "slug": "c920-desk",
+     "price": 67.3,
+     "rating": 4.6,
+     "ratings": 32790,
+     "bestseller": false
+    },
+    {
+     "asin": "B085TFF7M1",
+     "slug": "logitech-c920x-hd-pro-pc-webcam",
+     "price": 69.99,
+     "rating": 4.6,
+     "ratings": 22029,
+     "bestseller": true
+    },
+    {
+     "asin": "B09DVGV7BH",
+     "slug": "logitech-c920e-hd-1080p-mic-enabled",
+     "price": 69.99,
+     "rating": 4.6,
+     "ratings": 3675,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BFJ4CRKD",
+     "slug": "logitech-mx-brio-ultra-hd-4k",
+     "price": 199.99,
+     "rating": 4.4,
+     "ratings": 1481,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BFJ4CRKD",
+     "slug": "logitech-mx-brio-ultra-hd-4k",
+     "name": "Logitech MX Brio Ultra HD 4K Webcam Collaboration and Streaming",
+     "price": 199.99,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B085TFF7M1",
+     "slug": "logitech-c920x-hd-pro-pc-webcam",
+     "name": "Logitech C920x HD Pro PC Webcam Full 1080p/30fps Video",
+     "price": 69.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B0GG3JNQGF",
+     "slug": "xweiryn-webcam-for-pc-hd-1080p",
+     "name": "Xweiryn Webcam for PC, HD 1080P USB Plug-and-Play Computer Web Camera",
+     "price": 9.99,
+     "line": "Lowest-priced pick in this Top 10 \u2014 high definition webcam for desktop laptop, video conference."
+    }
+   }
+  },
+  "standing-mats": {
+   "site": "deskworth",
+   "page": "standing-mats",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CMQHRZNP",
+     "slug": "ophanie-kitchen-mats-for-floor-3",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B09CYDRFWQ",
+     "slug": "kitchenclouds-kitchen-mat-cushioned-anti-fatigue",
+     "price": 14.23,
+     "rating": 4.4,
+     "ratings": 22928,
+     "bestseller": true
+    },
+    {
+     "asin": "B093CG6ZP8",
+     "slug": "gorilla-grip-cushioned-kitchen-mats-for",
+     "price": 26.95,
+     "rating": 4.4,
+     "ratings": 14503,
+     "bestseller": true
+    },
+    {
+     "asin": "B0H4L5SNPX",
+     "slug": "tranquilmoments-1-extra-thick-anti-fatigue",
+     "price": 29.98,
+     "rating": 4.9,
+     "ratings": 49,
+     "bestseller": true
+    },
+    {
+     "asin": "B07X2RP4DG",
+     "slug": "featol-anti-fatigue-mat-for-standing",
+     "price": 44.99,
+     "rating": 4.6,
+     "ratings": 6422,
+     "bestseller": true
+    },
+    {
+     "asin": "B00M8O122G",
+     "slug": "sky-solutions-anti-fatigue-mat",
+     "price": 46.99,
+     "rating": 4.5,
+     "ratings": 37575,
+     "bestseller": false
+    },
+    {
+     "asin": "B0797Q5HL7",
+     "slug": "comfilife-anti-fatigue-floor-mat-3",
+     "price": 49.99,
+     "rating": 4.8,
+     "ratings": 41950,
+     "bestseller": true
+    },
+    {
+     "asin": "B0C4PNCVGY",
+     "slug": "featol-0-9-anti-fatigue-mat",
+     "price": 55.99,
+     "rating": 4.7,
+     "ratings": 798,
+     "bestseller": true
+    },
+    {
+     "asin": "B008FHCMZG",
+     "slug": "gelpro-newlife-eco-pro-mat",
+     "price": 79.95,
+     "rating": 4.6,
+     "ratings": 131,
+     "bestseller": false
+    },
+    {
+     "asin": "B00V3TO9EK",
+     "slug": "ergodriven-topo-comfort-mat",
+     "price": 109.0,
+     "rating": 4.7,
+     "ratings": 5958,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00V3TO9EK",
+     "slug": "ergodriven-topo-comfort-mat",
+     "name": "Ergodriven Topo Comfort Standing Desk Mat (Obsidian Black)",
+     "price": 109.0,
+     "line": "Highest-end pick in this Top 10 \u2014 topo by ergodriven, calculated terrain."
+    },
+    "bang": {
+     "asin": "B0797Q5HL7",
+     "slug": "comfilife-anti-fatigue-floor-mat-3",
+     "name": "ComfiLife Anti Fatigue Floor Mat \u2013 3/4 Inch Thick Kitchen Mats",
+     "price": 49.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 standing desk mat, kitchen rug."
+    },
+    "value": {
+     "asin": "B09CYDRFWQ",
+     "slug": "kitchenclouds-kitchen-mat-cushioned-anti-fatigue",
+     "name": "KitchenClouds Kitchen Mat Cushioned Anti Fatigue Rug Standing and Comfort",
+     "price": 14.23,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "cable-management": {
+   "site": "deskworth",
+   "page": "cable-management",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CMLNZHK1",
+     "slug": "under-desk-metal-cable-tray",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CYZPD7PZ",
+     "slug": "yesbes-cord-hider-kit-for-wall",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0BTT4JYRK",
+     "slug": "yecaye-tv-cord-hider",
+     "price": 8.79,
+     "rating": 4.5,
+     "ratings": 11217,
+     "bestseller": true
+    },
+    {
+     "asin": "B07FW3GTXB",
+     "slug": "alex-tech-10ft-1-2-inch",
+     "price": 8.99,
+     "rating": 4.7,
+     "ratings": 85111,
+     "bestseller": true
+    },
+    {
+     "asin": "B07TDGMDW4",
+     "slug": "alex-tech-25ft-1-4-inch",
+     "price": 9.99,
+     "rating": 4.7,
+     "ratings": 23049,
+     "bestseller": true
+    },
+    {
+     "asin": "B07RZXSJBM",
+     "slug": "alex-tech-50ft-1-4-inch",
+     "price": 9.99,
+     "rating": 4.5,
+     "ratings": 28451,
+     "bestseller": true
+    },
+    {
+     "asin": "B07GPFDL1K",
+     "slug": "delamu-cord-hider",
+     "price": 14.99,
+     "rating": 4.5,
+     "ratings": 42181,
+     "bestseller": true
+    },
+    {
+     "asin": "B08DG2LY5B",
+     "slug": "eveo-j-channel-cable-kit",
+     "price": 16.97,
+     "rating": 4.5,
+     "ratings": 5075,
+     "bestseller": true
+    },
+    {
+     "asin": "B07CQ3331C",
+     "slug": "d-line-half-round-cord-cover",
+     "price": 22.99,
+     "rating": 4.5,
+     "ratings": 9050,
+     "bestseller": false
+    },
+    {
+     "asin": "B08563XMS5",
+     "slug": "d-line-157in-cord-cover-kit",
+     "price": 26.99,
+     "rating": 4.4,
+     "ratings": 5399,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B08563XMS5",
+     "slug": "d-line-157in-cord-cover-kit",
+     "name": "D-Line 157in Cord Cover Kit",
+     "price": 26.99,
+     "line": "Highest-end pick in this Top 10 \u2014 self-adhesive wire hiders, paintable cable raceway to hide wires on wall."
+    },
+    "bang": {
+     "asin": "B07TDGMDW4",
+     "slug": "alex-tech-25ft-1-4-inch",
+     "name": "Alex Tech 25ft - 1/4 inch Split Wire Loom Tubing - Black",
+     "price": 9.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B0BTT4JYRK",
+     "slug": "yecaye-tv-cord-hider",
+     "name": "Yecaye TV Cord Hider",
+     "price": 8.79,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 42in cord cover wall mounted, W1.18in H0.6in."
+    }
+   }
+  },
+  "footrests": {
+   "site": "deskworth",
+   "page": "footrests",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CW1ZYZ7S",
+     "slug": "casazenith-foot-rest",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CPFTDT6P",
+     "slug": "casazenith-foot-rest-under-desk-at",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DK4HP264",
+     "slug": "tranquilrelax-foot-rest-under-desk",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DKJHM2VT",
+     "slug": "vecelo-office-foot-rest-under-desk",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0BFQX3YFY",
+     "slug": "blisstrends-foot-rest-under-desk",
+     "price": 19.97,
+     "rating": 4.4,
+     "ratings": 9134,
+     "bestseller": true
+    },
+    {
+     "asin": "B01MSQDE0U",
+     "slug": "mind-reader-adjustable-footrest",
+     "price": 26.99,
+     "rating": 4.2,
+     "ratings": 18806,
+     "bestseller": true
+    },
+    {
+     "asin": "B07L3RVF7C",
+     "slug": "huanuo-adjustable-footrest",
+     "price": 29.99,
+     "rating": 4.2,
+     "ratings": 13252,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FM7PT5DS",
+     "slug": "comfyinlove-foot-rest-for-under-desk",
+     "price": 33.99,
+     "rating": 4.6,
+     "ratings": 145,
+     "bestseller": true
+    },
+    {
+     "asin": "B07PGLBCFG",
+     "slug": "everlasting-comfort-foot-rest",
+     "price": 37.99,
+     "rating": 4.6,
+     "ratings": 27492,
+     "bestseller": false
+    },
+    {
+     "asin": "B08DHMMBFF",
+     "slug": "comfilife-foot-rest-for-under-desk",
+     "price": 39.99,
+     "rating": 4.6,
+     "ratings": 14088,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B08DHMMBFF",
+     "slug": "comfilife-foot-rest-for-under-desk",
+     "name": "ComfiLife Foot Rest for Under Desk at Work \u2013 Adjustable Height",
+     "price": 39.99,
+     "line": "Highest-end pick in this Top 10 \u2014 adjustable height memory foam foot stool for under desk, office chair & gaming chair."
+    },
+    "bang": {
+     "asin": "B0FM7PT5DS",
+     "slug": "comfyinlove-foot-rest-for-under-desk",
+     "name": "ComfyInLove Foot Rest for Under Desk with 3 Heights",
+     "price": 33.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 foot stool."
+    },
+    "value": {
+     "asin": "B0BFQX3YFY",
+     "slug": "blisstrends-foot-rest-under-desk",
+     "name": "BlissTrends Foot Rest Under Desk",
+     "price": 19.97,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 foot stool, 2 adjustable heights."
+    }
+   }
+  },
+  "desk-power": {
+   "site": "deskworth",
+   "page": "desk-power",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0FFGZH2S2",
+     "slug": "anker-nano-desk-clamp-power-strip",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DC6GXZSV",
+     "slug": "surge-protector-power-strip-chcore-5ft",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DZ254SSR",
+     "slug": "superdanny-extension-cord-flat-plug-surge",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0B1DKN9HG",
+     "slug": "one-beat-surge-protector-power-strip",
+     "price": 12.99,
+     "rating": 4.7,
+     "ratings": 13374,
+     "bestseller": true
+    },
+    {
+     "asin": "B08MTBCXWX",
+     "slug": "yintar-6ft-surge-protector-power-strip",
+     "price": 12.99,
+     "rating": 4.7,
+     "ratings": 30848,
+     "bestseller": true
+    },
+    {
+     "asin": "B014EKQ5AA",
+     "slug": "amazon-basics-6-outlet-surge-protector",
+     "price": 13.99,
+     "rating": 4.7,
+     "ratings": 43818,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FPFF7JN8",
+     "slug": "superdanny-10ft-flat-extension-cord-with",
+     "price": 13.99,
+     "rating": 4.7,
+     "ratings": 8866,
+     "bestseller": true
+    },
+    {
+     "asin": "B09SG2Q23M",
+     "slug": "anker-12-outlet-usb-c-power-strip",
+     "price": 28.99,
+     "rating": 4.8,
+     "ratings": 20293,
+     "bestseller": true
+    },
+    {
+     "asin": "B0C6S6TPRH",
+     "slug": "belkin-12-outlet-surge-protector-power",
+     "price": 29.95,
+     "rating": 4.7,
+     "ratings": 3631,
+     "bestseller": true
+    },
+    {
+     "asin": "B00TA594K8",
+     "slug": "belkin-12-outlet-usb-surge",
+     "price": 33.05,
+     "rating": 4.8,
+     "ratings": 5350,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00TA594K8",
+     "slug": "belkin-12-outlet-usb-surge",
+     "name": "Belkin 12-Outlet Surge Protector with 2 USB-A (3996J)",
+     "price": 33.05,
+     "line": "Highest-end pick in this Top 10 \u2014 12 AC multiple outlets & 2 USB ports, 6 ft long flat plug extension cord for home."
+    },
+    "bang": {
+     "asin": "B09SG2Q23M",
+     "slug": "anker-12-outlet-usb-c-power-strip",
+     "name": "Anker 12-Outlet Power Strip with 20W USB-C (2100J)",
+     "price": 28.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 2100J surge protector, outlet extender."
+    },
+    "value": {
+     "asin": "B0B1DKN9HG",
+     "slug": "one-beat-surge-protector-power-strip",
+     "name": "One Beat Surge Protector Power Strip",
+     "price": 12.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 5 ft flat plug extension cord."
+    }
+   }
+  },
+  "desk-converters": {
+   "site": "deskworth",
+   "page": "desk-converters",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0F8JS4L73",
+     "slug": "raathionty-height-adjustable-standing-desk-converter",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08GKXXT22",
+     "slug": "vivo-26-in-single-top-standing",
+     "price": 99.99,
+     "rating": 4.7,
+     "ratings": 862,
+     "bestseller": true
+    },
+    {
+     "asin": "B077Z3GCDL",
+     "slug": "techorbits-32-in-standing-desk-converter",
+     "price": 129.99,
+     "rating": 4.6,
+     "ratings": 2910,
+     "bestseller": true
+    },
+    {
+     "asin": "B08B2L36HF",
+     "slug": "vivo-32-in-standing-desk-riser",
+     "price": 129.99,
+     "rating": 4.6,
+     "ratings": 2152,
+     "bestseller": false
+    },
+    {
+     "asin": "B09VZ4CQG9",
+     "slug": "jylh-joyseeker-32-standing-desk-converter",
+     "price": 139.99,
+     "rating": 4.4,
+     "ratings": 432,
+     "bestseller": false
+    },
+    {
+     "asin": "B0GVCDDCYG",
+     "slug": "flexispot-36-desk-converter",
+     "price": 159.99,
+     "rating": 4.3,
+     "ratings": 181,
+     "bestseller": true
+    },
+    {
+     "asin": "B0B4T8DJW7",
+     "slug": "vivo-36-desk-converter",
+     "price": 169.99,
+     "rating": 4.6,
+     "ratings": 15665,
+     "bestseller": false
+    },
+    {
+     "asin": "B0747WDDMC",
+     "slug": "mount-it-standing-desk-converter-32",
+     "price": 169.99,
+     "rating": 4.6,
+     "ratings": 332,
+     "bestseller": false
+    },
+    {
+     "asin": "B0864RSM5S",
+     "slug": "versadesk-powerpro-36-inch-electric-standing",
+     "price": 349.0,
+     "rating": 4.3,
+     "ratings": 511,
+     "bestseller": true
+    },
+    {
+     "asin": "B00JI6NCCK",
+     "slug": "varidesk-pro-plus-36",
+     "price": 429.0,
+     "rating": 4.7,
+     "ratings": 3161,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00JI6NCCK",
+     "slug": "varidesk-pro-plus-36",
+     "name": "Vari VariDesk Pro Plus 36 Sit-Stand Converter",
+     "price": 429.0,
+     "line": "Highest-end pick in this Top 10 \u2014 adjustable desk converter, 11 height settings."
+    },
+    "bang": {
+     "asin": "B0GVCDDCYG",
+     "slug": "flexispot-36-desk-converter",
+     "name": "FlexiSpot 36\" Standing Desk Converter",
+     "price": 159.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B08GKXXT22",
+     "slug": "vivo-26-in-single-top-standing",
+     "name": "VIVO 26 in Single Top Standing Desk Converter",
+     "price": 99.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 ultra-slim desk riser."
+    }
+   }
+  },
+  "boom-arms": {
+   "site": "deskworth",
+   "page": "boom-arms",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DS6411MB",
+     "slug": "todi-mic-arm-for-lightweight-mics",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CZLK8DZN",
+     "slug": "fifine-bm66-heavy-metal-microphone-boom",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F4KMF64P",
+     "slug": "aa-audio-accessory-mic-arm-desk",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B01L3LL95O",
+     "slug": "innogear-boom-arm-microphone-mic-stand",
+     "price": 19.99,
+     "rating": 4.5,
+     "ratings": 24108,
+     "bestseller": true
+    },
+    {
+     "asin": "B08PYS1YKW",
+     "slug": "sunmon-quadcast-boom-arm",
+     "price": 19.99,
+     "rating": 4.4,
+     "ratings": 5370,
+     "bestseller": true
+    },
+    {
+     "asin": "B09BQQTLC8",
+     "slug": "fifine-cs1-scissor-microphone-boom-arm",
+     "price": 19.99,
+     "rating": 4.5,
+     "ratings": 1852,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BJV5S52N",
+     "slug": "innogear-mic-boom-cable-mgmt",
+     "price": 39.99,
+     "rating": 4.5,
+     "ratings": 1378,
+     "bestseller": true
+    },
+    {
+     "asin": "B0C45H4WG9",
+     "slug": "fifine-bm88-low-profile-microphone-boom",
+     "price": 56.99,
+     "rating": 4.6,
+     "ratings": 5181,
+     "bestseller": true
+    },
+    {
+     "asin": "B097376LKF",
+     "slug": "elgato-wave-mic-arm-lp",
+     "price": 85.99,
+     "rating": 4.6,
+     "ratings": 5023,
+     "bestseller": false
+    },
+    {
+     "asin": "B09JBVR5B4",
+     "slug": "rode-psa1-plus",
+     "price": 112.0,
+     "rating": 4.7,
+     "ratings": 2709,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B09JBVR5B4",
+     "slug": "rode-psa1-plus",
+     "name": "R\u00d8DE PSA1+ Professional Studio Boom Arm",
+     "price": 112.0,
+     "line": "Highest-end pick in this Top 10 \u2014 spring damping."
+    },
+    "bang": {
+     "asin": "B0C45H4WG9",
+     "slug": "fifine-bm88-low-profile-microphone-boom",
+     "name": "FIFINE BM88 Low Profile Microphone Boom Arm Stand for Gaming",
+     "price": 56.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B01L3LL95O",
+     "slug": "innogear-boom-arm-microphone-mic-stand",
+     "name": "InnoGear Boom Arm Microphone Mic Stand for Blue Yeti Fifine",
+     "price": 19.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "desk-organizers": {
+   "site": "deskworth",
+   "page": "desk-organizers",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CF5D4Z1V",
+     "slug": "leketree-desk-organizers-and-accessories",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B07VVB7DSK",
+     "slug": "amazon-basics-wire-mesh-pen-holder",
+     "price": 5.35,
+     "rating": 4.8,
+     "ratings": 9349,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BYMRJD7R",
+     "slug": "marbrasse-pen-organizer-with-2-drawer",
+     "price": 8.99,
+     "rating": 4.5,
+     "ratings": 5508,
+     "bestseller": true
+    },
+    {
+     "asin": "B08VPFB5G3",
+     "slug": "amazon-basics-mesh-desk-organizer",
+     "price": 9.44,
+     "rating": 4.7,
+     "ratings": 1523,
+     "bestseller": false
+    },
+    {
+     "asin": "B07MHXF8H5",
+     "slug": "simple-houseware-drawer-organizer-6pack",
+     "price": 13.97,
+     "rating": 4.8,
+     "ratings": 4139,
+     "bestseller": false
+    },
+    {
+     "asin": "B0GN1TZZ9W",
+     "slug": "wali-desk-file-organizer",
+     "price": 16.99,
+     "rating": 4.6,
+     "ratings": 4663,
+     "bestseller": true
+    },
+    {
+     "asin": "B09KBZCBP3",
+     "slug": "sinboun-letter-tray-paper-organizer-5",
+     "price": 17.99,
+     "rating": 4.6,
+     "ratings": 1813,
+     "bestseller": true
+    },
+    {
+     "asin": "B09QKDY1YY",
+     "slug": "supeasy-5-trays-paper-organizer-letter",
+     "price": 18.99,
+     "rating": 4.5,
+     "ratings": 4803,
+     "bestseller": true
+    },
+    {
+     "asin": "B08PBFKGJG",
+     "slug": "marbrasse-6-tier-paper-organizer-letter",
+     "price": 19.99,
+     "rating": 4.7,
+     "ratings": 5446,
+     "bestseller": true
+    },
+    {
+     "asin": "B01N9HQM9F",
+     "slug": "simple-houseware-desk-file-organizer",
+     "price": 25.87,
+     "rating": 4.6,
+     "ratings": 35682,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B01N9HQM9F",
+     "slug": "simple-houseware-desk-file-organizer",
+     "name": "Simple Houseware Desk File Organizer with Drawer",
+     "price": 25.87,
+     "line": "Highest-end pick in this Top 10 \u2014 all-in-one space-saving design."
+    },
+    "bang": {
+     "asin": "B0GN1TZZ9W",
+     "slug": "wali-desk-file-organizer",
+     "name": "WALI Desk File Organizer",
+     "price": 16.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 4 tier desktop paper letter tray organizer, drawer and 2 pen holders."
+    },
+    "value": {
+     "asin": "B07VVB7DSK",
+     "slug": "amazon-basics-wire-mesh-pen-holder",
+     "name": "Amazon Basics Wire Mesh Pen Holder",
+     "price": 5.35,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 pencil cup desk organizer for stationery, office caddy storage."
+    }
+   }
+  },
+  "wrist-rests": {
+   "site": "deskworth",
+   "page": "wrist-rests",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DCVVZ6CT",
+     "slug": "mosiso-wrist-rest-support-for-mouse",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0D2WF276L",
+     "slug": "sushret-cloud-wrist-rest-keyboard",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DSVRLMRG",
+     "slug": "demon-chest-ergocomfort-gel-wrist-rest",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DMNZ8FVJ",
+     "slug": "laborio-computer-keyboard-wrist-rest",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B09X4XYYHD",
+     "slug": "yolanda-keyboard-wrist-rest-memory-foam",
+     "price": 7.64,
+     "rating": 4.5,
+     "ratings": 11963,
+     "bestseller": true
+    },
+    {
+     "asin": "B0872TX516",
+     "slug": "ktrio-keyboard-wrist-rest-mouse-pad",
+     "price": 9.99,
+     "rating": 4.5,
+     "ratings": 5984,
+     "bestseller": true
+    },
+    {
+     "asin": "B08W9N38PC",
+     "slug": "gorilla-grip-wrist-rest-set",
+     "price": 12.99,
+     "rating": 4.4,
+     "ratings": 7047,
+     "bestseller": true
+    },
+    {
+     "asin": "B00003CYNU",
+     "slug": "fellowes-gel-mouse-wrist-rest",
+     "price": 13.99,
+     "rating": 4.5,
+     "ratings": 637,
+     "bestseller": false
+    },
+    {
+     "asin": "B08C56DKS5",
+     "slug": "vaydeer-wrist-rest-for-keyboard-and",
+     "price": 15.99,
+     "rating": 4.6,
+     "ratings": 3302,
+     "bestseller": true
+    },
+    {
+     "asin": "B000X4WCJU",
+     "slug": "3m-gel-keyboard-wrist-rest",
+     "price": 30.09,
+     "rating": 4.6,
+     "ratings": 1323,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B000X4WCJU",
+     "slug": "3m-gel-keyboard-wrist-rest",
+     "name": "3M Compact Gel Keyboard Wrist Rest (18\")",
+     "price": 30.09,
+     "line": "Highest-end pick in this Top 10 \u2014 soothing gel comfort, product protection."
+    },
+    "bang": {
+     "asin": "B08C56DKS5",
+     "slug": "vaydeer-wrist-rest-for-keyboard-and",
+     "name": "Vaydeer Wrist Rest for Keyboard and Mouse",
+     "price": 15.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 computer Ergonomic wrist support pad, soft memory foam arm cushion for desk."
+    },
+    "value": {
+     "asin": "B09X4XYYHD",
+     "slug": "yolanda-keyboard-wrist-rest-memory-foam",
+     "name": "Yolanda Keyboard Wrist Rest Memory Foam",
+     "price": 7.64,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 easy typing pain relief, keyboard mouse pad set for computer."
+    }
+   }
+  },
+  "desk-lighting": {
+   "site": "deskworth",
+   "page": "desk-lighting",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DRG3WXB3",
+     "slug": "yeelight-monitor-light-bar",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CZ46G1F2",
+     "slug": "catpower-portable-laptop-monitor-light-bar",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F9LBFHJZ",
+     "slug": "quntis-curved-monitor-light-bar-15",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0GSPZ797T",
+     "slug": "samphon-monitor-light-bar",
+     "price": 15.99,
+     "rating": 4.2,
+     "ratings": 354,
+     "bestseller": true
+    },
+    {
+     "asin": "B0G4ZYSP7J",
+     "slug": "samphon-rgb-monitor-light-bar",
+     "price": 16.99,
+     "rating": 4.2,
+     "ratings": 119,
+     "bestseller": true
+    },
+    {
+     "asin": "B09XR4MYB6",
+     "slug": "colorpanda-16-14-monitor-light-bar",
+     "price": 21.49,
+     "rating": 4.6,
+     "ratings": 632,
+     "bestseller": false
+    },
+    {
+     "asin": "B08DKQ3JG1",
+     "slug": "quntis-computer-monitor-lamp",
+     "price": 39.95,
+     "rating": 4.6,
+     "ratings": 13844,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BRCJL4MM",
+     "slug": "pzloz-led-desk-lamp-for-office",
+     "price": 49.99,
+     "rating": 4.7,
+     "ratings": 3577,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BNT41H7F",
+     "slug": "onway-curved-monitor-light-bar-with",
+     "price": 59.0,
+     "rating": 4.5,
+     "ratings": 1153,
+     "bestseller": true
+    },
+    {
+     "asin": "B076VNFZJG",
+     "slug": "benq-screenbar",
+     "price": 109.0,
+     "rating": 4.7,
+     "ratings": 3104,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B076VNFZJG",
+     "slug": "benq-screenbar",
+     "name": "BenQ ScreenBar Monitor Light",
+     "price": 109.0,
+     "line": "Highest-end pick in this Top 10 \u2014 adjustable brightness and color temperature, no screen glare."
+    },
+    "bang": {
+     "asin": "B08DKQ3JG1",
+     "slug": "quntis-computer-monitor-lamp",
+     "name": "Quntis Computer Monitor Lamp",
+     "price": 39.95,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 screen monitor light bar for eye caring, USB reading LED task lamp."
+    },
+    "value": {
+     "asin": "B09XR4MYB6",
+     "slug": "colorpanda-16-14-monitor-light-bar",
+     "name": "Colorpanda 16.14\" Monitor Light Bar,250LM USB LED Desk Lamp,Home Office",
+     "price": 21.49,
+     "line": "Among the lowest-priced picks in this Top 10, still well rated on Amazon \u2014 250LM USB LED desk lamp, home office gaming."
+    }
+   }
+  }
+ }
+}

@@ -7,7 +7,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 export function ProductCard({
   product,
   priority = false,
-  showAffiliateCta = false,
+  showAffiliateCta = true,
 }: {
   product: Product;
   priority?: boolean;
@@ -49,9 +49,6 @@ export function ProductCard({
           </h3>
           <p className="mt-1 line-clamp-2 text-sm text-stone-600">
             {product.tagline}
-          </p>
-          <p className="mt-auto pt-3 text-sm font-medium text-stone-800">
-            {product.priceBand}
           </p>
         </div>
       </Link>

@@ -28,7 +28,6 @@ export function StickyAffiliateBar({
       <div className="mx-auto flex max-w-6xl items-center gap-3">
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm font-medium text-stone-900">{productName}</p>
-          <p className="text-xs text-stone-500">{priceBand}</p>
         </div>
         <a
           href={href}

@@ -24,7 +24,6 @@ export function CompareWinner({
         </Link>
       </h2>
       <p className="mt-2 text-stone-700">{reason}</p>
-      <p className="mt-2 text-sm font-medium text-stone-800">{product.priceBand}</p>
       <AffiliateButton
         productSlug={product.slug}
         productName={product.name}

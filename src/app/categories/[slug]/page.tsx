@@ -6,6 +6,7 @@ import { getTopPicks } from "@/data/top10";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateNote } from "@/components/AffiliateNote";
 import { JsonLd } from "@/components/JsonLd";
+import { BadgePicks } from "@/components/BadgePicks";
 import {
   SITE_URL,
   CATEGORY_CROSS_LINKS,
@@ -92,6 +93,7 @@ export default async function CategoryPage({ params }: Props) {
           ))}
         </p>
       )}
+      <BadgePicks category={slug} />
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((p, i) => (
           <ProductCard key={p.slug} product={p} priority={i === 0} />

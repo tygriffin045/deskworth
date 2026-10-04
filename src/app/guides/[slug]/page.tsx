@@ -189,9 +189,6 @@ export default async function GuidePage({ params }: Props) {
                   >
                     {product.name}
                   </a>{" "}
-                  <span className="text-sm text-stone-500">
-                    · {product.priceBand}
-                  </span>
                 </p>
                 <p className="mt-1 text-sm">{pick.quickNote}</p>
               </li>
@@ -214,9 +211,6 @@ export default async function GuidePage({ params }: Props) {
               <h2 className="mt-2 font-serif text-3xl text-stone-900">
                 {product.name}
               </h2>
-              <p className="mt-1 text-sm font-medium text-stone-600">
-                {product.priceBand}
-              </p>
               {product.imageUrl && (
                 <Link
                   href={`/products/${product.slug}`}
