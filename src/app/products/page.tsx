@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { products } from "@/data/products";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import { ProductFilters } from "@/components/ProductFilters";
 import { DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
@@ -32,7 +31,6 @@ export default function ProductsIndexPage() {
         Filter by category and budget band. Every product page includes pros,
         cons, who it&apos;s for, and an Amazon price check.
       </p>
-      <AffiliateNote />
       <div className="mt-8">
         <ProductFilters products={products} />
       </div>

@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
 import { getTopPicks } from "@/data/top10";
 import { ProductCard } from "@/components/ProductCard";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import { JsonLd } from "@/components/JsonLd";
 import { BadgePicks } from "@/components/BadgePicks";
 import {
@@ -72,7 +71,6 @@ export default async function CategoryPage({ params }: Props) {
         {category.name}
       </h1>
       <p className="mt-3 max-w-2xl text-stone-600">{category.description}</p>
-      <AffiliateNote />
       <p className="mt-4 text-sm text-stone-500">
         <Link href="/products" className="underline underline-offset-2">
           All products

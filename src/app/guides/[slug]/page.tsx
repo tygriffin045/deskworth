@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { JsonLd } from "@/components/JsonLd";
 import {
@@ -168,7 +167,6 @@ export default async function GuidePage({ params }: Props) {
         {guide.title}
       </h1>
       <p className="mt-4 text-lg text-stone-700">{guide.description}</p>
-      <AffiliateNote />
 
       {picks.length > 0 && (
         <section

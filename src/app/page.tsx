@@ -5,7 +5,6 @@ import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
 import { TopRail } from "@/components/TopRail";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import {
   SITE_URL,
   SITE_DESCRIPTION,
@@ -52,7 +51,6 @@ export default function HomePage() {
             and desk power. Editorial shortlists with real tradeoffs and no
             invented scores.
           </p>
-          <AffiliateNote className="mt-3" />
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/products"
