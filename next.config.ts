@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      { source: "/products/screenbar-halo", destination: "/categories/desk-lighting", permanent: true },
+      { source: "/products/benq-screenbar-halo", destination: "/categories/desk-lighting", permanent: true },
+      { source: "/categories/desk-lamps", destination: "/categories/desk-lighting", permanent: true },
       {
         source: "/products/flexispot-e7-pro",
         destination: "/products/flexispot-e6-dual-motor-55x28",

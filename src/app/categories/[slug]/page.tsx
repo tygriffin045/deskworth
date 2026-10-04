@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
-import { getProductsByCategory } from "@/data/products";
+import { getTopPicks } from "@/data/top10";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateNote } from "@/components/AffiliateNote";
 import { JsonLd } from "@/components/JsonLd";
@@ -44,7 +44,7 @@ export default async function CategoryPage({ params }: Props) {
   const category = getCategory(slug);
   if (!category) notFound();
 
-  const items = getProductsByCategory(slug);
+  const items = getTopPicks(slug);
   const cross = CATEGORY_CROSS_LINKS[slug];
   const listLd = {
     "@context": "https://schema.org",
@@ -76,7 +76,7 @@ export default async function CategoryPage({ params }: Props) {
         <Link href="/products" className="underline underline-offset-2">
           All products
         </Link>{" "}
-        · {items.length} in this category
+        · Top {items.length} picks
       </p>
       {(cross?.guides?.length || cross?.compares?.length) && (
         <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-stone-600">

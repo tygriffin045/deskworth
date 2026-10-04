@@ -86,16 +86,21 @@ export default async function ProductPage({ params }: Props) {
     description: product.summary,
     brand: { "@type": "Brand", name: product.brand },
     ...(imageAbs ? { image: [imageAbs] } : {}),
-    offers: {
-      "@type": "AggregateOffer",
-      url: productUrl,
-      priceCurrency: "USD",
-      lowPrice: String(product.priceMin),
-      highPrice: String(product.priceMax),
-      offerCount: 1,
-      availability: "https://schema.org/InStock",
-      description: product.priceBand,
-    },
+    // Only emit an Offer when we verified a price on Amazon.
+    ...(product.priceMin > 0
+      ? {
+          offers: {
+            "@type": "AggregateOffer",
+            url: productUrl,
+            priceCurrency: "USD",
+            lowPrice: String(product.priceMin),
+            highPrice: String(product.priceMax),
+            offerCount: 1,
+            availability: "https://schema.org/InStock",
+            description: product.priceBand,
+          },
+        }
+      : {}),
   };
   const breadcrumbLd = {
     "@context": "https://schema.org",
