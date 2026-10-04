@@ -6,7 +6,7 @@ const groups = getAllNavGroupsWithLinks();
 const WORTH_SITES = [
   ["The Worth Guide", "https://theworthguide.com/"],
   ...["brew", "sleep", "pet", "tech", "car", "kitchen", "clean", "tool", "yard", "bag", "groom", "fit", "bath", "travel", "watch"].map(
-    (s) => [s[0].toUpperCase() + s.slice(1), `https://${s}.theworthguide.com/`],
+    (s) => [s[0].toUpperCase() + s.slice(1) + "Worth", `https://${s}.theworthguide.com/`],
   ),
 ].map(([label, href]) => ({ label, href }));
 
@@ -109,7 +109,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto max-w-6xl border-t border-stone-800 px-4 py-6 sm:px-6">
-        <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">More Worth Guide sites</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">The Worth Guide family</p>
         <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-400">
           {WORTH_SITES.map((site) => (
             <li key={site.href}>
