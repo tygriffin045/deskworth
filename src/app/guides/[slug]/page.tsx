@@ -36,6 +36,9 @@ const GUIDE_COMPARES: Record<string, { href: string; label: string }[]> = {
     { href: "/compare/cable-management", label: "Cable management comparison" },
     { href: "/compare", label: "Standing desk comparison" },
   ],
+  "best-mic-boom-arm-for-a-desk": [
+    { href: "/compare/boom-arms", label: "Boom arm comparison" },
+  ],
 };
 
 
