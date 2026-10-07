@@ -70,6 +70,9 @@ export const CATEGORY_CROSS_LINKS: Partial<
     compares: [{ href: "/compare/cable-management", label: "Cable management comparison" }],
   },
   "boom-arms": {
+    guides: [
+      { href: "/guides/best-mic-boom-arm-for-a-desk", label: "Best mic boom arm for a desk" },
+    ],
     compares: [{ href: "/compare/boom-arms", label: "Boom arm comparison" }],
   },
   "office-chairs": {
