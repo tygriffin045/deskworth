@@ -1805,7 +1805,7 @@ export const products: Product[] = [
   },
   {
     slug: "innogear-mic-boom-cable-mgmt",
-    name: "InnoGear Mic Boom Arm with Cable Management",
+    name: "InnoGear Microphone Arm Stand, Heavy Duty",
     brand: "InnoGear",
     category: "boom-arms",
     tagline: "Value desk boom for Blue Yeti–class USB mics with cable routing",
@@ -1819,8 +1819,8 @@ export const products: Product[] = [
     imageAlt: "InnoGear mic boom arm with cable management product photo",
     imageUrl: "/products/B0BJV5S52N.jpg",
     featured: false,
-    amazonAsin: "B0BJV5S52N",
-    amazonQuery: "InnoGear mic boom arm cable management",
+    amazonAsin: "B07V2FJL54",
+    amazonQuery: "InnoGear Microphone Arm Stand heavy duty desk boom",
     pros: [
       "Half the price of Elgato/RØDE premium arms",
       "Cable management keeps USB runs tidy",
