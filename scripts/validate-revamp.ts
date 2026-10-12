@@ -13,6 +13,13 @@ for (const p of products) {
   if (!TIERS.has((p as { tier?: string }).tier ?? "")) errors.push(`${p.slug}: missing/invalid tier`);
   if (p.pros.length < 2 || p.pros.length > 4) errors.push(`${p.slug}: ${p.pros.length} pros (need 2-4)`);
   if (p.cons.length < 1 || p.cons.length > 3) errors.push(`${p.slug}: ${p.cons.length} cons (need 1-3)`);
+  // Listing-voice gate: no pasted Amazon copy markers in visible product text.
+  const texts = [p.summary, p.tagline, p.whoItsFor, ...p.pros, ...p.cons];
+  for (const t of texts) {
+    if (/per the amazon listing/i.test(t)) errors.push(`${p.slug}: contains "Per the Amazon listing": ${t.slice(0, 60)}`);
+    if (/(^|[.;]\s+)[A-Z0-9][A-Z0-9 &'\-\/]{3,}\s*[:：]/.test(t)) errors.push(`${p.slug}: ALL-CAPS label bullet: ${t.slice(0, 60)}`);
+    if (/[✔✅【】♛➤]/.test(t)) errors.push(`${p.slug}: listing emoji/bracket marker: ${t.slice(0, 60)}`);
+  }
   if ("budget" in p || "priceBand" in p || "priceMin" in p || "priceMax" in p) errors.push(`${p.slug}: leftover budget/price field`);
 }
 const slugs = new Set(products.map((p) => p.slug));
