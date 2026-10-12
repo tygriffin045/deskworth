@@ -757,7 +757,7 @@ export const products: Product[] = [
     amazonAsin: "B0B4T8DJW7",
     amazonQuery: "VIVO DESK-V036KB standing desk converter",
     pros: ["Competitive price for a full 36\" converter", "Wide keyboard tray for real typing posture", "Easy Amazon returns if sit-stand is not for you", "Keeps a solid fixed desk in play"],
-    cons: ["More wobble under heavy dual-monitor loads", "Gas springs wear sooner than a full electric desk"],
+    cons: ["May wobble more under heavy dual-monitor loads", "Gas springs can wear sooner than an electric lift"],
     whoItsFor: "Lower-cost converters and first-time sit-stand users testing the habit before buying a full standing desk.",
     specs: [{"label": "Width", "value": "36 in"}, {"label": "Model", "value": "DESK-V036KB"}, {"label": "Keyboard tray", "value": "Wide dual-tier"}, {"label": "Lift", "value": "Height-adjustable riser"}, {"label": "Color", "value": "Black"}],
     relatedSlugs: ["flexispot-36-desk-converter", "varidesk-pro-plus-36", "flexispot-pro-dual-motor", "sihoo-b100", "sky-solutions-anti-fatigue-mat"],
