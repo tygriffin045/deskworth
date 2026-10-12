@@ -9,6 +9,7 @@ import {
 } from "@/data/products";
 import { getCategory } from "@/data/categories";
 import { guides } from "@/data/guides";
+import { TierBadge } from "@/components/TierBadge";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { ProductCard } from "@/components/ProductCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -77,7 +78,7 @@ export default async function ProductPage({ params }: Props) {
       : `${SITE_URL}${product.imageUrl}`
     : undefined;
 
-  // Honest Offer: priceBand as text; low/high from curated bands — no AggregateRating.
+  // No Offer/price in structured data (no prices shown) — no AggregateRating.
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -177,6 +178,9 @@ export default async function ProductPage({ params }: Props) {
           <p className="text-xs uppercase tracking-wider text-stone-500">
             {product.brand} · {category?.name}
           </p>
+          <p className="mt-2 text-sm text-stone-600">
+            Budget tier: <TierBadge tier={product.tier} />
+          </p>
           <h1 className="mt-2 font-serif text-4xl text-stone-900">
             {product.name}
           </h1>
@@ -270,7 +274,7 @@ export default async function ProductPage({ params }: Props) {
         <h2 className="font-serif text-2xl text-stone-900">Ready to buy?</h2>
         <p className="mt-2 text-stone-600">
           Confirm the live Amazon listing, configuration, and return window
-          before you commit — prices move.
+          before you commit.
         </p>
         <AffiliateButton
           productSlug={product.slug}
@@ -302,7 +306,6 @@ export default async function ProductPage({ params }: Props) {
         productName={product.name}
         amazonAsin={product.amazonAsin}
         amazonQuery={product.amazonQuery}
-        priceBand={product.priceBand}
       />
     </article>
   );

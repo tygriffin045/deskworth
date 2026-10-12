@@ -5,6 +5,8 @@ import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
 import { TopRail } from "@/components/TopRail";
+import { Top10List } from "@/components/Top10List";
+import { getHomeTop10, HOME_TOP10_CATEGORIES } from "@/data/top10";
 import {
   SITE_URL,
   SITE_DESCRIPTION,
@@ -33,9 +35,27 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 6);
+  const top10 = getHomeTop10();
+  const top10Labels = HOME_TOP10_CATEGORIES.map(
+    (c) => `Best ${categories.find((x) => x.slug === c)?.shortLabel ?? ""}`.trim(),
+  );
 
   return (
     <div className="space-y-16">
+      <section>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a84c1f]">
+          DeskWorth Top 10
+        </p>
+        <h1 className="mt-2 font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">
+          The 10 home-office picks we&apos;d buy first
+        </h1>
+        <p className="mt-3 max-w-2xl text-stone-700">
+          The Best Overall pick from ten core desk categories, with real pros and
+          cons. Budget tiers: $ budget · $$ mid-range · $$$ premium.
+        </p>
+        <Top10List items={top10} heading="Top 10 desk picks" labels={top10Labels} />
+      </section>
+
       <section className="relative overflow-hidden rounded-3xl border border-stone-200 bg-[#efe8dc] px-6 py-14 sm:px-12 sm:py-20">
         <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#c45c26]/15 blur-3xl" />
         <div className="absolute -bottom-20 left-1/3 h-56 w-56 rounded-full bg-stone-400/20 blur-3xl" />
@@ -43,9 +63,9 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a84c1f]">
             Desk setups, reviewed for years
           </p>
-          <h1 className="mt-3 font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">
+          <h2 className="mt-3 font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">
             Buy the right desk gear once — with tradeoffs spelled out
-          </h1>
+          </h2>
           <p className="mt-4 text-lg text-stone-700">
             Standing desks, converters, chairs, monitors, boom arms, mats, cables,
             and desk power. Editorial shortlists with real tradeoffs and no

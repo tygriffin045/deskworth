@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
 import { getTopPicks } from "@/data/top10";
-import { ProductCard } from "@/components/ProductCard";
+import { Top10List } from "@/components/Top10List";
 import { JsonLd } from "@/components/JsonLd";
 import { BadgePicks } from "@/components/BadgePicks";
 import {
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category not found" };
   const title = `${category.name} — DeskWorth picks`;
-  const description = `${category.description} Compare options and check current Amazon prices.`;
+  const description = `${category.description} Our Top 10 with pros, cons, and budget tiers.`;
   return {
     title,
     description,
@@ -92,11 +92,7 @@ export default async function CategoryPage({ params }: Props) {
         </p>
       )}
       <BadgePicks category={slug} />
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((p, i) => (
-          <ProductCard key={p.slug} product={p} priority={i === 0} />
-        ))}
-      </div>
+      <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
     </div>
   );
 }

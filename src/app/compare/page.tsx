@@ -42,7 +42,7 @@ const rows: { label: string; key: (slug: string) => ReactNode }[] = [
       </a>
     ),
   },
-  { label: "Budget tier", key: (s) => getProduct(s)!.budget },
+  { label: "Budget tier", key: (s) => getProduct(s)!.tier },
   {
     label: "Height range",
     key: (s) =>

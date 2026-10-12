@@ -504,14 +504,14 @@ export const guides: Guide[] = [
         productSlug: "belkin-12-outlet-usb-surge",
         award: "Best for surge protection",
         quickNote:
-          "3,996 joules, 12 outlets, a 6 ft flat-plug cord, and a $250,000 connected-equipment warranty.",
+          "3,996 joules, 12 outlets, a 6 ft flat-plug cord, and a connected-equipment warranty.",
         verdict:
-          "If a desktop PC, two monitors, and a dock ride on your desk, Belkin's 3,996-joule rating gives you the most surge headroom here, and it comes with a $250,000 connected-equipment warranty. The 6 ft cord with a flat plug gives the desk a little more travel slack than the 5 ft Anker cords, and mounting holes on the back let you screw it into a tray or under the desktop. The USB side is dated: two USB-A ports sharing 2.1A. It's also bulky, and white, which shows under dark desks.",
+          "If a desktop PC, two monitors, and a dock ride on your desk, Belkin's 3,996-joule rating gives you the most surge headroom here, and it comes with a connected-equipment warranty. The 6 ft cord with a flat plug gives the desk a little more travel slack than the 5 ft Anker cords, and mounting holes on the back let you screw it into a tray or under the desktop. The USB side is dated: two USB-A ports sharing 2.1A. It's also bulky, and white, which shows under dark desks.",
         pros: [
           "3,996J surge rating, the highest here",
           "6 ft cord with a flat plug",
           "Back mounting holes for tray or under-desk mounting",
-          "2-year limited warranty plus a $250,000 connected-equipment warranty",
+          "2-year limited warranty plus a connected-equipment warranty",
         ],
         cons: [
           "USB-A only (2.1A shared), so no USB-C",

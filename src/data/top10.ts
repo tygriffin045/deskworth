@@ -54,3 +54,37 @@ export function getTopPicks(category: string): Product[] {
     .map((s) => products.find((p) => p.slug === s))
     .filter((p): p is Product => Boolean(p));
 }
+
+const TIER_RANK = { $: 1, $$: 2, $$$: 3 } as const;
+
+/**
+ * Best Overall = #1 of the Top 10. Premium Pick = highest budget tier among the rest
+ * (earliest-ranked wins ties). Value Pick = lowest tier among the remainder (earliest-ranked).
+ */
+export function getThreePicks(category: string) {
+  const top = getTopPicks(category);
+  if (top.length < 3) return null;
+  const [best, ...rest] = top;
+  const premium = rest.reduce((a, b) => (TIER_RANK[b.tier] > TIER_RANK[a.tier] ? b : a));
+  const remain = rest.filter((p) => p !== premium);
+  const value = remain.reduce((a, b) => (TIER_RANK[b.tier] < TIER_RANK[a.tier] ? b : a));
+  return { best, premium, value };
+}
+
+/** Desk home Top 10: the Best Overall from each of the ten core desk categories. */
+export const HOME_TOP10_CATEGORIES = [
+  "standing-desks",
+  "office-chairs",
+  "monitors",
+  "monitor-arms",
+  "keyboards-mice",
+  "webcams-audio",
+  "desk-converters",
+  "usb-c-docks",
+  "laptop-stands",
+  "desk-lighting",
+];
+
+export function getHomeTop10(): Product[] {
+  return HOME_TOP10_CATEGORIES.map((c) => getTopPicks(c)[0]).filter(Boolean);
+}

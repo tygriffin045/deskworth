@@ -9,13 +9,11 @@ export function StickyAffiliateBar({
   productName,
   amazonAsin,
   amazonQuery,
-  priceBand,
 }: {
   productSlug: string;
   productName: string;
   amazonAsin?: string;
   amazonQuery?: string;
-  priceBand: string;
 }) {
   const href = getAffiliateUrl({
     slug: productSlug,
@@ -43,7 +41,7 @@ export function StickyAffiliateBar({
             })
           }
         >
-          Check Amazon
+          Check price on Amazon
         </a>
       </div>
     </div>
