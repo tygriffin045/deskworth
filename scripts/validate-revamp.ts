@@ -16,6 +16,9 @@ for (const p of products) {
   // Listing-voice gate: no pasted Amazon copy markers in visible product text.
   const texts = [p.summary, p.tagline, p.whoItsFor, ...p.pros, ...p.cons];
   for (const t of texts) {
+    if (/not tested hands-on|we have not tested it hands-on/i.test(t)) errors.push(`${p.slug}: per-product testing boilerplate: ${t.slice(0, 60)}`);
+    if (/^Shoppers comparing/i.test(t)) errors.push(`${p.slug}: generic who-it's-for line`);
+    if (/^Sizes, colors, and bundles vary/i.test(t)) errors.push(`${p.slug}: variant boilerplate con`);
     if (/per the amazon listing/i.test(t)) errors.push(`${p.slug}: contains "Per the Amazon listing": ${t.slice(0, 60)}`);
     if (/(^|[.;]\s+)[A-Z0-9][A-Z0-9 &'\-\/]{3,}\s*[:：]/.test(t)) errors.push(`${p.slug}: ALL-CAPS label bullet: ${t.slice(0, 60)}`);
     const sv = t.replace(/\bour\b[^.;]{0,40}\bpicks?\b/gi, "");
