@@ -4,10 +4,6 @@ import { products } from "../src/data/products";
 import { categories } from "../src/data/categories";
 import { TOP10, PICKS, getTopPicks } from "../src/data/top10";
 
-// Categories allowed to run short while a replacement product is sourced. Each entry prints a warning.
-const KNOWN_SHORT: Record<string, string> = {
-  "webcams-audio": "9 of 10 after removing duplicate c920-desk; needs one new webcam entry",
-};
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -25,8 +21,7 @@ for (const c of categories) {
   for (const s of list) if (!slugs.has(s)) errors.push(`${c.slug}: Top 10 slug not found: ${s}`);
   const n = getTopPicks(c.slug).length;
   if (n !== 10) {
-    if (KNOWN_SHORT[c.slug] && n >= 9) warnings.push(`${c.slug}: Top ${n} — ${KNOWN_SHORT[c.slug]}`);
-    else errors.push(`${c.slug}: Top 10 has ${n} items`);
+    errors.push(`${c.slug}: Top 10 has ${n} items (need exactly 10)`);
   }
   const pk = PICKS[c.slug];
   if (!pk) { errors.push(`${c.slug}: missing picks`); continue; }
@@ -35,6 +30,12 @@ for (const c of categories) {
     if (!slugs.has(s)) errors.push(`${c.slug}: ${k} pick not found: ${s}`);
     else if (!list.includes(s)) errors.push(`${c.slug}: ${k} pick ${s} not in Top 10`);
   }
+  const R: Record<string, number> = { $: 1, $$: 2, $$$: 3 };
+  const bySlug = (x: string) => products.find((p) => p.slug === x);
+  const [b, pr, v] = [bySlug(pk.best), bySlug(pk.premium), bySlug(pk.value)];
+  if (b && pr && R[pr.tier] < R[b.tier]) errors.push(`${c.slug}: Premium ${pr.slug} (${pr.tier}) is below Best Overall ${b.slug} (${b.tier})`);
+  const top = getTopPicks(c.slug);
+  if (v && top.some((p) => p.tier === "$") && v.tier !== "$") errors.push(`${c.slug}: Value ${v.slug} is ${v.tier} but the Top 10 has a $ item`);
   if (new Set(Object.values(pk)).size !== 3) errors.push(`${c.slug}: picks are not 3 distinct products`);
 }
 for (const w of warnings) console.warn(`validate-revamp: WARNING ${w}`);
