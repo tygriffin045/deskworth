@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import { getCategory } from "@/data/categories";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { TierBadge } from "@/components/TierBadge";
 
 export function ProductCard({
   product,
@@ -42,7 +43,7 @@ export function ProductCard({
         </div>
         <div className="flex flex-1 flex-col p-4">
           <p className="text-xs uppercase tracking-wide text-stone-500">
-            {product.brand}
+            {product.brand} <TierBadge tier={product.tier} className="ml-1" />
           </p>
           <h3 className="mt-1 font-serif text-lg text-stone-900 group-hover:underline group-hover:decoration-stone-300 group-hover:underline-offset-4">
             {product.name}
@@ -59,7 +60,6 @@ export function ProductCard({
             productName={product.name}
             amazonAsin={product.amazonAsin}
             amazonQuery={product.amazonQuery}
-            label="Check price on Amazon"
             className="[&_a]:w-full [&_a]:text-center [&_a]:text-sm [&_a]:py-2.5"
           />
         </div>

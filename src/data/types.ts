@@ -18,7 +18,7 @@ export type CategorySlug =
   | "desk-organizers"
   | "wrist-rests";
 
-export type BudgetBand = "budget" | "mid" | "premium";
+export type BudgetTier = "$" | "$$" | "$$$";
 
 export interface ProductSpec {
   label: string;
@@ -32,10 +32,8 @@ export interface Product {
   category: CategorySlug;
   tagline: string;
   summary: string;
-  priceBand: string;
-  budget: BudgetBand;
-  priceMin: number;
-  priceMax: number;
+  /** Budget tier derived once from former price data (lower/middle/top third of its category). Never show prices. */
+  tier: BudgetTier;
   imageGradient: string;
   imageAlt: string;
   /** Amazon CDN product image when available */

@@ -9,13 +9,11 @@ export function StickyAffiliateBar({
   productName,
   amazonAsin,
   amazonQuery,
-  priceBand,
 }: {
   productSlug: string;
   productName: string;
   amazonAsin?: string;
   amazonQuery?: string;
-  priceBand: string;
 }) {
   const href = getAffiliateUrl({
     slug: productSlug,
@@ -33,6 +31,7 @@ export function StickyAffiliateBar({
           href={href}
           target="_blank"
           rel="nofollow sponsored noopener noreferrer"
+          aria-label={`Check price on Amazon: ${productName}`}
           className="shrink-0 rounded-full bg-[#c45c26] px-4 py-2.5 text-sm font-semibold text-white"
           onClick={() =>
             track("amazon_outbound_click", {
@@ -43,7 +42,7 @@ export function StickyAffiliateBar({
             })
           }
         >
-          Check Amazon
+          Check price on Amazon
         </a>
       </div>
     </div>
