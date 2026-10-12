@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
         destination: "/products/flexispot-e6-dual-motor-55x28",
         permanent: true,
       },
+      { source: "/products/c920-desk", destination: "/products/logitech-c920s", permanent: true },
+      { source: "/products/k2-desk", destination: "/products/keychron-k2", permanent: true },
       {
         source: "/products/uplift-v2",
         destination: "/products/uplift-v3",

@@ -83,7 +83,6 @@ export function Top10List({
                   productName={p.name}
                   amazonAsin={p.amazonAsin}
                   amazonQuery={p.amazonQuery}
-                  label="Check price on Amazon"
                   className="mt-4"
                 />
               </div>

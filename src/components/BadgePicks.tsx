@@ -71,7 +71,6 @@ export function BadgePicks({ category }: { category: string }) {
               productName={p.name}
               amazonAsin={p.amazonAsin}
               amazonQuery={p.amazonQuery}
-              label="Check price on Amazon"
               className="mt-4 [&_a]:w-full"
             />
           </article>

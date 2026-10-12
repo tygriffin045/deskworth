@@ -36,6 +36,7 @@ const rows: { label: string; key: (slug: string) => ReactNode }[] = [
         href={getAffiliateUrl({ slug: s, amazonAsin: getProduct(s)!.amazonAsin })}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
+        aria-label={`Check price on Amazon: ${getProduct(s)!.name}`}
         className="font-semibold text-[#c45c26] underline underline-offset-2"
       >
         Check price on Amazon

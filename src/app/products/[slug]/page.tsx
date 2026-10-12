@@ -72,21 +72,7 @@ export default async function ProductPage({ params }: Props) {
   const category = getCategory(product.category);
   const related = getRelatedProducts(product);
   const productUrl = `${SITE_URL}/products/${product.slug}`;
-  const imageAbs = product.imageUrl
-    ? product.imageUrl.startsWith("http")
-      ? product.imageUrl
-      : `${SITE_URL}${product.imageUrl}`
-    : undefined;
 
-  // No Offer/price in structured data (no prices shown) — no AggregateRating.
-  const productLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.summary,
-    brand: { "@type": "Brand", name: product.brand },
-    ...(imageAbs ? { image: [imageAbs] } : {}),
-  };
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -133,7 +119,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <article className="pb-24 md:pb-0">
-      <JsonLd data={[productLd, breadcrumbLd]} />
+      <JsonLd data={breadcrumbLd} />
       <nav className="text-sm text-stone-500">
         <Link href="/products" className="hover:text-stone-800">
           Products

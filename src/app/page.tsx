@@ -4,8 +4,7 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
-import { TopRail } from "@/components/TopRail";
-import { Top10List } from "@/components/Top10List";
+import { HomeTop10 } from "@/components/HomeTop10";
 import { getHomeTop10, HOME_TOP10_CATEGORIES } from "@/data/top10";
 import {
   SITE_URL,
@@ -36,9 +35,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 6);
   const top10 = getHomeTop10();
-  const top10Labels = HOME_TOP10_CATEGORIES.map(
-    (c) => `Best ${categories.find((x) => x.slug === c)?.shortLabel ?? ""}`.trim(),
-  );
+  const top10Labels = HOME_TOP10_CATEGORIES.map((c) => ({
+    name: categories.find((x) => x.slug === c)?.name ?? c,
+    href: `/categories/${c}`,
+  }));
 
   return (
     <div className="space-y-16">
@@ -53,7 +53,7 @@ export default function HomePage() {
           The Best Overall pick from ten core desk categories, with real pros and
           cons. Budget tiers: $ budget · $$ mid-range · $$$ premium.
         </p>
-        <Top10List items={top10} heading="Top 10 desk picks" labels={top10Labels} />
+        <HomeTop10 items={top10} labels={top10Labels} />
       </section>
 
       <section className="relative overflow-hidden rounded-3xl border border-stone-200 bg-[#efe8dc] px-6 py-14 sm:px-12 sm:py-20">
@@ -93,8 +93,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <TopRail />
 
       <section>
         <h2 className="font-serif text-3xl text-stone-900">Vs reviews</h2>

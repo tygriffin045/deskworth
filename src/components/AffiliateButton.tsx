@@ -9,16 +9,12 @@ export function AffiliateButton({
   amazonAsin,
   amazonQuery,
   className = "",
-  label,
-
 }: {
   productSlug: string;
   productName: string;
   amazonAsin?: string;
   amazonQuery?: string;
   className?: string;
-  label?: string;
-
 }) {
   const href = getAffiliateUrl({
     slug: productSlug,
@@ -32,6 +28,7 @@ export function AffiliateButton({
         href={href}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
+        aria-label={`Check price on Amazon: ${productName}`}
         className="inline-flex w-full items-center justify-center rounded-full bg-[#c45c26] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#a84c1f] sm:w-auto"
         onClick={() =>
           track("amazon_outbound_click", {
@@ -41,7 +38,7 @@ export function AffiliateButton({
           })
         }
       >
-        {label ?? `Check price on Amazon — ${productName}`}
+        Check price on Amazon
       </a>
     </div>
   );

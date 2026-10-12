@@ -256,7 +256,6 @@ export default async function GuidePage({ params }: Props) {
                   productName={product.name}
                   amazonAsin={product.amazonAsin}
                   amazonQuery={product.amazonQuery}
-                  label="Check price on Amazon"
                 />
                 <Link
                   href={`/products/${product.slug}`}

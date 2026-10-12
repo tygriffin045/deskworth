@@ -20,8 +20,6 @@ export type CategorySlug =
 
 export type BudgetTier = "$" | "$$" | "$$$";
 
-export type BudgetBand = "budget" | "mid" | "premium";
-
 export interface ProductSpec {
   label: string;
   value: string;
@@ -34,7 +32,6 @@ export interface Product {
   category: CategorySlug;
   tagline: string;
   summary: string;
-  budget: BudgetBand;
   /** Budget tier derived once from former price data (lower/middle/top third of its category). Never show prices. */
   tier: BudgetTier;
   imageGradient: string;

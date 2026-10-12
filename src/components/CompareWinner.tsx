@@ -30,7 +30,6 @@ export function CompareWinner({
         amazonAsin={product.amazonAsin}
         amazonQuery={product.amazonQuery}
         className="mt-4"
-        label={`Check price on Amazon — ${product.name}`}
       />
     </aside>
   );
