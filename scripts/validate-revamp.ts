@@ -18,6 +18,9 @@ for (const p of products) {
   for (const t of texts) {
     if (/per the amazon listing/i.test(t)) errors.push(`${p.slug}: contains "Per the Amazon listing": ${t.slice(0, 60)}`);
     if (/(^|[.;]\s+)[A-Z0-9][A-Z0-9 &'\-\/]{3,}\s*[:：]/.test(t)) errors.push(`${p.slug}: ALL-CAPS label bullet: ${t.slice(0, 60)}`);
+    const sv = t.replace(/\bour\b[^.;]{0,40}\bpicks?\b/gi, "");
+    const m = sv.match(/\b(our|ours|you'll love|effortlessly|say goodbye|experience (smooth|the)|maximize)\b/i);
+    if (m) errors.push(`${p.slug}: seller voice "${m[0]}": ${t.slice(0, 70)}`);
     if (/[✔✅【】♛➤]/.test(t)) errors.push(`${p.slug}: listing emoji/bracket marker: ${t.slice(0, 60)}`);
   }
   if ("budget" in p || "priceBand" in p || "priceMin" in p || "priceMax" in p) errors.push(`${p.slug}: leftover budget/price field`);
