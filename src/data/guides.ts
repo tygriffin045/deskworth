@@ -764,16 +764,14 @@ export const guides: Guide[] = [
         quickNote:
           "5-in-1 with 4K HDMI, 100W USB-C PD, one 5 Gbps USB-A, and two 480 Mbps USB-A ports. Compact grey shell.",
         verdict:
-          "UGREEN’s 5-in-1 is the budget path when you mainly need HDMI and a few USB-A ports. The listing specs a 4K HDMI port, a 100W USB-C PD port, a 5 Gbps USB-A data port, and two 480 Mbps USB-A ports in a plug-and-play portable body (about 91 g). It does not include SD/TF like the Anker 7-in-1. Details here come from the Amazon listing; we have not tested it hands-on, so confirm the exact variant before you buy.",
+          "UGREEN’s 5-in-1 is the budget path when you mainly need HDMI and a few USB-A ports. The listing specs a 4K HDMI port, a 100W USB-C PD port, a 5 Gbps USB-A data port, and two 480 Mbps USB-A ports in a plug-and-play portable body (about 91 g). It does not include SD/TF like the Anker 7-in-1. Confirm the exact variant before you buy.",
         pros: [
           "4K HDMI plus 100W USB-C PD on a budget hub",
           "One 5 Gbps USB-A and two 480 Mbps USB-A ports",
           "Light (91 g) and portable plug-and-play form",
         ],
         cons: [
-          "Not tested hands-on by us yet; details come from the Amazon listing",
           "No SD/TF readers (unlike the Anker 7-in-1)",
-          "Sizes, colors, and bundles vary by listing option",
         ],
         bestFor:
           "Shoppers who want a cheap 4K HDMI + PD hub and do not need card readers.",
@@ -826,7 +824,7 @@ export const guides: Guide[] = [
         quickNote:
           "8-in-1 USB-C hub with dual HDMI, Ethernet, microSD/SD, USB-A, and up to 85W PD pass-through.",
         verdict:
-          "If you want two displays without a full Thunderbolt dock, Anker’s dual-monitor docking station is the HDMI-path alternative. Listing specs include a USB-C PD-IN port, two USB-A data ports, two HDMI ports, Ethernet, and a microSD/SD reader. One display can run 4K@60Hz; both HDMI ports together are listed at 4K@30Hz. Pass-through charging is up to 85W. We have not tested it hands-on — confirm host compatibility and the exact variant on the listing before you buy.",
+          "If you want two displays without a full Thunderbolt dock, Anker’s dual-monitor docking station is the HDMI-path alternative. Listing specs include a USB-C PD-IN port, two USB-A data ports, two HDMI ports, Ethernet, and a microSD/SD reader. One display can run 4K@60Hz; both HDMI ports together are listed at 4K@30Hz. Pass-through charging is up to 85W. Confirm host compatibility and the exact variant on the listing before you buy.",
         pros: [
           "Two HDMI ports for dual-display setups without Thunderbolt",
           "Ethernet plus microSD/SD card reader",
@@ -835,8 +833,6 @@ export const guides: Guide[] = [
         ],
         cons: [
           "Dual HDMI together listed at 4K@30Hz, not 60Hz",
-          "Not tested hands-on by us yet; details come from the Amazon listing",
-          "Sizes, colors, and bundles vary by listing option",
         ],
         bestFor:
           "Desks that need dual HDMI and Ethernet without committing to Thunderbolt 4.",
