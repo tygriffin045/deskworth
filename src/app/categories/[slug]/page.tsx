@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
-import { getTopPicks } from "@/data/top10";
+import { getTopPicks, getThreePicks } from "@/data/top10";
+import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { Top10List } from "@/components/Top10List";
 import { JsonLd } from "@/components/JsonLd";
 import { BadgePicks } from "@/components/BadgePicks";
@@ -46,6 +48,7 @@ export default async function CategoryPage({ params }: Props) {
 
   const items = getTopPicks(slug);
   const cross = CATEGORY_CROSS_LINKS[slug];
+  const lead = getThreePicks(slug)?.best ?? items[0];
   const listLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -71,6 +74,27 @@ export default async function CategoryPage({ params }: Props) {
         {category.name}
       </h1>
       <p className="mt-3 max-w-2xl text-stone-600">{category.description}</p>
+      {lead && (
+        <div
+          className="mt-5 flex flex-col gap-3 rounded-2xl border-2 border-[#9a3f12]/25 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
+          data-top-cta
+        >
+          <p className="text-sm text-stone-700">
+            <span className="font-bold uppercase tracking-wide text-[#9a3f12]">Best Overall:</span>{" "}
+            <Link href={`/products/${lead.slug}`} className="font-semibold text-stone-900 underline underline-offset-2">
+              {lead.name}
+            </Link>
+          </p>
+          <AffiliateButton
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            placement="category_top"
+            className="shrink-0"
+          />
+        </div>
+      )}
       <p className="mt-4 text-sm text-stone-500">
         <Link href="/products" className="underline underline-offset-2">
           All products
@@ -93,6 +117,16 @@ export default async function CategoryPage({ params }: Props) {
       )}
       <BadgePicks category={slug} />
       <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
+      {lead && (
+        <StickyAffiliateBar
+          productSlug={lead.slug}
+          productName={lead.name}
+          amazonAsin={lead.amazonAsin}
+          amazonQuery={lead.amazonQuery}
+          label="Best Overall"
+          placement="category_sticky"
+        />
+      )}
     </div>
   );
 }

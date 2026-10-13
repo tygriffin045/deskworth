@@ -6,6 +6,7 @@ import { getGuide, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_URL,
@@ -192,6 +193,14 @@ export default async function GuidePage({ params }: Props) {
                   </a>{" "}
                 </p>
                 <p className="mt-1 text-sm">{pick.quickNote}</p>
+                <AffiliateButton
+                  productSlug={product.slug}
+                  productName={product.name}
+                  amazonAsin={product.amazonAsin}
+                  amazonQuery={product.amazonQuery}
+                  placement="guide_quick_picks"
+                  className="mt-2"
+                />
               </li>
             ))}
           </ol>
@@ -267,6 +276,17 @@ export default async function GuidePage({ params }: Props) {
             </section>
           ))}
         </div>
+      )}
+
+      {picks.length > 0 && (
+        <StickyAffiliateBar
+          productSlug={picks[0].product.slug}
+          productName={picks[0].product.name}
+          amazonAsin={picks[0].product.amazonAsin}
+          amazonQuery={picks[0].product.amazonQuery}
+          label={picks[0].pick.award}
+          placement="guide_sticky"
+        />
       )}
 
       {(guide.criteria ?? []).length > 0 && (
