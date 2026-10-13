@@ -278,16 +278,20 @@ export default async function GuidePage({ params }: Props) {
         </div>
       )}
 
-      {picks.length > 0 && (
-        <StickyAffiliateBar
-          productSlug={picks[0].product.slug}
-          productName={picks[0].product.name}
-          amazonAsin={picks[0].product.amazonAsin}
-          amazonQuery={picks[0].product.amazonQuery}
-          label={picks[0].pick.award}
-          placement="guide_sticky"
-        />
-      )}
+      {(() => {
+        const lead = picks[0]?.product ?? linkedProducts[0];
+        if (!lead) return null;
+        return (
+          <StickyAffiliateBar
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            label={picks[0]?.pick.award ?? "Top pick in this guide"}
+            placement="guide_sticky"
+          />
+        );
+      })()}
 
       {(guide.criteria ?? []).length > 0 && (
         <section className="mt-14 rounded-2xl border border-stone-200 bg-stone-50/80 p-6">
