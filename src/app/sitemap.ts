@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/boom-arms",
     "/affiliate-disclosure",
   ].map((path) => ({
-    url: `${HOST}${path || "/"}`,
+    url: `${HOST}${path}`, // root without slash: matches the canonical Next renders
     changeFrequency: path === "" ? "weekly" : "monthly",
     priority: path === "" ? 1 : path === "/products" ? 0.9 : 0.7,
   }));
