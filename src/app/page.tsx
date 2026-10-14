@@ -90,6 +90,12 @@ export default function HomePage() {
             >
               Converter vs desk
             </Link>
+            <Link
+              href="/guides/gifts-for-desk-workers"
+              className="rounded-full border border-[#9a3f12]/60 bg-white/60 px-5 py-2.5 text-sm font-semibold text-[#9a3f12] hover:bg-white"
+            >
+              Gifts for desk workers
+            </Link>
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import { getGuide, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_URL,
@@ -192,6 +193,14 @@ export default async function GuidePage({ params }: Props) {
                   </a>{" "}
                 </p>
                 <p className="mt-1 text-sm">{pick.quickNote}</p>
+                <AffiliateButton
+                  productSlug={product.slug}
+                  productName={product.name}
+                  amazonAsin={product.amazonAsin}
+                  amazonQuery={product.amazonQuery}
+                  placement="guide_quick_picks"
+                  className="mt-2"
+                />
               </li>
             ))}
           </ol>
@@ -268,6 +277,22 @@ export default async function GuidePage({ params }: Props) {
           ))}
         </div>
       )}
+
+      {(() => {
+        const lead = picks[0]?.product ?? linkedProducts[0];
+        if (!lead) return null;
+        return (
+          <StickyAffiliateBar
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            label={picks[0]?.pick.award ?? "Top pick in this guide"}
+            placement="guide_sticky"
+            showAfterId="quick-picks"
+          />
+        );
+      })()}
 
       {(guide.criteria ?? []).length > 0 && (
         <section className="mt-14 rounded-2xl border border-stone-200 bg-stone-50/80 p-6">

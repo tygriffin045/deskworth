@@ -2,6 +2,130 @@ import type { Guide } from "./types";
 
 export const guides: Guide[] = [
   {
+    slug: "gifts-for-desk-workers",
+    title: "Gifts for Desk Workers: Practical Picks for Remote and Office Setups",
+    metaTitle: "Gifts for Desk Workers (2026 Holiday Guide)",
+    metaDescription:
+      "Practical holiday gift ideas for people who work at a desk: monitor lights, keyboards, laptop stands, desk mats, and footrests, sorted by $, $$ and $$$ budget tier.",
+    description:
+      "Desk upgrades that tend to get used every day, from budget-friendly stocking stuffers to premium keyboards and lights. Each pick is drawn from the DeskWorth Top 10 lists.",
+    readingTime: "6 min read",
+    publishedAt: "2026-10-13",
+    productSlugs: [
+      "benq-screenbar",
+      "keychron-k2",
+      "logitech-mx-keys-s-wireless-keyboard",
+      "rain-design-mstand",
+      "nulaxy-ergonomic-adjustable-laptop-stand-for",
+      "logitech-desk-mat-studio",
+      "huanuo-adjustable-footrest",
+      "samphon-monitor-light-bar",
+    ],
+    picks: [
+      {
+        productSlug: "benq-screenbar",
+        award: "Best overall gift ($$$)",
+        quickNote: "A monitor-top light that frees desk space; likely appreciated by anyone who works into the evening.",
+        verdict:
+          "The BenQ ScreenBar clamps to the top of a monitor and lights the desk without adding a lamp footprint. It is the kind of upgrade many people don't buy for themselves, which tends to make it a good gift. Check that the clamp fits the recipient's monitor first; curved and ultrawide screens may need a different model.",
+        pros: ["Lights the desk with little screen glare", "No desk footprint compared with a traditional lamp", "Adjustable brightness and color temperature"],
+        cons: ["Clamp fit should be confirmed for curved or ultrawide monitors", "Sits in the premium tier for a desk light"],
+        bestFor: "Remote workers and students who often work after dark.",
+      },
+      {
+        productSlug: "keychron-k2",
+        award: "Best keyboard gift ($$)",
+        quickNote: "A compact wireless mechanical keyboard that may suit writers and developers.",
+        verdict:
+          "The Keychron K2 is a compact wireless mechanical keyboard with Mac and Windows layouts. For someone who types a lot, it may feel like a clear step up from a laptop keyboard. Mechanical keys can be loud, so it may be a poor fit for a shared room or a quiet household.",
+        pros: ["Compact layout frees space for a mouse", "Wireless and wired modes", "Mac and Windows layouts available"],
+        cons: ["Mechanical sound may bother others nearby", "No number pad for spreadsheet-heavy work"],
+        bestFor: "Writers and developers who enjoy a tactile keyboard.",
+      },
+      {
+        productSlug: "logitech-mx-keys-s-wireless-keyboard",
+        award: "Premium quiet keyboard ($$$)",
+        quickNote: "Low-profile, quiet keys for people who type all day in shared spaces.",
+        verdict:
+          "If the recipient works near other people, the Logitech MX Keys S is likely the safer keyboard gift: low-profile keys, a backlight that wakes as hands approach, and quieter typing than a mechanical board. It connects over Bluetooth only, per the listing details.",
+        pros: ["Quiet, low-profile keys", "Backlight turns on as hands approach", "Shortcut customization in Logi Options+"],
+        cons: ["Bluetooth only; no wired connection listed", "Heavier than most low-profile keyboards"],
+        bestFor: "Heavy typists in shared or quiet spaces.",
+      },
+      {
+        productSlug: "rain-design-mstand",
+        award: "Best laptop stand gift ($$)",
+        quickNote: "A solid aluminum riser that may help with neck posture at a permanent desk.",
+        verdict:
+          "The Rain Design mStand raises a laptop screen toward eye level and stays put on the desk. It works best paired with an external keyboard and mouse, so it may suit someone who already has those, or pair well with one of the keyboards above.",
+        pros: ["Stable solid-aluminum build", "Raises the screen toward eye level", "Built-in cable slot"],
+        cons: ["Fixed height and not travel-friendly", "Needs an external keyboard and mouse"],
+        bestFor: "Laptop users with a permanent desk.",
+      },
+      {
+        productSlug: "huanuo-adjustable-footrest",
+        award: "Most underrated gift ($$)",
+        quickNote: "A rocking footrest that can help shorter people on tall chairs.",
+        verdict:
+          "The HUANUO footrest has three height settings and a free tilt that keeps ankles moving. It is an easy gift to overlook, but it may make a real difference for anyone whose feet don't rest flat at their desk.",
+        pros: ["Three height settings", "Rocking tilt encourages movement", "Large textured platform"],
+        cons: ["Hard plastic rather than foam", "Tilt angle is not lockable"],
+        bestFor: "Shorter people and anyone on a tall chair.",
+      },
+      {
+        productSlug: "logitech-desk-mat-studio",
+        award: "Budget-friendly desk refresh ($$)",
+        quickNote: "A clean mid-grey desk mat that tends to tidy up a setup.",
+        verdict:
+          "The Logitech Studio Series desk mat is a simple, office-friendly pad with a spill-resistant surface. It is smaller than extended gaming mats, which may suit compact desks better.",
+        pros: ["Clean office look", "Spill-resistant surface", "Anti-slip base"],
+        cons: ["Smaller than extended XL mats", "Thinner than plush gaming pads"],
+        bestFor: "Compact desks and minimal setups.",
+      },
+      {
+        productSlug: "nulaxy-ergonomic-adjustable-laptop-stand-for",
+        award: "Budget-friendly laptop stand ($)",
+        quickNote: "An adjustable stand at the $ tier for 10 to 16 inch laptops.",
+        verdict:
+          "The Nulaxy stand adjusts to raise a laptop toward eye level and folds open for airflow. It is a budget-friendly alternative to the mStand, though it is limited to laptops up to 16 inches.",
+        pros: ["Adjustable height", "Open design helps cooling", "Fits 10 to 16 inch laptops"],
+        cons: ["Limited to laptops up to 16 inches", "Needs an external keyboard and mouse"],
+        bestFor: "Students and hybrid workers on a tighter budget.",
+      },
+      {
+        productSlug: "samphon-monitor-light-bar",
+        award: "Budget-friendly monitor light ($)",
+        quickNote: "A $ tier take on the monitor light bar idea.",
+        verdict:
+          "The SAMPHON light bar uses the same basic design as the ScreenBar, with an asymmetric beam and three color temperatures. Its Amazon rating trailed most picks in its category when checked, so it is best treated as a budget-friendly option rather than a like-for-like replacement.",
+        pros: ["Wide 15.7 inch bar", "Asymmetric beam aimed at the desk", "Three color temperatures"],
+        cons: ["Lower Amazon rating than most category picks when checked", "Lights the desk, not the room"],
+        bestFor: "Stocking stuffers and secret-santa budgets.",
+      },
+    ],
+    criteria: [
+      { heading: "Pick for daily use", body: "Gifts that sit on the desk and get used every workday tend to be appreciated more than novelty gadgets." },
+      { heading: "Check fit before buying", body: "Monitor lights need a compatible bezel, laptop stands have size limits, and keyboards come in Mac and Windows layouts. Confirm details on the Amazon listing." },
+      { heading: "Budget tiers, not prices", body: "Each pick shows a $, $$ or $$$ tier. Prices change often, especially around holiday sales, so check the current price on Amazon." },
+    ],
+    sections: [
+      {
+        heading: "Pairing gifts",
+        body: "A laptop stand and a keyboard tend to work well together, since raising the laptop means the recipient will likely need a separate keyboard. A desk mat can round out a smaller gift.",
+      },
+    ],
+    faqs: [
+      { question: "What is a good gift for someone who works from home?", answer: "A monitor light, a laptop stand, or a better keyboard are likely to get daily use. The right pick depends on the person's setup, so check monitor and laptop compatibility first." },
+      { question: "Are there budget-friendly desk gifts?", answer: "Yes. The Nulaxy laptop stand and SAMPHON light bar sit in the $ tier. Check current prices on Amazon, since they change often." },
+    ],
+    relatedGuideSlugs: ["ergonomic-home-office-starter-kit", "best-laptop-stand-for-desk"],
+    relatedLinks: [
+      { href: "/categories/desk-lighting", label: "Top 10 desk lighting" },
+      { href: "/categories/keyboards-mice", label: "Top 10 keyboards and mice" },
+      { href: "/categories/laptop-stands", label: "Top 10 laptop stands" },
+    ],
+  },
+  {
     slug: "how-to-choose-a-standing-desk",
     title: "How to Choose a Standing Desk (Without Overpaying)",
     description:

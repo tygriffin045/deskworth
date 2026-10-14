@@ -22,6 +22,8 @@ export const CATEGORY_CROSS_LINKS: Partial<
     { guides?: { href: string; label: string }[]; compares?: { href: string; label: string }[] }
   >
 > = {
+  "desk-lighting": { guides: [{ href: "/guides/gifts-for-desk-workers", label: "Gifts for desk workers" }] },
+  "keyboards-mice": { guides: [{ href: "/guides/gifts-for-desk-workers", label: "Gifts for desk workers" }] },
   "standing-desks": {
     guides: [
       { href: "/guides/how-to-choose-a-standing-desk", label: "How to choose a standing desk" },
@@ -89,6 +91,7 @@ export const CATEGORY_CROSS_LINKS: Partial<
   },
   "laptop-stands": {
     guides: [
+      { href: "/guides/gifts-for-desk-workers", label: "Gifts for desk workers" },
       { href: "/guides/best-laptop-stand-for-desk", label: "Best laptop stand for a desk" },
     ],
   },
