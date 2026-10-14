@@ -73,7 +73,7 @@ export function StickyAffiliateBar({
 
   return (
     <>
-    <div ref={barRef} aria-hidden={!visible} className={`fixed inset-x-0 bottom-0 z-40 border-t-2 border-[#9a3f12]/30 bg-white/95 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-md transition-transform duration-200 ${visible ? "translate-y-0" : "pointer-events-none translate-y-full"}`} data-sticky-cta>
+    <div ref={barRef} aria-hidden={!visible} className={`fixed inset-x-0 bottom-[env(safe-area-inset-bottom,0px)] z-40 m-0 border-t-2 border-[#9a3f12]/30 bg-white/95 p-3 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur-md transition-[translate,transform,visibility] duration-200 ${visible ? "translate-y-0" : "pointer-events-none invisible translate-y-[calc(100%+env(safe-area-inset-bottom,0px))]"}`} data-sticky-cta>
       <div className="mx-auto flex max-w-6xl items-center gap-3">
         <div className="min-w-0 flex-1">
           {label && <p className="text-[11px] font-bold uppercase tracking-wider text-[#9a3f12]">{label}</p>}
