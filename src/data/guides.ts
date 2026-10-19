@@ -2,6 +2,91 @@ import type { Guide } from "./types";
 
 export const guides: Guide[] = [
   {
+    slug: "best-monitor-light-bars",
+    title: "Best Monitor Light Bars for Desk Setup",
+    metaTitle: "Best Monitor Light Bars (2026)",
+    metaDescription:
+      "BenQ ScreenBar Pro vs Halo 2 vs Quntis and budget SAMPHON: how to choose a monitor-mounted light that cuts glare without cluttering the desk.",
+    description:
+      "A monitor light bar lights the keyboard and notes without shining on the screen or taking desk space. Here are the picks that cover most setups, from premium BenQ to budget options.",
+    readingTime: "7 min read",
+    publishedAt: "2026-10-19",
+    productSlugs: [
+      "benq-screenbar-pro",
+      "benq-screenbar-halo-2",
+      "quntis-monitor-light",
+      "samphon-monitor-light-bar",
+      "benq-screenbar",
+    ],
+    picks: [
+      {
+        productSlug: "benq-screenbar-pro",
+        award: "Best overall",
+        quickNote: "Ultrawide coverage, motion sensor, and strong compatibility for curved monitors, per BenQ.",
+        verdict:
+          "The ScreenBar Pro is the one we point most people to. BenQ lists over 1000 lx center brightness with 500 lx coverage across a large desk area, asymmetric optics that avoid screen glare, and a clamp that fits thicker and curved monitors. The motion sensor turns it on when you sit down. Confirm the exact thickness and curvature limits on the Amazon listing before buying.",
+        pros: ["Wide desk coverage without screen glare", "Motion sensor for automatic on/off", "Fits a wide range of monitor thicknesses and curves, per the listing"],
+        cons: ["Premium price", "Needs USB-C power or the included adapter"],
+        bestFor: "Most single or dual-monitor desks that want reliable, hands-off lighting.",
+      },
+      {
+        productSlug: "benq-screenbar-halo-2",
+        award: "Best with rear light",
+        quickNote: "Adds a backlight and wireless dial for dark rooms.",
+        verdict:
+          "The Halo 2 adds a rear bias light and a wireless controller with its own display. Per BenQ, the front light still uses asymmetric optics, and the rear light helps reduce contrast in a dark room. It is the pick when you work with the room lights off. The wireless dial needs occasional charging.",
+        pros: ["Rear backlight for dark-room comfort", "Wireless dial with precise control", "High color rendering, per the listing"],
+        cons: ["Highest price here", "Extra part to keep charged"],
+        bestFor: "Evening workers and anyone who wants bias lighting behind the monitor.",
+      },
+      {
+        productSlug: "quntis-monitor-light",
+        award: "Best value",
+        quickNote: "Auto-dimming and touch control at a lower price, with thousands of ratings.",
+        verdict:
+          "The Quntis light bar is the value option that still includes auto-dimming and asymmetric optics. It has a high number of Amazon ratings and sits well below the BenQ price. Check clamp fit on thinner or curved monitors; some budget bars struggle there.",
+        pros: ["Much lower price than BenQ", "Auto-dimming and stepless control", "High rating volume on Amazon"],
+        cons: ["Clamp may not fit every curved or thick monitor", "Build and light quality step down from BenQ"],
+        bestFor: "Budget desks and first-time light-bar buyers.",
+      },
+      {
+        productSlug: "samphon-monitor-light-bar",
+        award: "Budget pick",
+        quickNote: "Simple USB bar with three color temperatures.",
+        verdict:
+          "The SAMPHON is the lowest-cost option we list. It offers basic stepless dimming and three color temperatures in a compact bar. Treat it as a try-before-you-spend-more pick; the Amazon rating trails the others.",
+        pros: ["Lowest price in this guide", "Simple touch or button control", "No desk footprint"],
+        cons: ["Lower rating volume and score than the Quntis and BenQ", "Fewer features"],
+        bestFor: "Stocking stuffers or testing whether a light bar helps before buying premium.",
+      },
+      {
+        productSlug: "benq-screenbar",
+        award: "Previous-gen BenQ",
+        quickNote: "The original ScreenBar; buy only if clearly cheaper than the Pro.",
+        verdict:
+          "The original ScreenBar is the earlier model in the same line. It still clamps on and uses asymmetric light, but the Pro improves coverage, sensor, and fit. Only choose it when the price is meaningfully lower than the Pro on the day you buy.",
+        pros: ["Same core glare-free idea", "Often discounted", "Proven track record"],
+        cons: ["Narrower coverage than the Pro", "Older design"],
+        bestFor: "Buyers who find a real discount on the older model.",
+      },
+    ],
+    criteria: [
+      { heading: "Clamp fit first", body: "Measure your monitor thickness and check whether it is flat or curved. Premium bars list wider ranges; budget ones often do not. A bar that will not clamp is useless." },
+      { heading: "Coverage vs price", body: "The BenQ Pro covers a larger desk area. For a compact setup the Quntis or SAMPHON is usually enough. Rear light is only useful if you work in the dark." },
+      { heading: "Power", body: "All of these run from USB. Some include an adapter; others rely on a monitor USB port or a wall charger you already own." },
+    ],
+    sections: [
+      { heading: "Why a light bar instead of a lamp", body: "A traditional desk lamp takes space and can reflect on the screen. A monitor-mounted bar sits above the display, lights the work surface, and leaves the desk clear. We may earn a commission from qualifying purchases. Product links use our Amazon Associates tag deskworth20-20." },
+      { heading: "How to choose", body: "Most people: BenQ ScreenBar Pro. Dark-room bias lighting: Halo 2. Tight budget: Quntis. Absolute lowest spend: SAMPHON. Compare the clamp specs on Amazon against your monitor before you order." },
+    ],
+    faqs: [
+      { question: "Will a monitor light bar work on a curved screen?", answer: "Some do. The BenQ Pro and Halo 2 list curved-monitor ranges. Many budget bars are designed for flat screens. Check the listing." },
+      { question: "Do I need a rear light?", answer: "Only if you often work with the room lights off. For normal office lighting the front light is what matters." },
+    ],
+    relatedGuideSlugs: ["ergonomic-home-office-starter-kit", "how-to-choose-a-monitor-arm"],
+  },
+
+  {
     slug: "gifts-for-desk-workers",
     title: "Gifts for Desk Workers: Practical Picks for Remote and Office Setups",
     metaTitle: "Gifts for Desk Workers (2026 Holiday Guide)",
