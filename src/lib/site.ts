@@ -6,7 +6,7 @@ export const SITE_HOST = new URL(SITE_URL).host;
 export const SITE_NAME = "DeskWorth";
 export const SITE_TITLE = "DeskWorth — Honest picks for a better home office";
 export const SITE_DESCRIPTION =
-  "Editorial reviews and buying guides for standing desks, ergonomic chairs, monitors, keyboards, webcams, and home office accessories — tradeoffs spelled out, no invented scores.";
+  "Reviews and buying guides for standing desks, ergonomic chairs, monitors, keyboards, and home office gear — tradeoffs spelled out, no invented scores.";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.jpg`;
 export const DEFAULT_OG_IMAGE_METADATA = {
   url: DEFAULT_OG_IMAGE,

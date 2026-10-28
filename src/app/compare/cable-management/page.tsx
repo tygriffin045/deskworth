@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Cable management comparison (tray vs raceway)",
   description: "Side-by-side comparison of an under-desk metal tray, EVEO J-channel kit, and D-Line half-round cord cover for standing desks.",
   openGraph: {
+      type: "website",
     title: "Cable management comparison (tray vs raceway)",
     description: "Side-by-side comparison of an under-desk metal tray, EVEO J-channel kit, and D-Line half-round cord cover for standing desks.",
     url: "/compare/cable-management",
@@ -91,6 +93,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["Cable management comparison (tray vs raceway)", "/compare/cable-management"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Cable management comparison

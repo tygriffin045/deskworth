@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { ItemListLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,8 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return { title: "Guide not found" };
-  const title = guide.metaTitle ?? guide.title;
-  const description = guide.metaDescription ?? guide.description;
+  const title = fit(guide.metaTitle ?? guide.title, 58);
+  const description = fit(guide.metaDescription ?? guide.description, 160);
   const url = `${SITE_URL}/guides/${slug}`;
   return {
     title,
@@ -168,6 +170,7 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <article className="max-w-3xl">
+      {picks.length === 0 && <ItemListLd name={guide.title} items={linkedProducts.map((p) => ({ name: p.name, path: `/products/${p.slug}` }))} />}
       <JsonLd data={ldBlocks} />
       <p className="text-xs text-stone-500">
         <Link href="/guides" className="hover:text-stone-800">

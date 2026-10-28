@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { products } from "@/data/products";
+import { products, DUPLICATE_OF } from "@/data/products";
 import { categories } from "@/data/categories";
 import { guides } from "@/data/guides";
 
@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const productRoutes = products.map((p) => ({
+  const productRoutes = products.filter((p) => !DUPLICATE_OF[p.slug]).map((p) => ({
     url: `${HOST}/products/${p.slug}`,
     changeFrequency: "weekly" as const,
     priority: 0.85,

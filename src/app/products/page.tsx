@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { ProductFilters } from "@/components/ProductFilters";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Browse DeskWorth standing desks, chairs, monitors, docks, mats, and accessories. Filter by category and budget.",
   openGraph: {
+      type: "website",
     title: "All home office products",
     description:
       "Browse DeskWorth standing desks, chairs, monitors, docks, mats, and accessories. Filter by category and budget.",
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
 export default function ProductsIndexPage() {
   return (
     <div>
+      <BreadcrumbLd trail={[["Products", "/products"]]} />
       <h1 className="font-serif text-4xl text-stone-900">All products</h1>
       <p className="mt-2 max-w-2xl text-stone-600">
         Filter by category and budget band. Every product page includes pros,

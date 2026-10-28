@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -10,16 +11,17 @@ import type { ReactNode } from "react";
 import { getAffiliateUrl } from "@/lib/affiliate";
 
 export const metadata: Metadata = {
-  title: "Sit-stand desk converter comparison (VariDesk vs FlexiSpot vs VIVO)",
+  title: "Desk converters compared: VariDesk vs FlexiSpot vs VIVO",
   description: "Side-by-side comparison of VariDesk Pro Plus 36, FlexiSpot 36, and VIVO 36 desk converters for fixed desks.",
   openGraph: {
-    title: "Sit-stand desk converter comparison (VariDesk vs FlexiSpot vs VIVO)",
+      type: "website",
+    title: "Desk converters compared: VariDesk vs FlexiSpot vs VIVO",
     description: "Side-by-side comparison of VariDesk Pro Plus 36, FlexiSpot 36, and VIVO 36 desk converters for fixed desks.",
     url: "/compare/desk-converters",
     images: [DEFAULT_OG_IMAGE_METADATA],
   },
   twitter: {
-    title: "Sit-stand desk converter comparison (VariDesk vs FlexiSpot vs VIVO)",
+    title: "Desk converters compared: VariDesk vs FlexiSpot vs VIVO",
     description: "Side-by-side comparison of VariDesk Pro Plus 36, FlexiSpot 36, and VIVO 36 desk converters for fixed desks.",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -97,6 +99,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["Desk converters compared: VariDesk vs FlexiSpot vs VIVO", "/compare/desk-converters"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Sit-stand desk converter comparison

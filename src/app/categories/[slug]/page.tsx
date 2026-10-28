@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -26,11 +28,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category not found" };
   const title = `${category.name} — DeskWorth picks`;
-  const description = `${category.description} Our Top 10 with pros, cons, and budget tiers.`;
+  const description = fit(`${category.description} Our Top 10 with pros, cons, and budget tiers.`, 160);
   return {
     title,
     description,
     openGraph: {
+      type: "website",
       title,
       description,
       url: `/categories/${slug}`,
@@ -66,6 +69,7 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <div>
+      <BreadcrumbLd trail={[[category.name, `/categories/${category.slug}`]]} />
       <JsonLd data={listLd} />
       <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">
         Category

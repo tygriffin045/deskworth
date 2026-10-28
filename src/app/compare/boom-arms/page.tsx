@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Mic boom arm comparison (Elgato vs RODE vs InnoGear)",
   description: "Side-by-side comparison of Elgato Wave Mic Arm LP, RODE PSA1+, and InnoGear cable-management boom arms for desk setups.",
   openGraph: {
+      type: "website",
     title: "Mic boom arm comparison (Elgato vs RODE vs InnoGear)",
     description: "Side-by-side comparison of Elgato Wave Mic Arm LP, RODE PSA1+, and InnoGear cable-management boom arms for desk setups.",
     url: "/compare/boom-arms",
@@ -102,6 +104,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["Mic boom arm comparison (Elgato vs RODE vs InnoGear)", "/compare/boom-arms"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Mic & webcam boom arm comparison

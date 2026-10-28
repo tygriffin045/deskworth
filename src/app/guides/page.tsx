@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guides } from "@/data/guides";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Practical DeskWorth guides for standing desks, converters, monitor arms, mats, and ergonomic setups — with links to products we mention.",
   openGraph: {
+      type: "website",
     title: "Buying guides for home office desks & gear",
     description:
       "Practical DeskWorth guides for standing desks, converters, monitor arms, mats, and ergonomic setups — with links to products we mention.",
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
 export default function GuidesIndexPage() {
   return (
     <div>
+      <BreadcrumbLd trail={[["Guides", "/guides"]]} />
       <h1 className="font-serif text-4xl text-stone-900">Buying guides</h1>
       <p className="mt-2 max-w-2xl text-stone-600">
         Longer editorial pieces with links to the products we mention — written

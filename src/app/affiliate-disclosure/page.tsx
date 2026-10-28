@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE_METADATA, DEFAULT_OG_IMAGE } from "@/lib/site";
 
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "FTC affiliate disclosure for DeskWorth — how commissions work in plain language.",
   openGraph: {
+      type: "website",
     title: "Affiliate disclosure",
     description:
       "FTC affiliate disclosure for DeskWorth — how commissions work in plain language.",
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
 export default function AffiliateDisclosurePage() {
   return (
     <article className="max-w-3xl">
+      <BreadcrumbLd trail={[["Affiliate disclosure", "/affiliate-disclosure"]]} />
       <h1 className="font-serif text-4xl text-stone-900">
         Affiliate disclosure
       </h1>

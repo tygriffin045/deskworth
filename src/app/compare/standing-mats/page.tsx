@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Standing mat comparison (Topo vs GelPro vs Sky)",
   description: "Side-by-side comparison of Ergodriven Topo, NewLife by GelPro Eco-Pro, and Sky Solutions anti-fatigue mats for standing desks.",
   openGraph: {
+      type: "website",
     title: "Standing mat comparison (Topo vs GelPro vs Sky)",
     description: "Side-by-side comparison of Ergodriven Topo, NewLife by GelPro Eco-Pro, and Sky Solutions anti-fatigue mats for standing desks.",
     url: "/compare/standing-mats",
@@ -90,6 +92,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["Standing mat comparison (Topo vs GelPro vs Sky)", "/compare/standing-mats"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Standing mat comparison

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
+      type: "website",
     title: "DeskWorth — Honest picks for a better home office",
     description: SITE_DESCRIPTION,
     url: SITE_URL,

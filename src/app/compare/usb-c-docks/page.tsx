@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "USB-C dock comparison (Anker vs Plugable vs CalDigit)",
   description: "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks for travel vs dual-monitor desks.",
   openGraph: {
+      type: "website",
     title: "USB-C dock comparison (Anker vs Plugable vs CalDigit)",
     description: "Side-by-side comparison of Anker 7-in-1, Plugable Thunderbolt 4, and CalDigit TS4 docks for travel vs dual-monitor desks.",
     url: "/compare/usb-c-docks",
@@ -92,6 +94,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["USB-C dock comparison (Anker vs Plugable vs CalDigit)", "/compare/usb-c-docks"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         USB-C dock comparison

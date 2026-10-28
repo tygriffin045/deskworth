@@ -3683,3 +3683,8 @@ export function getRelatedProducts(product: Product): Product[] {
     .map((slug) => getProduct(slug))
     .filter((p): p is Product => Boolean(p));
 }
+
+/** Duplicate product pages (same ASIN) and the page that should be canonical. Kept live for old links, left out of the sitemap. */
+export const DUPLICATE_OF: Record<string, string> = {
+  "quntis-monitor-light": "quntis-computer-monitor-lamp",
+};

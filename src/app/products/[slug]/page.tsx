@@ -1,3 +1,4 @@
+import { fit } from "@/lib/meta-fit";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import {
   getProduct,
   getRelatedProducts,
   products,
+  DUPLICATE_OF,
 } from "@/data/products";
 import { getCategory } from "@/data/categories";
 import { guides } from "@/data/guides";
@@ -30,12 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product not found" };
-  const title = `${product.name} review (2026)`;
-  const description = `${product.summary} DeskWorth editorial take`;
+  const title = DUPLICATE_OF[slug] ? fit(`${product.name}: ${product.tagline}`, 55) : fit(`${product.name} review`, 55);
+  const description = fit(product.summary, 160);
   return {
     title,
     description,
     openGraph: {
+      type: "website",
       title,
       description,
       url: `/products/${slug}`,
@@ -60,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? [product.imageUrl.startsWith("http") ? product.imageUrl : `${SITE_URL}${product.imageUrl}`]
         : [DEFAULT_OG_IMAGE],
     },
-    alternates: { canonical: `/products/${slug}` },
+    alternates: { canonical: `/products/${DUPLICATE_OF[slug] ?? slug}` },
   };
 }
 

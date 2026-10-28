@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Standing desk comparison (FlexiSpot vs UPLIFT)",
   description: "Side-by-side DeskWorth comparison of the FlexiSpot E6 55x28, FlexiSpot E6 MAX (48x24 bamboo), and UPLIFT V3 standing desks across budget, mid-range, and premium.",
   openGraph: {
+      type: "website",
     title: "Standing desk comparison (FlexiSpot vs UPLIFT)",
     description: "Side-by-side DeskWorth comparison of the FlexiSpot E6 55x28, FlexiSpot E6 MAX (48x24 bamboo), and UPLIFT V3 standing desks across budget, mid-range, and premium.",
     url: "/compare",
@@ -95,6 +97,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Standing desk comparison

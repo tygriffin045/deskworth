@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   title: "Monitor arm comparison (HUANUO vs Ergotron)",
   description: "Side-by-side comparison of HUANUO dual, Amazon Basics dual, and Ergotron LX monitor arms \u2014 VESA, load, and motion tradeoffs.",
   openGraph: {
+      type: "website",
     title: "Monitor arm comparison (HUANUO vs Ergotron)",
     description: "Side-by-side comparison of HUANUO dual, Amazon Basics dual, and Ergotron LX monitor arms \u2014 VESA, load, and motion tradeoffs.",
     url: "/compare/monitor-arms",
@@ -97,6 +99,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"], ["Monitor arm comparison (HUANUO vs Ergotron)", "/compare/monitor-arms"]]} />
       <JsonLd data={listLd} />
       <h1 className="font-serif text-4xl text-stone-900">
         Monitor arm comparison
