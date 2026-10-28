@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { getGuideTop10, getRelatedGuideList } from "@/lib/guide-links";
 import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
@@ -93,9 +94,16 @@ export default async function GuidePage({ params }: Props) {
     .filter((s) => !pickSlugs.has(s))
     .map((s) => getProduct(s))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
-  const relatedGuides = (guide.relatedGuideSlugs ?? [])
-    .map((s) => getGuide(s))
-    .filter((g): g is NonNullable<typeof g> => Boolean(g));
+  const relatedGuides = getRelatedGuideList<NonNullable<ReturnType<typeof getGuide>>>(
+    guide,
+    3,
+    guide.relatedGuideSlugs ?? [],
+  );
+  const top10 = getGuideTop10(guide);
+  const extraLinks = [
+    ...(top10 && !(guide.relatedLinks ?? []).some((l) => l.href === top10.href) ? [top10] : []),
+    ...(guide.relatedLinks ?? []),
+  ];
   const faqs = guide.faqs ?? [];
   const guideUrl = `${SITE_URL}/guides/${guide.slug}`;
   const articleLd = {
@@ -341,7 +349,7 @@ export default async function GuidePage({ params }: Props) {
         </section>
       )}
 
-      {(relatedGuides.length > 0 || (guide.relatedLinks ?? []).length > 0) && (
+      {(relatedGuides.length > 0 || extraLinks.length > 0) && (
         <section className="mt-12 rounded-2xl border border-stone-200 bg-stone-50/80 p-6">
           <h2 className="font-serif text-2xl text-stone-900">Keep reading</h2>
           <ul className="mt-3 space-y-2 text-sm">
@@ -356,7 +364,7 @@ export default async function GuidePage({ params }: Props) {
                 </Link>
               </li>
             ))}
-            {(guide.relatedLinks ?? []).map((l) => (
+            {extraLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="underline underline-offset-2">
                   {l.label}
