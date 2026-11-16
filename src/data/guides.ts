@@ -2,6 +2,80 @@ import type { Guide } from "./types";
 
 export const guides: Guide[] = [
   {
+    slug: "best-webcam-for-working-from-home",
+    title: "Best Webcams for Working From Home",
+    metaTitle: "Best Webcams for Working From Home (2026)",
+    metaDescription:
+      "Logitech C920s, Brio 101, MX Brio and EMEET C960 compared: which 1080p or 4K webcam fits your calls, budget and desk.",
+    description:
+      "A dedicated webcam is one of the simplest upgrades over a laptop camera. Here are four webcams from our verified Top 10, from a budget 1080p pick to a 4K option for people on camera all day.",
+    readingTime: "6 min read",
+    publishedAt: "2026-11-16",
+    productSlugs: [
+      "logitech-c920s",
+      "logitech-brio-101-full-hd-1080p",
+      "emeet-c960-1080p-webcam-with-microphone",
+      "logitech-mx-brio-ultra-hd-4k",
+    ],
+    picks: [
+      {
+        productSlug: "logitech-c920s",
+        award: "Best for most work calls",
+        quickNote: "Dependable 1080p with a privacy shutter and wide support.",
+        verdict:
+          "The C920s is the long-running Logitech HD Pro webcam with a privacy shutter and a clear 1080p image for Zoom, Meet and Teams. It is a clear step up from most laptop cameras without building a streaming kit. The built-in mic is fine rather than great, and low light still benefits from a desk light.",
+        pros: ["Reliable 1080p for work calls", "Privacy shutter included", "Plug-and-play on Windows and macOS"],
+        cons: ["Not 4K and no auto-framing", "Built-in mic is only fine", "Low light still prefers a desk light"],
+        bestFor: "Hybrid workers who want a clear, simple upgrade.",
+      },
+      {
+        productSlug: "logitech-brio-101-full-hd-1080p",
+        award: "Best simple Logitech with auto brightness",
+        quickNote: "RightLight auto brightness, built-in privacy cover and mic.",
+        verdict:
+          "The Brio 101 is a 1080p USB-A webcam with RightLight auto brightness, a built-in privacy cover and a built-in mic. When we checked on Oct 3, 2026 it was #1 on Amazon's Best Sellers list for Webcams. It is fixed focus and 1080p only, so treat it as a straightforward everyday camera.",
+        pros: ["RightLight auto brightness", "Built-in privacy cover and mic", "Popular with Amazon buyers"],
+        cons: ["1080p only, no 4K", "Fixed focus"],
+        bestFor: "Occasional callers who want a simple Logitech camera with a privacy cover.",
+      },
+      {
+        productSlug: "emeet-c960-1080p-webcam-with-microphone",
+        award: "Best value",
+        quickNote: "1080p, privacy cover and two mics, with a USB-C adapter in the box.",
+        verdict:
+          "The EMEET C960 is our Value pick: a 1080p camera with a privacy cover, two built-in microphones, and plug-and-play USB-A with a USB-C adapter in the box. It is a simple upgrade over a laptop camera. The build is more basic than the Logitech picks.",
+        pros: ["1080p with a privacy cover", "Two built-in microphones", "USB-A plus included USB-C adapter"],
+        cons: ["1080p only", "Basic build compared with the Logitech picks"],
+        bestFor: "Second desks, kids' laptops and tight budgets.",
+      },
+      {
+        productSlug: "logitech-mx-brio-ultra-hd-4k",
+        award: "Best premium",
+        quickNote: "4K at 30fps or 1080p at 60fps with manual controls.",
+        verdict:
+          "The MX Brio is our Premium pick. It records 4K at 30fps or 1080p at 60fps, and manual controls for ISO, shutter and white balance let you fine-tune the picture. Logitech says it captures better face detail in tricky light. Most call apps do not send 4K, so the upgrade shows mainly in recordings.",
+        pros: ["4K at 30fps or 1080p at 60fps", "Manual ISO, shutter and white balance controls", "Better face detail in tricky light, per Logitech"],
+        cons: ["Most call apps do not send 4K", "The most expensive webcam here"],
+        bestFor: "People on camera all day, presenters and streamers.",
+      },
+    ],
+    criteria: [
+      { heading: "Resolution you will actually use", body: "Most call apps send 1080p or less, so a 1080p webcam covers daily meetings. 4K helps mainly when you record video." },
+      { heading: "Privacy cover", body: "A built-in cover or shutter is an easy way to be sure the camera is off. The C920s, Brio 101 and EMEET C960 list one." },
+      { heading: "Light and microphone", body: "A webcam can only do so much in a dim room. A desk or monitor light helps more than a higher resolution, and a headset mic usually beats a built-in one." },
+    ],
+    sections: [
+      { heading: "How to choose", body: "Most people: Logitech C920s. Auto brightness and a simple setup: Brio 101. Tight budget: EMEET C960. On camera all day or recording: MX Brio. Confirm port type (USB-A or USB-C) against your computer on the Amazon listing." },
+    ],
+    faqs: [
+      { question: "Do I need a 4K webcam for video calls?", answer: "Usually not. Most call apps do not send 4K, so a good 1080p webcam is enough for meetings. 4K matters more for recordings." },
+      { question: "Which webcam here is the best value?", answer: "The EMEET C960 is our Value pick: 1080p, a privacy cover and two built-in microphones." },
+    ],
+    relatedGuideSlugs: ["best-monitor-light-bars", "how-to-choose-a-monitor-arm"],
+    relatedLinks: [{ href: "/categories/webcams-audio", label: "Webcams & audio category" }],
+  },
+
+  {
     slug: "best-monitor-light-bars",
     title: "Best Monitor Light Bars for Desk Setup",
     metaTitle: "Best Monitor Light Bars (2026)",
